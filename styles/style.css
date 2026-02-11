@@ -1,15 +1,20 @@
+@import url(reset.css);
+
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     text-decoration: none;
 }
 
 body {
-    background: linear-gradient(135deg, #e8defa, #f7f7ff);
     font-family: "Funnel Display", sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
 }
 
+/* HEADER */
 .nav {
     position: sticky;
     top: 0;
@@ -19,9 +24,52 @@ body {
     justify-content: center;
     align-items: center;
     gap: 100px;
-    background: rgba(255, 255, 255, 0.4);
+    background: rgba(0, 0, 0);
     backdrop-filter: blur(8px);
     z-index: 10;
 }
 
-@import url(./reset.css);
+.nav-link{
+    color: #FFF;
+}
+/* -------------- */
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5rem;
+    min-height: 100vh;
+    margin: 0 8vw;
+}
+
+.section{
+    min-height: 100vh;
+    scroll-margin-top: 75px;
+}
+.video{
+    width: 5000px;
+    height: 500px;
+    background-color: #A1A1A1;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    gap: 3rem;
+}
+
+.selector{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3rem;
+    margin: 0 8vw;
+}
+
+.box{
+    width: 1000px;
+    height: 750px;
+    background-color: #A1A1A1;
+}
