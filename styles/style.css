@@ -46,11 +46,16 @@ body {
 .section{
     min-height: 100vh;
     scroll-margin-top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 3rem;
+    margin: 0 8vw;
 }
 .video{
     width: 5000px;
     height: 500px;
-    background-color: #A1A1A1;
+    background-color: #D9D9D9;
 }
 
 .description{
@@ -60,16 +65,42 @@ body {
     gap: 3rem;
 }
 
-.selector{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 3rem;
-    margin: 0 8vw;
-}
+/* .selector{
+    
+} */
 
 .box{
-    width: 1000px;
+    width: 238px;
     height: 750px;
-    background-color: #A1A1A1;
+    background-color: #D9D9D9;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    gap: 3rem;
+}
+
+.icon-about{
+    width: 125px;
+}
+
+.text-about{
+    text-align: center;
+    font-size: 20px;
+}
+
+.box-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-decouverte{
+    width: 1500px;
+    height: 750px;
+    background-color: #D9D9D9;
 }
