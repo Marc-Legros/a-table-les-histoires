@@ -100,7 +100,13 @@ body {
 }
 
 .img-decouverte{
-    width: 1500px;
-    height: 750px;
+    width: 1150px;
+    height: 550px;
     background-color: #D9D9D9;
+}
+
+footer {
+    width: 100%;
+    height: 250px;
+    background-color: rgba(19, 19, 19);
 }
