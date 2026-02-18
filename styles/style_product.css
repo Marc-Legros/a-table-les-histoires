@@ -43,9 +43,41 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 3rem;
     margin: 0 8vw;
+}
+
+.preview{
+    width: 500px;
+    height: 700px;
+    margin-right: 150px;
+    background-color: #D9D9D9;
+}
+
+.cate{
+    margin-bottom: 50px;
+}
+
+.title-cate{
+    margin-bottom: 15px;
+}
+
+.choices{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.choice{
+    width: 75px;
+    height: 75px;
+    background-color: #D9D9D9;
+    transition: opacity 0.2s ease;
+}
+
+.choice:hover{
+    opacity: 60%;
 }
 
 footer {
