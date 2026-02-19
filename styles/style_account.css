@@ -39,3 +39,44 @@ body {
 .nav-link {
     color: #FFF;
 }
+
+
+.ui-box {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 320px;
+    color: white;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+.ui-box h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.ui-box input {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.ui-box button {
+    padding: 12px;
+    background: linear-gradient(45deg, #00ffd0, #0066ff);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: 0.2s;
+}
+
+.ui-box button:hover {
+    transform: scale(1.05);
+}
