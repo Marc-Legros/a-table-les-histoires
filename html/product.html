@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/style_product.css">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
     <title>À Table les Histoires</title>
 </head>
 
@@ -20,26 +21,39 @@
     </header>
 
     <section class="section">
-        <img class="arrow" src="../assets/arrow-gauche.svg" alt="">
+        <div class="slider">
+            <div class="slider-items">
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+                <div class="slider-item"></div>
+            </div>
 
-        <div class="box1">
-            <h1>Nom de la box1</h1>
+            <div class="slider-controls">
+                <span class="bx bxs-chevron-left prev" onclick="changeSlide(-1)"></span>
+                <span class="bx bxs-chevron-right next" onclick="changeSlide(1)"></span>
+            </div>
 
-            <div class="visuel-box"></div>
+            <div class="slider-indicators">
+                <span onclick="moveTo(1)"></span>
+                <span onclick="moveTo(2)"></span>
+                <span onclick="moveTo(3)"></span>
+            </div>
 
-            <a href="customisation.html">Je personnalise</a>
+            <div class="slider-content">
+                <h3>Box 1<br><a href="customisation.html">Je personnalise</a></h3>
+                <h3>Box 2<br><a href="customisation.html">Je personnalise</a></h3>
+                <h3>Box 3<br><a href="customisation.html">Je personnalise</a></h3>
+            </div>
         </div>
-
-        <img class="arrow" src="../assets/arrow-droite.svg" alt="">
     </section>
 
 
-    
+
 
 
     <footer></footer>
 
-    <script src="#"></script>
+    <script src="../js/slider.js"></script>
 </body>
 
 </html>
