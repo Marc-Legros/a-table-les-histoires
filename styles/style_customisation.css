@@ -57,6 +57,7 @@ footer {
 }
 
 .preview{
+    position: relative;
     width: 500px;
     height: 700px;
     margin-right: 150px;
@@ -86,4 +87,37 @@ footer {
 
 .choice:hover{
     opacity: 60%;
+}
+
+
+.headAvatar {
+    position: absolute;
+    width: 200px;
+    left: 50px;
+}
+
+.t-shirt {
+    position: absolute;
+    width: 200px;
+    top: 215px;
+    left: 48px;
+}
+
+.hat {
+    position: absolute;
+    width: 230px;
+    left: 38px;
+    top: -10px;
+}
+
+
+#hat2 {
+  width: 500px;  
+  top: 30px;
+}
+
+
+#calque-chapeau.hat3 {
+  width: 100px; 
+  top: 60px;
 }
