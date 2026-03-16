@@ -108,3 +108,7 @@ footer {
     top: -10px;
 }
 
+.accessoire {
+    position: absolute;
+    width: 100px;
+}
