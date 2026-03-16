@@ -138,14 +138,9 @@ footer {
     align-items: center;
     justify-content: space-evenly;
     gap: 5rem;
-<<<<<<< HEAD
-    /* min-height: 100vh; */
-    margin: 0 8vw;
-=======
     min-height: 100vh;
     box-sizing: border-box;
-    scroll-margin-top: 75px; 
->>>>>>> b50ae1fbfe9da118b155ee980c1c9d188ceb4588
+    scroll-margin-top: 75px;
 }
 
 .intro {
