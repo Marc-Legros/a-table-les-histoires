@@ -1,15 +1,12 @@
 @import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&display=swap');
 
-html {
-    scroll-behavior: smooth;
-}
-
-* {
-    text-decoration: none;
-}
+html { scroll-behavior: smooth; }
+* { text-decoration: none; box-sizing: border-box; }
 
 body {
-    font-family: "Funnel Display", sans-serif;
+    font-family: "Baloo 2", sans-serif;
+    background-color: #7B6FC4;
     margin: 0;
     padding: 0;
 }
@@ -18,78 +15,51 @@ body {
 .nav {
     position: sticky;
     top: 0;
-    height: 75px;
+    height: 65px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 5rem;
-    background: rgba(0, 0, 0);
-    backdrop-filter: blur(8px);
+    padding: 0 3rem;
+    background: linear-gradient(90deg, #F5A623, #F07B5A);
     z-index: 10;
 }
-
-.links{
-    display: flex;
-    gap: 3rem;
+.links { display: flex; gap: 1.5rem; }
+.nav-link {
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.9rem;
 }
-
-.nav-link{
-    color: #FFF;
-}
-/* -------------- */
+.nav-link:hover { opacity: 0.8; }
 
 /* FOOTER */
 footer {
     width: 100%;
-    height: 250px;
-    background-color: rgba(19, 19, 19);
+    height: 150px;
+    background: linear-gradient(90deg, #F5A623, #F07B5A);
 }
-/* -------------- */
 
-.section{
+/* SECTION */
+.section {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    margin: 0 8vw;
+    padding: 3rem 4vw;
 }
 
-.preview{
+/* PREVIEW */
+.preview {
     position: relative;
-    width: 500px;
-    height: 700px;
-    margin-right: 150px;
-    background-color: #D9D9D9;
+    width: 300px;
+    height: 480px;
+    background: #6B5FB5;
+    border-radius: 14px;
+    flex-shrink: 0;
 }
 
-.cate{
-    margin-bottom: 50px;
-}
-
-.title-cate{
-    margin-bottom: 15px;
-}
-
-.choices{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-}
-
-.choice{
-    width: 75px;
-    height: 75px;
-    background-color: #D9D9D9;
-    transition: opacity 0.2s ease;
-}
-
-.choice:hover{
-    opacity: 60%;
-}
-
-
+/* CALQUES */
 .headAvatar {
     position: absolute;
     width: 200px;
@@ -107,8 +77,70 @@ footer {
     left: 38px;
     top: -10px;
 }
-
 .accessoire {
     position: absolute;
     width: 100px;
+}
+
+/* PANEL CHOIX */
+.customisation {
+    background: #A89FD8;
+    border-radius: 14px;
+    padding: 1.5rem 2rem;
+    max-width: 420px;
+    width: 100%;
+}
+
+.cate { margin-bottom: 1.5rem; }
+
+.title-cate {
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 0.6rem;
+}
+
+.choices {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.choice {
+    width: 62px;
+    height: 62px;
+    background: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+    overflow: hidden;
+}
+.choice:hover {
+    transform: scale(1.08);
+}
+.choice img {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+}
+
+/* BOUTON ACHETER */
+.section > a {
+    display: inline-block;
+    background: #F5A623;
+    color: #fff;
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    padding: 0.8rem 2.2rem;
+    border-radius: 50px;
+}
+.section > a:hover {
+    opacity: 0.9;
 }
