@@ -1,3 +1,12 @@
+// Parallax.js
+var scene = document.getElementById('scene');
+var parallaxInstance = new Parallax(scene, {
+  invertX: false,
+  invertY: false
+});
+
+
+
 const card = document.getElementById("card");
 
 document.addEventListener("mousemove", (e) => {

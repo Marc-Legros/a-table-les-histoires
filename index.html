@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles/style_index.css">
     <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
     <title>À Table les Histoires</title>
+    <!-- Librairie -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 </head>
 
 <body>
@@ -57,34 +59,42 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section-slider">
+        <div class="slider-backgrounds" id="scene">
+            <div class="layer bg-item" data-depth="0.05">
+                <img src="assets/img_parallax/gouvernail_1 1.svg" alt="">
+            </div>
+            <div class="layer bg-item" data-depth="0.05">
+                <img src="assets/img_parallax/argent.svg" alt="">
+            </div>
+            <div class="layer bg-item" data-depth="0.05">
+                <img src="assets/img_parallax/perroquet 1.svg" alt="">
+            </div>
+            <div class="layer bg-item" data-depth="0.05">
+                <img src="assets/img_parallax/épée 1.svg" alt="">
+            </div>
+        </div>
+
         <div class="slider">
-            <div class="slider-items">
-                <div class="slider-item"></div>
-                <div class="slider-item"></div>
-                <div class="slider-item"></div>
+            <div class="slider-title">
+                <span>THÉMATIQUES : LES PIRATES</span>
+                <h2>LA LÉGENDE DE L'ÎLE NUAGE</h2>
             </div>
-
-            <div class="slider-controls">
-                <span class="bx bxs-chevron-left prev" onclick="changeSlide(-1)"></span>
-                <span class="bx bxs-chevron-right next" onclick="changeSlide(1)"></span>
-            </div>
-
-            <div class="slider-indicators">
-                <span onclick="moveTo(1)"></span>
-                <span onclick="moveTo(2)"></span>
-                <span onclick="moveTo(3)"></span>
-            </div>
-
             <div class="slider-content">
-                <h3>Box 1<br><a href="html/customisation.html">Je personnalise</a></h3>
-                <h3>Box 2<br><a href="html/customisation.html">Je personnalise</a></h3>
-                <h3>Box 3<br><a href="html/customisation.html">Je personnalise</a></h3>
+                <div class="slider-item">Box1</div>
+                <div class="slider-item">Box2</div>
+                <div class="slider-item">Box3</div>
+                <div class="slider-item">Box4</div>
+            </div>
+            <div class="slider-navigation">
+                <button class="btn prev"><img src="assets/svg/arrow-left.svg" onclick="changeSlide(-1)" alt=""></button>
+                <a href="html/customisation.html">Je personnalise</a>
+                <button class="btn next"><img src="assets/svg/arrow-right.svg" onclick="changeSlide(1)" alt=""></button>
             </div>
         </div>
     </section>
 
-    
+
 
     <!-- <section class="section">
         <a href="html/product.html">
@@ -108,9 +118,11 @@
     </section> -->
 
     <footer></footer>
-    
+
     <script src="js/index.js"></script>
     <script src="js/slider.js"></script>
+
+
 </body>
 
 </html>
