@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style_index.css">
-    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
     <title>À Table les Histoires</title>
     <!-- Librairie -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
@@ -37,7 +36,6 @@
     <section class="section">
         <div class="visuel">
             Modélisation de la box en 3D
-            <div class="card" id="card"></div>
         </div>
     </section>
 
@@ -62,67 +60,59 @@
     <section class="section-slider">
         <div class="slider-backgrounds" id="scene">
             <div class="layer bg-item" data-depth="0.05">
-                <img src="assets/img_parallax/gouvernail_1 1.svg" alt="">
+                <img src="assets/svg/perroquet.svg" alt="">
             </div>
             <div class="layer bg-item" data-depth="0.05">
-                <img src="assets/img_parallax/argent.svg" alt="">
+                <img src="assets/svg/pieces.svg" alt="">
             </div>
             <div class="layer bg-item" data-depth="0.05">
-                <img src="assets/img_parallax/perroquet 1.svg" alt="">
+                <img src="assets/svg/gouvernail.svg" alt="">
             </div>
             <div class="layer bg-item" data-depth="0.05">
-                <img src="assets/img_parallax/épée 1.svg" alt="">
+                <img src="assets/svg/epee.svg" alt="">
             </div>
         </div>
 
         <div class="slider">
             <div class="slider-title">
-                <span>THÉMATIQUES : LES PIRATES</span>
                 <h2>LA LÉGENDE DE L'ÎLE NUAGE</h2>
             </div>
             <div class="slider-content">
-                <div class="slider-item">Box1</div>
-                <div class="slider-item">Box2</div>
-                <div class="slider-item">Box3</div>
-                <div class="slider-item">Box4</div>
+                <div class="slider-item">
+                    <img src="assets/ile_flottante.png" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="assets/smoothie.png" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="assets/crème_brûlée.png" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="assets/salade_de_fruits.png" alt="">
+                </div>
+                <div class="slider-item">
+                    <img src="assets/cookies.png" alt="">
+                </div>
             </div>
             <div class="slider-navigation">
-                <button class="btn prev"><img src="assets/svg/arrow-left.svg" onclick="changeSlide(-1)" alt=""></button>
-                <a href="html/customisation.html">Je personnalise</a>
-                <button class="btn next"><img src="assets/svg/arrow-right.svg" onclick="changeSlide(1)" alt=""></button>
+                <div class="btn" onclick="changeSlide(-1)">
+                    <img src="assets/svg/arrow-left.svg" alt="">
+                </div>
+                <div class="text">
+                    <a href="html/customisation.html">JE PERSONNALISE</a>
+                    <p>LE HÉROS DE MA RECETTE !</p>
+                </div>
+                <div class="btn" onclick="changeSlide(1)">
+                    <img src="assets/svg/arrow-right.svg" alt="">
+                </div>
             </div>
         </div>
     </section>
-
-
-
-    <!-- <section class="section">
-        <a href="html/product.html">
-            <div class="box">box1</div>
-        </a>
-        <a href="html/product.html">
-            <div class="box">box2</div>
-        </a>
-        <a href="html/product.html">
-            <div class="box">box3</div>
-        </a>
-        <a href="html/product.html">
-            <div class="box">box4</div>
-        </a>
-        <a href="html/product.html">
-            <div class="box">box5</div>
-        </a>
-        <a href="html/product.html">
-            <div class="box">box6</div>
-        </a>
-    </section> -->
 
     <footer></footer>
 
     <script src="js/index.js"></script>
     <script src="js/slider.js"></script>
-
-
 </body>
 
 </html>
