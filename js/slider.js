@@ -9,7 +9,7 @@ const changeSlide = e => {
 }
 
 const showSlide = e => {
-    const images = document.querySelectorAll('.slider-item');
+    const images = document.querySelectorAll('.slider-item img');
     const indicators = document.querySelectorAll('.slider-indicators span');
     const contents = document.querySelectorAll('.slider-content h3');
 
