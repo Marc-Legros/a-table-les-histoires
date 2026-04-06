@@ -187,7 +187,7 @@ footer {
 }
 
 .presentation {
-    background-image: url("../assets/photo.svg");
+    background-image: url("../assets/index/photo.svg");
     width: 100%;
     background-size: cover;
     background-position: center;
