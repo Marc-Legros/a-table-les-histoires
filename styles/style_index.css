@@ -13,7 +13,6 @@ html {
 body {
     font-family: "Belanosima", sans-serif;
     transition: background 0.1s;
-<<<<<<< HEAD
 }
 
 
@@ -56,78 +55,87 @@ body {
     border-radius: 50px;
     padding: 0.6rem 0.8rem;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
-=======
-    overflow-x: hidden;
+}
+
+/* Fais comme ça — conteneur relatif + enfants absolus */
+.intro {
+    position: relative;
+    width: 100%;
+    height: 100vh;
     background-color: #F8F4EA;
->>>>>>> 70b68298aba7c4270af25c3ef2d8408f605603da
 }
 
 .intro-img {
-    width: 40vw;
+    width: 45%;
     display: block;
     margin: 0 auto;
-<<<<<<< HEAD
-    margin-top: 6vh;
-=======
-    margin-top: 62px;
->>>>>>> 70b68298aba7c4270af25c3ef2d8408f605603da
+    padding-top: 5vh;
 }
 
 #perso {
-    position: relative;
-    top: -55vh;
-    left: 65vw;
+    position: absolute;
+    top: 6%;
+    right: 25%;
+    
 }
 
 #ligne1 {
-    position: relative;
-    top: -70vh;
-    left: 82vw;
+    position: absolute;
+    top: 15%;
+    right: 2%;
+    width: 8%;
 }
 
 #cookies {
-    position: relative;
-    top: -68vh;
-    left: 80vw;
+    position: absolute;
+    top: 40%;
+    right: 7%;
 }
 
+
 #ligne2 {
-    position: relative;
-    top: -68vh;
-    left: 83vw;
-    z-index: 3;
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    width: 8%;
 }
 
 #nuage {
-    position: relative;
-    bottom: 68vh;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 30%;
     z-index: 2;
 }
 
 #ligne3 {
-    position: relative;
-    bottom: 90vh;
+    position: absolute;
+    bottom: 0%;
+    width: 15%;
+    z-index: 1;
 }
 
 #union {
-    position: relative;
-    right: -6vw;
-    bottom: 115vh;
+    position: absolute;
+    bottom: 20%;
+    left: 4%;
+    width: 4%;
+    z-index: 2;
 }
 
 #ligne4 {
-    position: relative;
-    right: 0;
-    bottom: 170vh;
+    position: absolute;
+    top: 15%;
+    left : 0;
+    width: 15%;
 }
 
 #fourchette {
-    position: relative;
-    right: -15vw;
-    bottom: 190vh;
+    position: absolute;
+    top: 10%;
+    left: 15%;
 }
 
-<<<<<<< HEAD
 /* -------------- */
 
 /* FOOTER */
@@ -138,8 +146,6 @@ footer {
 }
 
 /* -------------- */
-=======
->>>>>>> 70b68298aba7c4270af25c3ef2d8408f605603da
 .section-intro {
     display: flex;
     align-items: center;
@@ -197,22 +203,14 @@ footer {
     -webkit-text-fill-color: transparent;
     display: inline-block;
     font-weight: 800;
-<<<<<<< HEAD
     font-family: "Google Sans Flex", sans-serif;
-=======
-    font-family: "Belanosima", sans-serif;
->>>>>>> 70b68298aba7c4270af25c3ef2d8408f605603da
     font-size: 2.2rem;
     margin-left: 5vw;
     margin-top: 4vh;
 }
 
 .p-line {
-<<<<<<< HEAD
     font-family: "Google Sans Flex", sans-serif;
-=======
-    font-family: "Belanosima", sans-serif;
->>>>>>> 70b68298aba7c4270af25c3ef2d8408f605603da
     font-weight: 600;
     margin-left: 5vw;
     margin-top: 3vh;
@@ -220,11 +218,7 @@ footer {
 }
 
 .p-reduc {
-<<<<<<< HEAD
     font-family: "Google Sans Flex", sans-serif;
-=======
-    font-family: "Belanosima", sans-serif;
->>>>>>> 70b68298aba7c4270af25c3ef2d8408f605603da
     position: relative;
     background-color: #CB55E4;
     border-radius: 50%;
@@ -270,14 +264,8 @@ footer {
     background: linear-gradient(90deg, #CB55E4, #FFB802);
     padding: 3px; /* épaisseur du contour */
     border-radius: 50px;
-<<<<<<< HEAD
     display: inline-block;
 }
-=======
-    padding: 0.8rem 1.8rem;
-    font-family: "Belanosima", sans-serif;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
->>>>>>> 70b68298aba7c4270af25c3ef2d8408f605603da
 
 .personnalise {
     display: block;
