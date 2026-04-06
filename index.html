@@ -4,16 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Table les Histoires</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/style_index.css">
-    <<<<<<< HEAD=======<link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
-            rel="stylesheet">
-        >>>>>>> b50ae1fbfe9da118b155ee980c1c9d188ceb4588
-        <title>À Table les Histoires</title>
-        <!-- Librairie -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <link rel="stylesheet" href="styles/global_components.css">
+    <!-- FONT -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
+        rel="stylesheet">
+    <!-- Librairie -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 </head>
 
 <body>
@@ -92,7 +94,9 @@
         </div>
     </section>
 
+    
     <section class="section-slider">
+        <img class="vague1" src="assets/Vector 4 (1).svg" alt="">
         <div class="slider-backgrounds" id="scene">
             <div class="layer bg-item" data-depth="0.05">
                 <img src="assets/svg/perroquet.svg" alt="">
@@ -130,16 +134,16 @@
                 </div>
             </div>
             <div class="slider-navigation">
-                <div class="btn" onclick="changeSlide(-1)">
+                <button class="btn" onclick="changeSlide(-1)">
                     <img src="assets/svg/arrow-left.svg" alt="">
-                </div>
+                </button>
                 <div class="text">
                     <a href="html/customisation.html">JE PERSONNALISE</a>
                     <p>LE HÉROS DE MA RECETTE !</p>
                 </div>
-                <div class="btn" onclick="changeSlide(1)">
+                <button class="btn" onclick="changeSlide(1)">
                     <img src="assets/svg/arrow-right.svg" alt="">
-                </div>
+                </button>
             </div>
         </div>
     </section>
