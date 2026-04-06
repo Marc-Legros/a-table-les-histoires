@@ -7,14 +7,14 @@
     <title>À Table les Histoires</title>
     <!-- CSS -->
     <link rel="stylesheet" href="styles/style_index.css">
-    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
-            rel="stylesheet">
-        <title>À Table les Histoires</title>
-        <!-- Librairie -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Librairie -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -70,32 +70,34 @@
         </div>
     </section>
 
-   <section class="section-about">
-    <img id="star" src="./assets/star.svg" alt="">
-    <h2 class="about-title">LA MAGIE COMMENCE DANS LA CUISINE</h2>
-    
-    <div class="cards-container">
-        <div class="about-card">
-            <img class="icon-about" src="assets/perso3.svg" alt="">
-            <p class="card-title"><span class="gradient-text">À VOTRE</span> PORTE</p>
-            <p class="card-text">Des ingrédients locaux, directement livrés chez vous.</p>
-        </div>
-        <div class="about-card">
-            <img class="icon-about" src="assets/orange.svg" alt="">
-            <p class="card-title"><span class="gradient-text">UN VOYAGE</span> CULINAIRE</p>
-            <p class="card-text">Des saveurs venues de tous les horizons, pour éveiller le goût dès le plus jeune âge.</p>
-        </div>
-        <div class="about-card">
-            <img class="icon-about" src="assets/fourchette2.svg" alt="">
-            <p class="card-title"><span class="gradient-text">L'AVENTURE</span> COMMENCE ICI</p>
-            <p class="card-text">À chaque box, une nouvelle recette et une nouvelle histoire dont votre enfant devient le héros !</p>
-        </div>
-    </div>
+    <section class="section-about">
+        <img id="star" src="./assets/star.svg" alt="">
+        <h2 class="about-title">LA MAGIE COMMENCE DANS LA CUISINE</h2>
 
-    <div class="personnalise-wrapper">
-        <a class="personnalise" href="html/customisation.html">JE PERSONNALISE MA BOX</a>
-    </div>
-</section>
+        <div class="cards-container">
+            <div class="about-card">
+                <img class="icon-about" src="assets/perso3.svg" alt="">
+                <p class="card-title"><span class="gradient-text">À VOTRE</span> PORTE</p>
+                <p class="card-text">Des ingrédients locaux, directement livrés chez vous.</p>
+            </div>
+            <div class="about-card">
+                <img class="icon-about" src="assets/orange.svg" alt="">
+                <p class="card-title"><span class="gradient-text">UN VOYAGE</span> CULINAIRE</p>
+                <p class="card-text">Des saveurs venues de tous les horizons, pour éveiller le goût dès le plus jeune
+                    âge.</p>
+            </div>
+            <div class="about-card">
+                <img class="icon-about" src="assets/fourchette2.svg" alt="">
+                <p class="card-title"><span class="gradient-text">L'AVENTURE</span> COMMENCE ICI</p>
+                <p class="card-text">À chaque box, une nouvelle recette et une nouvelle histoire dont votre enfant
+                    devient le héros !</p>
+            </div>
+        </div>
+
+        <div class="personnalise-wrapper">
+            <a class="personnalise" href="html/customisation.html">JE PERSONNALISE MA BOX</a>
+        </div>
+    </section>
 
     <section class="section-chemin">
         <img class="chemin-img" src="/assets/chemin.svg" alt="">
@@ -160,6 +162,22 @@
         </div>
         <img class="vague2" src="assets/vague2.svg" alt="">
     </section>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
 
     <footer></footer>
 
