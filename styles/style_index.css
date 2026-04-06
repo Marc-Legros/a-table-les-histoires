@@ -42,7 +42,7 @@ body {
     color: #000000;
     background-color: #FFF;
     border-radius: 50px;
-    padding: 0.6rem 2.8rem;
+    padding: 0.2rem 1.8rem;
     font-weight: 600;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
 
@@ -60,68 +60,65 @@ body {
 }
 
 .intro-img {
-    width: 608px;
+    width: 40vw;
     display: block;
     margin: 0 auto;
-    margin-top: 62px; 
+    margin-top: 6vh;
 }
 
 #perso {
     position: relative;
-    top: -530px;
-    left: 1021px;
+    top: -55vh;
+    left: 65vw;
 }
-
 
 #ligne1 {
     position: relative;
-    top: -670px;
-    left: 1270px;
+    top: -70vh;
+    left: 82vw;
 }
 
 #cookies {
     position: relative;
-    top: -660px;
-    left: 1250px;
+    top: -68vh;
+    left: 80vw;
 }
 
 #ligne2 {
     position: relative;
-    top: -660px;
-    left: 1290px;
+    top: -68vh;
+    left: 83vw;
     z-index: 3;
 }
 
 #nuage {
     position: relative;
-    bottom: 665px;
+    bottom: 68vh;
     z-index: 2;
 }
 
 #ligne3 {
     position: relative;
-    bottom: 873px;
-
+    bottom: 90vh;
 }
 
 #union {
     position: relative;
-    right: -86px;
-    bottom: 1116px;
+    right: -6vw;
+    bottom: 115vh;
 }
 
 #ligne4 {
     position: relative;
-    right: 4px;
-    bottom: 1646px;
+    right: 0;
+    bottom: 170vh;
 }
 
 #fourchette {
     position: relative;
-    right: -235px;
-    bottom: 1840px;
+    right: -15vw;
+    bottom: 190vh;
 }
-
 
 /* -------------- */
 
@@ -184,61 +181,58 @@ footer {
 }
 
 .line_gradient {
-    background: linear-gradient(90deg,#CB55E4, #FFB801);
+    background: linear-gradient(90deg, #CB55E4, #FFB801);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
     font-weight: 800;
-    font-family:"Google Sans Flex", sans-serif;
+    font-family: "Google Sans Flex", sans-serif;
     font-size: 2.2rem;
-    margin-left: 76px;
-    margin-top: 40px;
+    margin-left: 5vw;
+    margin-top: 4vh;
 }
 
 .p-line {
-    font-family:"Google Sans Flex", sans-serif;
+    font-family: "Google Sans Flex", sans-serif;
     font-weight: 600;
-    margin-left: 76px;
-    margin-top: 35px;
+    margin-left: 5vw;
+    margin-top: 3vh;
     color: #FFF;
 }
 
-
 .p-reduc {
-    font-family:"Google Sans Flex", sans-serif;
+    font-family: "Google Sans Flex", sans-serif;
     position: relative;
     background-color: #CB55E4;
     border-radius: 50%;
     font-weight: 400;
-    margin-left: 1300px;
-    margin-top: -70px;
+    margin-left: 83vw;
+    margin-top: -8vh;
     color: #FFF;
-
-    width: 150px;
-    height: 150px;
-
+    width: 10vw;
+    height: 10vw;
     z-index: 2;
-
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-
     box-sizing: border-box;
+    font-size: 0.85rem;
 }
+
 
 #oeuf1 {
     width: 40px;
     position: relative;
-    bottom: -245px;
+    bottom: -265px;
     left: 960px;
 }
 
 #oeuf2 {
     width: 50px;
     position: relative;
-    bottom: -215px;
+    bottom: -230px;
     left: 895px;
 }
 
@@ -246,39 +240,42 @@ footer {
 #oeuf3 {
     width: 70px;
     position: relative;
-    bottom: -200px;
+    bottom: -230px;
     left: 540px;
 }
 
-.personnalise {
-    position: relative;
-    color: #000000;
-    background-color: #FFF;
-    background-clip: padding-box;
-    outline: none;
+.personnalise-wrapper {
+    background: linear-gradient(90deg, #CB55E4, #FFB802);
+    padding: 3px; /* épaisseur du contour */
     border-radius: 50px;
-    padding: 0.8rem 1.8rem;
-    font-family:"Google Sans Flex", sans-serif;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    display: inline-block;
+}
 
+.personnalise {
+    display: block;
+    background-color: #FFF;
+    border-radius: 50px;
+    padding: 0.5rem 1.8rem;
+    font-family: "Google Sans Flex", sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
-
-    top: -250px;
-    left: 70px;
-    z-index: 0;
-
+    color: #000;
     cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-.personnalise::before {
-    content: "";
-    position: absolute;
-    inset: -5px;
-    border-radius: 50px;
+
+.personnalise-intro-wrapper {
     background: linear-gradient(90deg, #CB55E4, #FFB802);
-    z-index: -1;
+    padding: 3px;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    top: -280px;
+    left: 70px;
 }
+
+
 
 #perso2 {
     position: relative;
@@ -300,6 +297,12 @@ footer {
     background-color: #D9D9D9;
 }
 
+#star {
+    display: block;
+    margin: 0 auto;
+    margin-top: -130px;
+}
+
 .card {
     width: 200px;
     height: 200px;
@@ -307,6 +310,136 @@ footer {
     border-radius: 20px;
     transition: transform 0.1s;
     transform-style: preserve-3d;
+}
+
+
+.section-about {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 8vw;
+    background-color: #F8F4EA;
+    scroll-margin-top: 75px;
+}
+
+.about-title {
+    font-weight: 800;
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.cards-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.about-card {
+    background: #FFF;
+    border-radius: 20px;
+    padding: 2rem;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.card-title {
+    font-weight: 800;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #CB55E4, #FFB802);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+
+.section-chemin {
+    position: relative;
+    background-color: #F8F4EA;
+    min-height: 120vh;
+    scroll-margin-top: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chemin-img {
+    width: 100%;
+    height: auto;
+    max-height: 70vh;
+    object-fit: cover;
+}
+
+#panneau {
+    position: absolute;
+    bottom: 405px;
+    left: 95px;
+    width: auto;
+}
+
+#pas {
+    position: absolute;
+    bottom: 85px;
+    left: 575px;
+    width: auto;
+}
+
+#echelle {
+    position: absolute;
+    top: 330px;
+    right: 95px;
+    width: auto;
+}
+
+#character {
+    position: absolute;
+    top: 130px;
+    right: 165px;
+    width: auto;
+}
+
+#numero1 {
+    position: absolute;
+    top: 190px;
+    left: 200px;
+    width: auto;
+}
+
+#numero2 {
+    position: absolute;
+    top: 30px;
+    left: 350px;
+    width: auto;
+}
+
+#numero3 {
+    position: absolute;
+    top: 190px;
+    left: 200px;
+    width: auto;
+}
+
+#numero4 {
+    position: absolute;
+    top: 190px;
+    left: 200px;
+    width: auto;
 }
 
 /* SECTION INFO */
@@ -320,8 +453,8 @@ footer {
 }
 
 .icon-about {
-    width: 125px;
-    height: 92px;
+    width: 100px;
+    height: 72px;
 }
 
 .text-about {
