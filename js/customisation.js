@@ -1,5 +1,10 @@
+// On vient chercher l'id de la recette dans l'URL 
+const searchParams = new URLSearchParams(window.location.search);
+const recetteId = searchParams.get("id");
+
 let avatarActuel = "";
 let accessoireActuel = "";
+
 
 function placerAccessoire() {
   if (!accessoireActuel) return; 
