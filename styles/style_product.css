@@ -1,4 +1,5 @@
 @import url(reset.css);
+@import url(global_components.css);
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&display=swap');
 
 html {
@@ -14,39 +15,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-/* HEADER */
-.nav {
-    position: sticky;
-    top: 0;
-    height: 75px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5rem;
-    background: rgba(0, 0, 0);
-    backdrop-filter: blur(8px);
-    z-index: 10;
-}
-
-.links{
-    display: flex;
-    gap: 3rem;
-}
-
-.nav-link{
-    color: #FFF;
-}
-/* -------------- */
-
-/* FOOTER */
-footer {
-    width: 100%;
-    height: 250px;
-    background-color: rgba(19, 19, 19);
-}
-/* -------------- */
 
 .section{
     min-height: 100vh;
