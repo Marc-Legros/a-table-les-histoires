@@ -188,8 +188,10 @@ footer {
 .presentation {
     background-image: url("../assets/photo.svg");
     width: 100%;
+    min-height: 100vh;
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 .line {
@@ -206,7 +208,7 @@ footer {
     font-family: "Google Sans Flex", sans-serif;
     font-size: 2.2rem;
     margin-left: 5vw;
-    margin-top: 4vh;
+    margin-top: 12vh;
 }
 
 .p-line {
@@ -219,12 +221,12 @@ footer {
 
 .p-reduc {
     font-family: "Google Sans Flex", sans-serif;
-    position: relative;
+    position: absolute;
     background-color: #CB55E4;
     border-radius: 50%;
     font-weight: 400;
     margin-left: 83vw;
-    margin-top: -8vh;
+    margin-top: 10vh;
     color: #FFF;
     width: 10vw;
     height: 10vw;
@@ -239,25 +241,25 @@ footer {
 
 
 #oeuf1 {
-    width: 40px;
-    position: relative;
-    bottom: -265px;
-    left: 960px;
+    position: absolute;
+    bottom: 18%;
+    right: 40%;
+    width: 3%;
+    width: 65px;
 }
 
 #oeuf2 {
+    position: absolute;
+    bottom: 19%;
+    right: 35%;
     width: 50px;
-    position: relative;
-    bottom: -230px;
-    left: 895px;
 }
 
-
 #oeuf3 {
-    width: 70px;
-    position: relative;
-    bottom: -230px;
-    left: 540px;
+    position: absolute;
+    bottom: 5%;
+    left: 35%;
+    width: 85px;
 }
 
 .personnalise-wrapper {
@@ -286,24 +288,24 @@ footer {
     padding: 3px;
     border-radius: 50px;
     display: inline-block;
-    position: relative;
-    top: -280px;
+    position: absolute;
+    top: 45%;
     left: 70px;
 }
 
 
 
 #perso2 {
-    position: relative;
-    top: -185px;
-    right: -1360px;
+    position: absolute;
+    top: 39%;
+    right: 10%;
     z-index: 1;
 }
 
 #main_perso2 {
-    position: relative;
-    top: -210px;
-    right: -1410px;
+    position: absolute;
+    top: 44%;
+    right: 11%;
     z-index: 3;
 }
 
