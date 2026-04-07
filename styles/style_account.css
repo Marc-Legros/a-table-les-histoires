@@ -1,20 +1,15 @@
 @import url(reset.css);
 
-html {
-    scroll-behavior: smooth;
-}
-
-* {
-    text-decoration: none;
-}
+html { scroll-behavior: smooth; }
+* { text-decoration: none; box-sizing: border-box; }
 
 body {
-    font-family: "Funnel Display", sans-serif;
+    font-family: "Belanosima", sans-serif;
+    background-color: #F8F4EA;
     margin: 0;
     padding: 0;
 }
-
-/* HEADER */
+* HEADER */
 .nav {
     position: sticky;
     top: 0;
@@ -24,57 +19,161 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 5rem;
-    background: rgba(0, 0, 0);
+    background: linear-gradient(90deg, rgba(203, 85, 228, 1) 0%,rgba(255, 184, 2, 1) 100%);
     backdrop-filter: blur(8px);
     z-index: 10;
 }
 
 .links {
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .nav-link {
-    color: #FFF;
+    color: #000000;
+    background-color: #FFF;
+    border-radius: 50px;
+    padding: 0.2rem 1.8rem;
+    font-weight: 600;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
+.nav-account {
+    background-color: #FFF;
+    border-radius: 50px;
+    padding: 0.6rem 0.8rem;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+}
 
-.ui-box {
-    background: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(10px);
-    padding: 40px;
-    border-radius: 16px;
+/* SECTION */
+.section {
+    min-height: 100vh;
+    padding: 3rem 8vw;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    width: 320px;
-    color: white;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    gap: 2rem;
 }
 
-.ui-box h2 {
-    text-align: center;
-    margin-bottom: 10px;
+/* ÉTAPES */
+.etapes {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 1rem;
+}
+.etape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    color: #aaa;
+}
+.etape.active { color: #333; }
+.num {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.etape.active .num {
+    background: linear-gradient(90deg, #FFB802, #CB55E4);
+    color: #fff;
 }
 
-.ui-box input {
-    padding: 12px;
-    border-radius: 8px;
-    border: none;
-    outline: none;
+/* TABLEAU */
+.panier {
+    width: 100%;
 }
-
-.ui-box button {
-    padding: 12px;
-    background: linear-gradient(45deg, #00ffd0, #0066ff);
-    border: none;
-    border-radius: 8px;
+.panier-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 0.5fr;
+    padding: 0.8rem 1rem;
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+}
+.panier-ligne {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 0.5fr;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    border-bottom: 1px solid #eee;
+}
+.article-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.article-info img {
+    width: 90px;
+    object-fit: contain;
+}
+.article-nom {
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+.article-sous {
+    font-size: 0.85rem;
+    color: #555;
+}
+.qte {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+.qte-btn {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
     cursor: pointer;
-    font-weight: bold;
-    color: white;
-    transition: 0.2s;
+    font-size: 1rem;
 }
+.total {
+    font-weight: 600;
+}
+.suppr {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    opacity: 0.6;
+}
+.suppr:hover { opacity: 1; }
 
-.ui-box button:hover {
-    transform: scale(1.05);
+/* BOUTON */
+.panier-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-paiement {
+    background: linear-gradient(90deg, #FFB802, #CB55E4);
+    color: #fff;
+    font-family: "Belanosima", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.9rem 2.5rem;
+    border-radius: 50px;
+    letter-spacing: 0.05em;
+}
+.btn-paiement:hover { opacity: 0.9; }
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: #131313;
 }

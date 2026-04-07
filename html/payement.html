@@ -17,32 +17,67 @@
 
 <body>
     <header class="nav">
-        <a href="index.html">
-            <img class="logo" src="./assets/logo.svg" alt="Logo À Table les Histoires">
+        <a href="../index.html">
+            <img class="logo" src="../assets/index/logo.svg" alt="Logo À Table les Histoires">
         </a>
         <div class="links">
             <a class="nav-link" href="../html/catalogue.html">Nos produits</a>
             <a class="nav-link" href="../html/vision.html">Notre vision</a>
-            <a class="nav-account" href=""><img src="../assets/panier.svg" alt=""></a>
+            <a class="nav-account" href=""><img src="../assets/index/panier.svg" alt=""></a>
         </div>
     </header>
 
     <section class="section">
-        <div class="ui-box">
-            <h2>Paiement</h2>
 
-            <input placeholder="Nom sur la carte">
-            <input placeholder="Numéro de carte">
-            <input placeholder="Expiration">
-            <input placeholder="CVV">
-
-            <button>Payer</button>
+        <!-- ÉTAPES -->
+        <div class="etapes">
+            <div class="etape active">
+                <span class="num">1</span>
+                <p>Panier</p>
+            </div>
+            <div class="etape">
+                <span class="num">2</span>
+                <p>Coordonnées</p>
+            </div>
+            <div class="etape">
+                <span class="num">3</span>
+                <p>Paiement</p>
+            </div>
         </div>
+
+        <!-- TABLEAU -->
+        <div class="panier">
+            <div class="panier-header">
+                <span>ARTICLE</span>
+                <span>QTÉ</span>
+                <span>TOTAL</span>
+                <span>ACTION</span>
+            </div>
+
+            <div class="panier-ligne">
+                <div class="article-info">
+                    <img src="../assets/payement/boite 2.svg" alt="Box">
+                    <div>
+                        <p class="article-nom">BOX</p>
+                        <p class="article-sous">"LA LÉGENDE DE L'ÎLE NUAGE"</p>
+                    </div>
+                </div>
+                <div class="qte">
+                    <button class="qte-btn">−</button>
+                    <span>1</span>
+                    <button class="qte-btn">+</button>
+                </div>
+                <span class="total">20,00 €</span>
+                <button class="suppr">🗑</button>
+            </div>
+        </div>
+
+        <div class="panier-footer">
+            <a href="payement.html" class="btn-paiement">PASSER AU PAIEMENT</a>
+        </div>
+
     </section>
 
     <footer></footer>
-
-    <script src="#"></script>
 </body>
-
 </html>
