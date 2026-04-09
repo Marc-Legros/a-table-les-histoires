@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/style_account.css">
+    <link rel="stylesheet" href="../styles/global_components.css">
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="nav">
+        <a href="../index.html">
+            <img class="logo" src="../assets/index/logo.svg" alt="Logo À Table les Histoires">
+        </a>
+        <div class="links">
+            <a class="nav-link" href="../html/catalogue.html">Nos produits</a>
+            <a class="nav-link" href="../html/vision.html">Notre vision</a>
+            <a class="nav-account" href=""><img src="../assets/index/panier.svg" alt=""></a>
+        </div>
+    </header>
+
+    <section class="section">
+
+    <div class="etapes">
+        <div class="etape">
+            <span class="num">1</span>
+            <p>Panier</p>
+        </div>
+        <div class="trait"></div>
+        <div class="etape active">
+            <span class="num">2</span>
+            <p>Coordonnées</p>
+        </div>
+        <div class="trait"></div>
+        <div class="etape">
+            <span class="num">3</span>
+            <p>Paiement</p>
+        </div>
+    </div>
+
+    <div class="formulaire">
+
+        <div class="form-bloc">
+            <h3>Contact</h3>
+            <input type="email" placeholder="Adresse-mail">
+        </div>
+
+        <div class="form-bloc">
+            <h3>Livraison</h3>
+            <div class="form-row">
+                <input type="text" placeholder="Prénom">
+                <input type="text" placeholder="Nom">
+            </div>
+            <input type="text" placeholder="Adresse">
+            <input type="text" placeholder="Appartement, suite, etc. (optionnel)">
+            <div class="form-row">
+                <input type="text" placeholder="Code postal">
+                <input type="text" placeholder="Ville">
+            </div>
+            <input type="tel" placeholder="Téléphone">
+            <label class="checkbox">
+                <input type="checkbox">
+                Sauvegarder mes données pour la prochaine fois
+            </label>
+        </div>
+
+        <div class="form-bloc">
+            <h3>Mode d'expédition</h3>
+            <div class="expedition-info">
+                <p>Saisissez votre adresse d'expédition pour voir les modes d'expédition disponibles.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="panier-footer">
+        <a href="payement3.html" class="btn-paiement">CONTINUER</a>
+    </div>
+
+    </section>
+
+    <script src="../js/payement2.js"></script>
+    <footer></footer>
+</body>
+</html>
