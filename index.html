@@ -110,63 +110,67 @@
 
 
     <section class="section-slider">
-        <img class="vague1" src="assets/index/vague1.svg" alt="">
-        <div class="slider-backgrounds" id="scene">
-            <div class="layer bg-item" data-depth="0.05">
-                <img src="assets/index/perroquet.svg" alt="">
-            </div>
-            <div class="layer bg-item" data-depth="0.05">
-                <img src="assets/index/pieces.svg" alt="">
-            </div>
-            <div class="layer bg-item" data-depth="0.05">
-                <img src="assets/index/gouvernail.svg" alt="">
-            </div>
-            <div class="layer bg-item" data-depth="0.05">
-                <img src="assets/index/epee.svg" alt="">
-            </div>
-        </div>
 
-        <div class="slider">
-            <div class="slider-title">
-                <h2>LA LÉGENDE DE L'ÎLE NUAGE</h2>
-            </div>
-            <div class="slider-content">
-                <div class="slider-item">
-                    <img src="assets/index/ile_flottante.png" alt="">
-                </div>
-                <div class="slider-item">
-                    <img src="assets/index/smoothie.png" alt="">
-                </div>
-                <div class="slider-item">
-                    <img src="assets/index/crème_brûlée.png" alt="">
-                </div>
-                <div class="slider-item">
-                    <img src="assets/index/salade_de_fruits.png" alt="">
-                </div>
-                <div class="slider-item">
-                    <img src="assets/index/cookies.png" alt="">
-                </div>
-            </div>
-            <div class="slider-navigation">
-                <button class="btn" onclick="changeSlide(-1)">
-                    <img src="assets/index/arrow-left.svg" alt="">
-                </button>
-                <div class="text">
-                    <a href="html/customisation.html">JE PERSONNALISE</a>
-                    <p>LE HÉROS DE MA RECETTE !</p>
-                </div>
-                <button class="btn" onclick="changeSlide(1)">
-                    <img src="assets/index/arrow-right.svg" alt="">
-                </button>
-            </div>
-        </div>
-        <img class="vague2" src="assets/index/vague2.svg" alt="">
     </section>
 
     <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide"><img class="vague1" src="assets/la_legende_de_lile_nuage/vague1.svg" alt="">
+                <div class="slider-backgrounds" id="scene">
+                    <div class="layer bg-item" data-depth="0.05">
+                        <img src="assets/la_legende_de_lile_nuage/perroquet.svg" alt="">
+                    </div>
+                    <div class="layer bg-item" data-depth="0.05">
+                        <img src="assets/la_legende_de_lile_nuage/pieces.svg" alt="">
+                    </div>
+                    <div class="layer bg-item" data-depth="0.05">
+                        <img src="assets/la_legende_de_lile_nuage/gouvernail.svg" alt="">
+                    </div>
+                    <div class="layer bg-item" data-depth="0.05">
+                        <img src="assets/la_legende_de_lile_nuage/epee.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="slider">
+                    <div class="slider-title">
+                        <h2>LA LÉGENDE DE L'ÎLE NUAGE</h2>
+                    </div>
+                    <div class="slider-content">
+                        <div class="slider-item">
+                            <img src="assets/index/ileFlottante.png" alt="">
+                        </div>
+                        <div class="slider-item">
+                            <img src="assets/index/smoothie.png" alt="">
+                        </div>
+                        <div class="slider-item">
+                            <img src="assets/index/crèmeBrûlée.png" alt="">
+                        </div>
+                        <div class="slider-item">
+                            <img src="assets/index/saladeDeFruits.png" alt="">
+                        </div>
+                        <div class="slider-item">
+                            <img src="assets/index/cookies.png" alt="">
+                        </div>
+                    </div>
+                    <div class="slider-navigation">
+                        <button class="btn" onclick="changeSlide(-1)">
+                            <img src="assets/index/arrowLeft.svg" alt="">
+                        </button>
+                        <div class="text">
+                            <a href="html/customisation.html">JE PERSONNALISE</a>
+                            <p>LE HÉROS DE MA RECETTE !</p>
+                        </div>
+                        <button class="btn" onclick="changeSlide(1)">
+                            <img src="assets/index/arrowRight.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <img class="vague2" src="assets/la_legende_de_lile_nuage/vague2.svg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img class="vague1" src="assets/la_legende_de_lile_nuage/vague1.svg" alt="">
+                <img class="vague2" src="assets/la_legende_de_lile_nuage/vague2.svg" alt="">
+            </div>
             <div class="swiper-slide">Slide 3</div>
             <div class="swiper-slide">Slide 4</div>
             <div class="swiper-slide">Slide 5</div>
@@ -179,7 +183,48 @@
         <div class="swiper-button-prev"></div>
     </div>
 
-    <footer></footer>
+    <footer>
+        <div id="footer-content">
+            <div class="info-block">
+                <img id="logo-footer" src="assets/index/logoFooter.svg" alt="">
+
+                <p id="desc-footer">Une box qui transforme la cuisine en aventure ludique et éducative pour les enfats.
+                </p>
+
+                <a id="btn" href="html/vision.html">Voir notre histoire</a>
+            </div>
+
+            <div class="info-block">
+                <a href="index.html">ACCUEIL</a>
+                <a href="html/vision.html">À PROPOS</a>
+                <a href="html/catalogue.html">SERVICE / PRODUITS</a>
+                <a href="#">CONTACT</a>
+            </div>
+
+            <div class="info-block">
+                <a href="#">MONTIONS LÉGALEES</a>
+                <a href="#">POLITIQUE DE CONFIDENTIALITÉ</a>
+                <a href="#">CONDITIONS GÉNÉRALES (CGV : CGU)</a>
+                <a href="#">POLITIQUE DE COOKIES</a>
+            </div>
+
+            <div class="info-block">
+                <h2>ON RESTE EN CONTACT ?</h2>
+                <p>Inscrivez-vous à notre newsletter :</p>
+
+                <form action="">
+                    <div id="content-form">
+                        <input type="email" placeholder="ENTREZ VOTRE EMAIL" class="email">
+                        <button type="submit" class="submit-btn">
+                            <img src="assets/index/arrowSubmit.svg" alt="">
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <img src="assets/index/decoFooter.svg" alt="">
+    </footer>
 
     <script src="js/index.js"></script>
     <script src="js/slider.js"></script>

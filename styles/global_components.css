@@ -52,6 +52,97 @@
     ============================= */
 footer {
     width: 100%;
-    height: 250px;
-    background-color: rgba(19, 19, 19);
+    height: 500px;
+    background-color: #F8F4EA;
+}
+
+#footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* height: 100%; */
+    padding: 3rem 5rem 0rem 5rem;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 2rem;
+}
+
+#logo-footer {
+    width: 191px;
+    height: 157px;
+}
+
+#btn {
+    color: #3D2D00;
+    padding: 0.5em 1.5em;
+    border: 5px #3D2D00 solid;
+    border-radius: 40px;
+    background: #FFF;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#desc-footer {
+    font-size: 24px;
+}
+
+.info-block a {
+    width: fit-content;
+    color: #000;
+    font-size: 16px;
+}
+
+.info-block h2 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.info-block p {
+    font-size: 20px;
+}
+
+.info-block:nth-child(1) {
+    width: 350px;
+}
+
+#content-form {
+    display: flex;
+    border: 5px solid #CB55E4;
+    border-radius: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.email {
+    border: none;
+    width: 240px;
+    height: 50px;
+    padding: 14px 30px;
+    
+}
+
+.email::placeholder {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+
+}
+
+.info-block .submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    /* padding: 0 25px; */
+    background: #CB55E4;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
