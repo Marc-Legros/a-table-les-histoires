@@ -1,9 +1,14 @@
 @import url(reset.css);
 @import url(global_components.css);
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&display=swap');
 
-html { scroll-behavior: smooth; }
-* { text-decoration: none; box-sizing: border-box; }
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+}
 
 body {
     font-family: "Belanosima", sans-serif;
@@ -36,18 +41,21 @@ body {
     width: 200px;
     left: 50px;
 }
+
 .t-shirt {
     position: absolute;
     width: 200px;
     top: 215px;
     left: 48px;
 }
+
 .hat {
     position: absolute;
     width: 230px;
     left: 38px;
     top: -10px;
 }
+
 .accessoire {
     position: absolute;
     width: 100px;
@@ -62,7 +70,9 @@ body {
     width: 100%;
 }
 
-.cate { margin-bottom: 1.5rem; }
+.cate {
+    margin-bottom: 1.5rem;
+}
 
 .title-cate {
     font-size: 0.75rem;
@@ -92,9 +102,11 @@ body {
     transition: transform 0.15s ease;
     overflow: hidden;
 }
+
 .choice:hover {
     transform: scale(1.08);
 }
+
 .choice img {
     width: 85%;
     height: 85%;
@@ -102,17 +114,18 @@ body {
 }
 
 /* BOUTON ACHETER */
-.section > a {
+.section>a {
     display: inline-block;
     background: #F5A623;
     color: #fff;
-    font-family: "Baloo 2", sans-serif;
+    font-family: "Belanosima", sans-serif;
     font-weight: 800;
     font-size: 1rem;
     padding: 0.8rem 2.2rem;
     border-radius: 50px;
 }
-.section > a:hover {
+
+.section>a:hover {
     opacity: 0.9;
 }
 
@@ -134,7 +147,7 @@ body {
     padding: 0.7rem 1.2rem;
     border-radius: 50px;
     border: none;
-    font-family: "Baloo 2", sans-serif;
+    font-family: "Belanosima", sans-serif;
     font-size: 1rem;
     text-align: center;
     outline: none;
@@ -145,7 +158,7 @@ body {
     display: inline-block;
     background: linear-gradient(90deg, #F5A623, #CB55E4);
     color: #fff;
-    font-family: "Baloo 2", sans-serif;
+    font-family: "Belanosima", sans-serif;
     font-weight: 800;
     font-size: 1rem;
     padding: 0.8rem 2.2rem;
