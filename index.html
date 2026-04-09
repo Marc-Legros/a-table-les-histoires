@@ -7,7 +7,6 @@
     <title>À Table les Histoires</title>
     <!-- CSS -->
     <link rel="stylesheet" href="styles/style_index.css">
-    <link rel="stylesheet" href="styles/global_components.css">
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -185,11 +184,12 @@
     </div>
 
     <footer>
-        <div id="layout">
+        <div id="footer-content">
             <div class="info-block">
                 <img id="logo-footer" src="assets/index/logoFooter.svg" alt="">
 
-                <p>Une box qui transforme la cuisine en aventure ludique et éducative pour les enfats.</p>
+                <p id="desc-footer">Une box qui transforme la cuisine en aventure ludique et éducative pour les enfats.
+                </p>
 
                 <a id="btn" href="html/vision.html">Voir notre histoire</a>
             </div>
@@ -197,15 +197,15 @@
             <div class="info-block">
                 <a href="index.html">ACCUEIL</a>
                 <a href="html/vision.html">À PROPOS</a>
-                <a href="html/product.html">SERVICE / PRODUITS</a>
-                <a href="html/contact.html">CONTACT</a>
+                <a href="html/catalogue.html">SERVICE / PRODUITS</a>
+                <a href="#">CONTACT</a>
             </div>
 
             <div class="info-block">
-                <a href="">MONTIONS LÉGALEES</a>
-                <a href="">POLITIQUE DE CONFIDENTIALITÉ</a>
-                <a href="">CONDITIONS GÉNÉRALES (CGV : CGU)</a>
-                <a href="">POLITIQUE DE COOKIES</a>
+                <a href="#">MONTIONS LÉGALEES</a>
+                <a href="#">POLITIQUE DE CONFIDENTIALITÉ</a>
+                <a href="#">CONDITIONS GÉNÉRALES (CGV : CGU)</a>
+                <a href="#">POLITIQUE DE COOKIES</a>
             </div>
 
             <div class="info-block">
@@ -213,8 +213,12 @@
                 <p>Inscrivez-vous à notre newsletter :</p>
 
                 <form action="">
-                    <input type="email" placeholder="ENTREZ VOTRE EMAIL">
-                    <button type="submit">S'INSCRIRE</button>
+                    <div id="content-form">
+                        <input type="email" placeholder="ENTREZ VOTRE EMAIL" class="email">
+                        <button type="submit" class="submit-btn">
+                            <img src="assets/index/arrowSubmit.svg" alt="">
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>
