@@ -322,14 +322,19 @@ body {
     font-weight: 800;
     font-size: 1rem;
     text-transform: uppercase;
+    color: #FF9925;
 }
 
-.gradient-text {
+.text-purple{
+    color: #CB55E4;
+}
+
+/* .gradient-text {
     background: linear-gradient(90deg, #CB55E4, #FFB802);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+} */
 
 .card-text {
     font-size: 0.9rem;
