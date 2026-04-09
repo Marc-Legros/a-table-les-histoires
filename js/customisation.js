@@ -171,3 +171,56 @@ btns.forEach(btn => {
 
   });
 });
+
+const btnAchat = document.getElementById("btn-achat");
+const nomInput = document.getElementById("nom-perso");
+const messagePret = document.getElementById("message-pret");
+
+// Quand on clique sur J'ACHÈTE MA BOX
+btnAchat.addEventListener("click", (e) => {
+    e.preventDefault(); // on empêche la navigation pour sauvegarder d'abord
+
+    const nom = nomInput.value.trim();
+
+    // Si aucun nom entré on prévient
+    if (!nom) {
+        alert("Entre le prénom de ton héros !");
+        return;
+    }
+
+    // On affiche "Céleste est prêt !"
+    messagePret.textContent = nom + " est prêt !";
+    messagePret.style.display = "block";
+
+    // On sauvegarde tout dans le localStorage
+    const personnage = {
+        nom: nom,
+        avatar: document.getElementById("calque-avatar").src,
+        avatarTop: document.getElementById("calque-avatar").style.top,
+        avatarLeft: document.getElementById("calque-avatar").style.left,
+        avatarWidth: document.getElementById("calque-avatar").style.width,
+
+        chapeau: document.getElementById("calque-chapeau").src,
+        chapeauTop: document.getElementById("calque-chapeau").style.top,
+        chapeauLeft: document.getElementById("calque-chapeau").style.left,
+        chapeauWidth: document.getElementById("calque-chapeau").style.width,
+
+        tshirt: document.getElementById("calque-tshirt").src,
+        tshirtTop: document.getElementById("calque-tshirt").style.top,
+        tshirtLeft: document.getElementById("calque-tshirt").style.left,
+        tshirtWidth: document.getElementById("calque-tshirt").style.width,
+
+        accessoire: document.getElementById("calque-accessoire").src,
+        accessoireTop: document.getElementById("calque-accessoire").style.top,
+        accessoireLeft: document.getElementById("calque-accessoire").style.left,
+        accessoireWidth: document.getElementById("calque-accessoire").style.width,
+        accessoireTransform: document.getElementById("calque-accessoire").style.transform,
+    };
+
+    localStorage.setItem("personnage", JSON.stringify(personnage));
+
+    // On redirige vers la page panier après 1 seconde
+    setTimeout(() => {
+        window.location.href = "../html/inter-customisation.html";
+    }, 1000);
+});

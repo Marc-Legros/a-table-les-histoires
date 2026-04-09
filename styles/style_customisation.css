@@ -117,3 +117,44 @@ body {
 .section > a:hover {
     opacity: 0.9;
 }
+
+
+.achat-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.perso-pret {
+    font-weight: 800;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.input-nom {
+    padding: 0.7rem 1.2rem;
+    border-radius: 50px;
+    border: none;
+    font-family: "Baloo 2", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    outline: none;
+    width: 220px;
+}
+
+.btn-achat {
+    display: inline-block;
+    background: linear-gradient(90deg, #F5A623, #CB55E4);
+    color: #fff;
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    padding: 0.8rem 2.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.btn-achat:hover {
+    opacity: 0.9;
+}
