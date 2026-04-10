@@ -1,3 +1,19 @@
+// On vérifie si le panier a été activé depuis inter-customisation
+const panierActif = localStorage.getItem("panierActif");
+const panierVide = document.getElementById("panier-vide");
+const panierPlein = document.getElementById("panier-plein");
+const etapes = document.querySelector(".etapes");
+
+if (panierActif === "true") {
+    panierVide.style.display = "none";
+    panierPlein.style.display = "block";
+    etapes.style.display = "flex"; // ← on affiche les étapes
+} else {
+    panierVide.style.display = "flex";
+    panierPlein.style.display = "none";
+    etapes.style.display = "none"; // ← on cache les étapes
+}
+
 // Prix d'une box
 const prixUnitaire = 20;
 

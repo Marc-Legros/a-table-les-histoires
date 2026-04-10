@@ -42,7 +42,7 @@ function placerAccessoire() {
   }
 }
 
-const btns = document.querySelectorAll(".btn");
+const btns = document.querySelectorAll("img.btn");
 
 btns.forEach(btn => {
   btn.addEventListener("click", () => {

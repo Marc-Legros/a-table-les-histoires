@@ -1,3 +1,13 @@
+const btnPanier = document.querySelector(".btn-panier");
+
+if (btnPanier) {
+    btnPanier.addEventListener("click", () => {
+        // On marque que le panier est actif
+        localStorage.setItem("panierActif", "true");
+    });
+}
+
+
 // On récupère le personnage sauvegardé
 const personnage = JSON.parse(localStorage.getItem("personnage"));
 

@@ -23,12 +23,11 @@
         <div class="links">
             <a class="nav-link" href="../html/catalogue.html">Nos produits</a>
             <a class="nav-link" href="../html/vision.html">Notre vision</a>
-            <a class="nav-account" href=""><img src="../assets/panier.svg" alt=""></a>
+            <a class="nav-account" href=""><img src="../assets/index/panier.svg" alt=""></a>
         </div>
     </header>
 
     <section class="section">
-
         <div class="etapes">
             <div class="etape active">
                 <span class="num">1</span>
@@ -46,41 +45,49 @@
             </div>
         </div>
 
-        <!-- TABLEAU -->
-        <div class="panier">
-            <div class="panier-header">
-                <span>ARTICLE</span>
-                <span>QTÉ</span>
-                <span>TOTAL</span>
-                <span>ACTION</span>
-            </div>
-
-            <div class="panier-ligne">
-                <div class="article-info">
-                    <img src="../assets/payement/boite 2.svg" alt="Box">
-                    <div>
-                        <p class="article-nom">BOX</p>
-                        <p class="article-sous">"LA LÉGENDE DE L'ÎLE NUAGE"</p>
-                    </div>
-                </div>
-                <div class="qte">
-                    <button class="qte-btn">−</button>
-                    <span>1</span>
-                    <button class="qte-btn">+</button>
-                </div>
-                <span class="total">20,00 €</span>
-                <button class="suppr">🗑</button>
-            </div>
+        <!-- PANIER VIDE -->
+        <div class="panier-vide" id="panier-vide">
+            <img src="../assets/index/panier.svg" alt="Panier vide">
+            <p class="panier-vide-texte">Oh oh... il semblerait que votre panier soit vide.</p>
+            <p class="panier-vide-titre">En manque d'inspiration ?</p>
+            <a href="catalogue.html" class="btn-idees">TROUVER DES IDÉES</a>
         </div>
 
-        <div class="panier-footer">
-            <a href="payement2.html" class="btn-paiement">PASSER AU PAIEMENT</a>
+        <!-- TABLEAU — caché par défaut -->
+        <div id="panier-plein" style="display:none; width:100%">
+            <div class="panier">
+                <div class="panier-header">
+                    <span>ARTICLE</span>
+                    <span>QTÉ</span>
+                    <span>TOTAL</span>
+                    <span>ACTION</span>
+                </div>
+                <div class="panier-ligne">
+                    <div class="article-info">
+                        <img src="../assets/payement/boite 2.svg" alt="Box">
+                        <div>
+                            <p class="article-nom">BOX</p>
+                            <p class="article-sous">"LA LÉGENDE DE L'ÎLE NUAGE"</p>
+                        </div>
+                    </div>
+                    <div class="qte">
+                        <button class="qte-btn">−</button>
+                        <span>1</span>
+                        <button class="qte-btn">+</button>
+                    </div>
+                    <span class="total">20,00 €</span>
+                    <button class="suppr">🗑</button>
+                </div>
+            </div>
+            <div class="panier-footer">
+                <a href="payement2.html" class="btn-paiement">PASSER AU PAIEMENT</a>
+            </div>
         </div>
 
     </section>
 
     <footer></footer>
 
-    <script src="#"></script>
+    <script src="../js/payement.js"></script>
 </body>
 </html>
