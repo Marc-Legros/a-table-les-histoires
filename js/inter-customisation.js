@@ -33,15 +33,18 @@ if (btnPanier) {
 // ---- RÉCUPÉRATION DU PERSONNAGE ----
 const personnage = JSON.parse(localStorage.getItem("personnage"));
 
-if (personnage) {
+    if (personnage) {
 
-    // On récupère le bon thème
-    const themeId = personnage.theme || "pirate";
-    const themeConfig = decorationsThemes[themeId];
+        // On récupère le bon thème
+        const themeId = personnage.theme || "pirate";
+        const themeConfig = decorationsThemes[themeId];
 
-    if (themeConfig) {
+        if (themeConfig) {
         // On applique la couleur de fond
         document.body.style.backgroundColor = themeConfig.couleurFond;
+
+        // On applique la couleur au footer
+        document.querySelector("footer").setAttribute("style", `background-color: ${themeConfig.couleurFond} !important`);
 
         // On charge les décorations
         themeConfig.decos.forEach(deco => {
