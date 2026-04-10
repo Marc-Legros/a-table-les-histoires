@@ -1,23 +1,60 @@
-const btnPanier = document.querySelector(".btn-panier");
+// ---- CONFIG DÉCORATIONS PAR THÈME ----
+const decorationsThemes = {
+    "pirate": {
+        couleurFond: "#5B54C8",
+        decos: [
+            { classe: "deco-perroquet", src: "../assets/la_legende_de_lile_nuage/perroquet.svg" },
+            { classe: "deco-pieces",    src: "../assets/index/argent.svg" },
+            { classe: "deco-gouvernail",src: "../assets/la_legende_de_lile_nuage/gouvernail.svg" },
+            { classe: "deco-epee",      src: "../assets/la_legende_de_lile_nuage/epee.svg" },
+            { classe: "deco-dessert",   src: "../assets/index/ileFlottante.png" },
+        ],
+    },
+    "fee": {
+        couleurFond: "#F5A623",
+        decos: [
+            { classe: "deco-perroquet", src: "../assets/fee/deco1.svg" },
+            { classe: "deco-pieces",    src: "../assets/fee/deco2.svg" },
+            { classe: "deco-gouvernail",src: "../assets/fee/deco3.svg" },
+            { classe: "deco-epee",      src: "../assets/fee/deco4.svg" },
+            { classe: "deco-dessert",   src: "../assets/fee/deco5.svg" },
+        ],
+    },
+};
 
+// ---- BOUTON PANIER ----
+const btnPanier = document.querySelector(".btn-panier");
 if (btnPanier) {
     btnPanier.addEventListener("click", () => {
-        // On marque que le panier est actif
         localStorage.setItem("panierActif", "true");
     });
 }
 
-
-// On récupère le personnage sauvegardé
+// ---- RÉCUPÉRATION DU PERSONNAGE ----
 const personnage = JSON.parse(localStorage.getItem("personnage"));
 
 if (personnage) {
+
+    // On récupère le bon thème
+    const themeId = personnage.theme || "pirate";
+    const themeConfig = decorationsThemes[themeId];
+
+    if (themeConfig) {
+        // On applique la couleur de fond
+        document.body.style.backgroundColor = themeConfig.couleurFond;
+
+        // On charge les décorations
+        themeConfig.decos.forEach(deco => {
+            const el = document.querySelector("." + deco.classe);
+            if (el) el.src = deco.src;
+        });
+    }
 
     // On affiche le nom
     const nomElement = document.getElementById("nom-perso");
     if (nomElement) nomElement.textContent = personnage.nom + " est prêt(e) !";
 
-    // On remet l'avatar avec ses positions
+    // On remet l'avatar
     const avatar = document.getElementById("inter-avatar");
     if (avatar && personnage.avatar) {
         avatar.src = personnage.avatar;
@@ -26,7 +63,7 @@ if (personnage) {
         avatar.style.width = personnage.avatarWidth;
     }
 
-    // On remet le chapeau avec ses positions
+    // On remet le chapeau
     const chapeau = document.getElementById("inter-chapeau");
     if (chapeau && personnage.chapeau) {
         chapeau.src = personnage.chapeau;
@@ -35,7 +72,7 @@ if (personnage) {
         chapeau.style.width = personnage.chapeauWidth;
     }
 
-    // On remet le t-shirt avec ses positions
+    // On remet le t-shirt
     const tshirt = document.getElementById("inter-tshirt");
     if (tshirt && personnage.tshirt) {
         tshirt.src = personnage.tshirt;
@@ -44,7 +81,7 @@ if (personnage) {
         tshirt.style.width = personnage.tshirtWidth;
     }
 
-    // On remet l'accessoire avec ses positions et sa rotation
+    // On remet l'accessoire
     const accessoire = document.getElementById("inter-accessoire");
     if (accessoire && personnage.accessoire) {
         accessoire.src = personnage.accessoire;
@@ -55,6 +92,5 @@ if (personnage) {
     }
 
 } else {
-    // Si aucun personnage sauvegardé on redirige vers la customisation
     window.location.href = "../html/customisation.html";
 }
