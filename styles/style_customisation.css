@@ -2,8 +2,14 @@
 @import url(global_components.css);
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
 
-html { scroll-behavior: smooth; }
-* { text-decoration: none; box-sizing: border-box; }
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+}
 
 body {
     font-family: "Belanosima", sans-serif;
@@ -65,18 +71,21 @@ body {
     width: 200px;
     left: 30px;
 }
+
 .t-shirt {
     position: absolute;
     width: 200px;
     top: 215px;
     left: 28px;
 }
+
 .hat {
     position: absolute;
     width: 230px;
     left: 18px;
     top: -10px;
 }
+
 .accessoire {
     position: absolute;
     width: 100px;

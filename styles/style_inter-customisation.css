@@ -1,36 +1,14 @@
 @import url(reset.css);
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&display=swap');
+@import url(global_components.css);
 
-* { box-sizing: border-box; text-decoration: none; }
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
 
 body {
-    font-family: "Baloo 2", sans-serif;
+    font-family: "Belanosima", sans-serif;
     background-color: #5B54C8;
-    margin: 0;
-    padding: 0;
-}
-
-/* HEADER */
-.nav {
-    position: sticky;
-    top: 0;
-    height: 65px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 3rem;
-    background: linear-gradient(90deg, #F5A623, #CB55E4);
-    z-index: 10;
-}
-.links { display: flex; gap: 1.5rem; align-items: center; }
-.nav-link {
-    color: #000;
-    background: #fff;
-    border-radius: 50px;
-    padding: 0.3rem 1.2rem;
-    font-weight: 700;
-    font-size: 0.85rem;
 }
 
 /* SECTION INTER */
@@ -95,7 +73,7 @@ body {
 .btn-panier {
     background: linear-gradient(90deg, #F5A623, #CB55E4);
     color: #fff;
-    font-family: "Baloo 2", sans-serif;
+    font-family: "Belanosima", sans-serif;
     font-weight: 800;
     font-size: 1rem;
     padding: 0.8rem 2.5rem;
@@ -104,6 +82,7 @@ body {
     position: relative;
     z-index: 2;
 }
+<<<<<<< HEAD
 .btn-panier:hover { opacity: 0.9; }
 
 /* DÉCORATIONS */
@@ -149,4 +128,9 @@ body {
     right: 30%;
     bottom: 25%;
     width: 20%;
+=======
+
+.btn-panier:hover {
+    opacity: 0.9;
+>>>>>>> 88ec909b687fa52a4ee9f4459bc1646658941765
 }
