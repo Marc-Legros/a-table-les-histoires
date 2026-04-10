@@ -106,15 +106,24 @@ body {
     color: #555;
 }
 
+.choice {
+    width: 62px;
+    height: 62px;
+    background: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+    overflow: hidden;
+}
+
+/* L'input ne doit jamais être bloqué */
 .input-nom {
-    padding: 0.6rem 1rem;
-    border-radius: 50px;
-    border: 1.5px solid #ddd;
-    font-family: "Belanosima", sans-serif;
-    font-size: 0.9rem;
-    text-align: center;
-    outline: none;
-    width: 200px;
+    position: relative;
+    z-index: 10;
+    pointer-events: all;
 }
 
 .btn-achat {

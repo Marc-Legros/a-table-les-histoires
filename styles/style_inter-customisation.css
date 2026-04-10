@@ -82,7 +82,6 @@ body {
     position: relative;
     z-index: 2;
 }
-<<<<<<< HEAD
 .btn-panier:hover { opacity: 0.9; }
 
 /* DÉCORATIONS */
@@ -128,9 +127,4 @@ body {
     right: 30%;
     bottom: 25%;
     width: 20%;
-=======
-
-.btn-panier:hover {
-    opacity: 0.9;
->>>>>>> 88ec909b687fa52a4ee9f4459bc1646658941765
 }
