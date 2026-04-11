@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>À Table les Histoires</title>
-    <!-- CSS -->
     <link rel="stylesheet" href="../styles/style_customisation.css">
-    <!-- FONT -->
+    <link rel="stylesheet" href="../styles/global_components.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
@@ -26,14 +25,24 @@
     </header>
 
     <section class="section">
-        <h1 class="title"></h1>
 
-        <div class="preview">Preview
-            <div id="result">
-                <img class="headAvatar" id="calque-avatar" src="" alt="">
-                <img class="hat" id="calque-chapeau" src="" alt="">
-                <img class="t-shirt" id="calque-tshirt" src="" alt="">
-                <img class="accessoire" id="calque-accessoire" src="" alt="">
+        <div class="col-gauche">
+            <p class="titre-customisation">Je crée le héros de mon histoire !</p>
+
+            <div class="preview">
+                <div id="result">
+                    <img class="headAvatar" id="calque-avatar" src="" alt="">
+                    <img class="hat" id="calque-chapeau" src="" alt="">
+                    <img class="t-shirt" id="calque-tshirt" src="" alt="">
+                    <img class="accessoire" id="calque-accessoire" src="" alt="">
+                </div>
+            </div>
+
+           <!-- ✅ Correct — input en dehors des choices -->
+            <div class="achat-section">
+                <p class="perso-pret" id="message-pret" style="display:none">est prêt !</p>
+                <input class="input-nom" id="nom-perso" placeholder="Prénom de ton héros" type="text">
+                <a href="../html/inter-customisation.html" class="btn-achat" id="btn-achat">J'ACHÈTE MA BOX</a>
             </div>
         </div>
 
@@ -44,7 +53,6 @@
                     <div class="choice">
                         <img class="btn" src="../assets/customisation/avatar/Group.svg" alt="">
                     </div>
-
                     <div class="choice">
                         <img class="btn" src="../assets/customisation/avatar/Group1.svg" alt="">
                     </div>
@@ -63,30 +71,30 @@
                 </div>
             </div>
             <div class="cate">
-                <h2 class="title-cate">Accessoire 1</h2>
+                <h2 class="title-cate">Je choisis mon couvre-chef</h2>
                 <div class="choices">
                     <div class="choice">
                         <img class="btn" src="../assets/customisation/accessoires/chapeau/hat1.svg" alt="">
                     </div>
                     <div class="choice">
-                        <img class="btn" id="hat2" src="../assets/customisation/accessoires/chapeau/hat2.svg" alt="">
+                        <img class="btn" src="../assets/customisation/accessoires/chapeau/hat2.svg" alt="">
                     </div>
                     <div class="choice">
-                        <img class="btn " src="../assets/customisation/accessoires/chapeau/hat3.svg" alt="">
+                        <img class="btn" src="../assets/customisation/accessoires/chapeau/hat3.svg" alt="">
                     </div>
                     <div class="choice">
-                        <img class="btn " src="../assets/customisation/accessoires/chapeau/hat4.svg" alt="">
+                        <img class="btn" src="../assets/customisation/accessoires/chapeau/hat4.svg" alt="">
                     </div>
                     <div class="choice">
-                        <img class="btn " src="../assets/customisation/accessoires/chapeau/hat5.svg" alt="">
+                        <img class="btn" src="../assets/customisation/accessoires/chapeau/hat5.svg" alt="">
                     </div>
                     <div class="choice">
-                        <img class="btn " src="../assets/customisation/accessoires/chapeau/hat6.svg" alt="">
+                        <img class="btn" src="../assets/customisation/accessoires/chapeau/hat6.svg" alt="">
                     </div>
                 </div>
             </div>
             <div class="cate">
-                <h2 class="title-cate">Accessoire 2</h2>
+                <h2 class="title-cate">Je choisis mon t-shirt</h2>
                 <div class="choices">
                     <div class="choice">
                         <img class="btn" src="../assets/customisation/accessoires/t-shirt/t-shirt1.svg" alt="">
@@ -109,8 +117,8 @@
                 </div>
             </div>
             <div class="cate">
-                <h2 class="title-cate">Accessoire 3</h2>
-                <div class="choices btn">
+                <h2 class="title-cate">Je choisis mon accessoire</h2>
+                <div class="choices">
                     <div class="choice">
                         <img class="btn" src="../assets/customisation/accessoires/objets/accessoire1.svg" alt="">
                     </div>
@@ -132,44 +140,31 @@
                 </div>
             </div>
         </div>
-        
-        <div class="achat-section">
-            <p class="perso-pret" id="message-pret" style="display:none">est prêt !</p>
-            <input class="input-nom" id="nom-perso" placeholder="Prénom de ton héros" type="text">
-            <a href="../html/inter-customisation.html" class="btn-achat" id="btn-achat">J'ACHÈTE MA BOX</a>
-        </div>
-    </section>
 
+    </section>
 
     <footer>
         <div id="footer-content">
             <div class="info-block">
                 <img id="logo-footer" src="../assets/index/logoFooter.svg" alt="">
-
-                <p id="desc-footer">Une box qui transforme la cuisine en aventure ludique et éducative pour les enfats.
-                </p>
-
+                <p id="desc-footer">Une box qui transforme la cuisine en aventure ludique et éducative pour les enfants.</p>
                 <a id="btn" href="vision.html">Voir notre histoire</a>
             </div>
-
             <div class="info-block">
                 <a href="../index.html">ACCUEIL</a>
                 <a href="vision.html">À PROPOS</a>
                 <a href="catalogue.html">SERVICE / PRODUITS</a>
                 <a href="#">CONTACT</a>
             </div>
-
             <div class="info-block">
-                <a href="#">MONTIONS LÉGALEES</a>
+                <a href="#">MENTIONS LÉGALES</a>
                 <a href="#">POLITIQUE DE CONFIDENTIALITÉ</a>
-                <a href="#">CONDITIONS GÉNÉRALES (CGV : CGU)</a>
+                <a href="#">CONDITIONS GÉNÉRALES (CGV / CGU)</a>
                 <a href="#">POLITIQUE DE COOKIES</a>
             </div>
-
             <div class="info-block">
                 <h2>ON RESTE EN CONTACT ?</h2>
                 <p>Inscrivez-vous à notre newsletter :</p>
-
                 <form action="">
                     <div id="content-form">
                         <input type="email" placeholder="ENTREZ VOTRE EMAIL" class="email">
@@ -180,7 +175,6 @@
                 </form>
             </div>
         </div>
-
         <img src="../assets/index/decoFooter.svg" alt="">
     </footer>
 

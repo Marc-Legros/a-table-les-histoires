@@ -1,0 +1,156 @@
+@import url(reset.css);
+@import url(global_components.css);
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
+
+* { box-sizing: border-box; text-decoration: none; }
+
+body {
+    font-family: "Belanosima", sans-serif;
+    background-color: #f8f4ea;
+    margin: 0;
+    padding: 0;
+}
+
+/* SECTION */
+.section-confirmation {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 2rem;
+    overflow: hidden;
+}
+
+/* DÉCORATIONS */
+.decorations {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.decorations img {
+    position: absolute;
+}
+
+.deco-fourchette {
+    left: 12%;
+    top: 25%;
+    width: 5%;
+}
+
+.deco-plus {
+    right: 9%;
+    top: 13%;
+    width: 5%;
+    transform: rotate(40deg);
+    z-index: 1;
+}
+
+.deco-ligne-gauche {
+    left: 0%;
+    top: 30%;
+    width: 12%;
+}
+
+.deco-ligne-droite {
+    right: 0%;
+    top: 0%;
+    width: 15%;
+    transform: rotate(180deg);
+}
+
+/* TEXTES */
+.texte-principal {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+    max-width: 500px;
+    position: relative;
+    z-index: 1;
+}
+
+.texte-secondaire {
+    font-size: 0.85rem;
+    text-align: center;
+    color: #777;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+}
+
+/* ORANGE */
+.orange-perso {
+    width: 120px;
+    position: relative;
+    z-index: 1;
+}
+
+/* TIMELINE */
+.timeline {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 700px;
+    z-index: 1;
+}
+
+.timeline-ligne {
+    position: absolute;
+    top: 28px;
+    left: 15%;
+    right: 15%;
+    height: 4px;
+    background: #F5A623;
+    z-index: 0;
+}
+
+.timeline-etape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.timeline-cercle {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #F5A623;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #F5A623;
+}
+
+.timeline-cercle img {
+    width: 28px;
+    height: 28px;
+    filter: brightness(0) invert(1);
+}
+
+.timeline-titre {
+    font-weight: 800;
+    font-size: 0.85rem;
+    color: #333;
+}
+
+.timeline-sous {
+    font-size: 0.8rem;
+    color: #777;
+}
+

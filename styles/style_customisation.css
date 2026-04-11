@@ -1,5 +1,6 @@
 @import url(reset.css);
 @import url(global_components.css);
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -13,6 +14,8 @@ html {
 body {
     font-family: "Belanosima", sans-serif;
     background-color: #f8f4ea;
+    margin: 0;
+    padding: 0;
 }
 
 /* SECTION */
@@ -21,17 +24,44 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
-    padding: 3rem 4vw;
+    gap: 5vw;
+    padding: 2rem 4vw;
+}
+
+/* COLONNE GAUCHE */
+.col-gauche {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    flex-shrink: 0;
+    width: 280px;
+    min-height: 500px; 
+}
+
+.titre-customisation {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #333;
+    align-self: flex-start;
+    margin-bottom: auto; 
+}
+
+.achat-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: auto; 
 }
 
 /* PREVIEW */
 .preview {
     position: relative;
-    width: 300px;
-    height: 480px;
-    background: #6B5FB5;
-    border-radius: 14px;
+    width: 260px;
+    height: 420px;
+    background: transparent;
     flex-shrink: 0;
 }
 
@@ -39,20 +69,20 @@ body {
 .headAvatar {
     position: absolute;
     width: 200px;
-    left: 50px;
+    left: 30px;
 }
 
 .t-shirt {
     position: absolute;
     width: 200px;
     top: 215px;
-    left: 48px;
+    left: 28px;
 }
 
 .hat {
     position: absolute;
     width: 230px;
-    left: 38px;
+    left: 18px;
     top: -10px;
 }
 
@@ -61,33 +91,19 @@ body {
     width: 100px;
 }
 
-/* PANEL CHOIX */
-.customisation {
-    background: #A89FD8;
-    border-radius: 14px;
-    padding: 1.5rem 2rem;
-    max-width: 420px;
-    width: 100%;
-}
-
-.cate {
-    margin-bottom: 1.5rem;
-}
-
-.title-cate {
-    font-size: 0.75rem;
-    font-weight: 800;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #fff;
-    margin-bottom: 0.6rem;
-}
-
-.choices {
+/* ACHAT */
+.achat-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     gap: 0.5rem;
-    flex-wrap: wrap;
+    margin-top: 0.5rem;
+}
+
+.perso-pret {
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: #555;
 }
 
 .choice {
@@ -103,55 +119,11 @@ body {
     overflow: hidden;
 }
 
-.choice:hover {
-    transform: scale(1.08);
-}
-
-.choice img {
-    width: 85%;
-    height: 85%;
-    object-fit: contain;
-}
-
-/* BOUTON ACHETER */
-.section>a {
-    display: inline-block;
-    background: #F5A623;
-    color: #fff;
-    font-family: "Belanosima", sans-serif;
-    font-weight: 800;
-    font-size: 1rem;
-    padding: 0.8rem 2.2rem;
-    border-radius: 50px;
-}
-
-.section>a:hover {
-    opacity: 0.9;
-}
-
-
-.achat-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-}
-
-.perso-pret {
-    font-weight: 800;
-    font-size: 1rem;
-    color: #fff;
-}
-
+/* L'input ne doit jamais être bloqué */
 .input-nom {
-    padding: 0.7rem 1.2rem;
-    border-radius: 50px;
-    border: none;
-    font-family: "Belanosima", sans-serif;
-    font-size: 1rem;
-    text-align: center;
-    outline: none;
-    width: 220px;
+    position: relative;
+    z-index: 10;
+    pointer-events: all;
 }
 
 .btn-achat {
@@ -160,12 +132,59 @@ body {
     color: #fff;
     font-family: "Belanosima", sans-serif;
     font-weight: 800;
-    font-size: 1rem;
-    padding: 0.8rem 2.2rem;
+    font-size: 0.95rem;
+    padding: 0.7rem 2rem;
     border-radius: 50px;
     cursor: pointer;
 }
 
-.btn-achat:hover {
-    opacity: 0.9;
+.btn-achat:hover { opacity: 0.9; }
+
+/* PANEL CHOIX */
+.customisation {
+    background: #A89FD8;
+    border-radius: 20px;
+    padding: 1.5rem 1.8rem;
+    width: 100%;
+    max-width: 500px;
+}
+
+.cate { margin-bottom: 1.2rem; }
+
+.cate:last-child { margin-bottom: 0; }
+
+.title-cate {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.choices {
+    display: flex;
+    flex-direction: row;
+    gap: 0.4rem;
+    flex-wrap: nowrap;
+}
+
+.choice {
+    width: 58px;
+    height: 58px;
+    background: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.choice:hover { transform: scale(1.08); }
+
+.choice img {
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
 }
