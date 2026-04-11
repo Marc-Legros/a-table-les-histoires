@@ -17,7 +17,7 @@ body {
 
 /* SECTION */
 .section {
-    min-height: 100vh;
+    min-height: calc(100vh - 75px);
     padding: 3rem 8vw;
     display: flex;
     flex-direction: column;
