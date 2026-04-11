@@ -23,21 +23,16 @@ body {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     align-items: start;
-    /* margin-bottom: 8rem; */
-    /* gap: 4rem; */
 }
 
 #info {
     display: flex;
     flex-direction: column;
-    /* gap: 1.5rem; */
 }
 
 #intro {
     width: 100%;
     max-width: 400px;
-    /* width: 28vw; */
-    /* margin-bottom: 52px; */
     margin-bottom: 5vh;
 }
 
@@ -117,37 +112,7 @@ h1 {
     /* left: 15%; */
     width: 100%;
     height: 100%;
-    /* width: 115%;
-    height: 110%; */
 }
-
-/* #about{
-    display: flex;
-    justify-content: center;
-}
-
-#trace1 {
-    width: 350px;
-    height: 500px;
-}
-
-.marc {
-    position: absolute;
-    top: 75px;
-    right: 305px;
-}
-
-.tiph {
-    position: absolute;
-    top: 355px;
-    right: 590px;
-}
-
-.gaspar {
-    position: absolute;
-    bottom: 530px;
-    right: 280px;
-} */
 
 .number {
     position: absolute;
@@ -233,14 +198,8 @@ h1 {
 
 
 .section-cita {
-    /* min-height: 100vh; */
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem; */
-    margin: 0 8vw;
-
     min-height: 60vh;
+    margin: 0 8vw;
     display: grid;
     grid-template-columns: 1fr 1.2fr;
     align-items: center;
@@ -251,7 +210,6 @@ h1 {
     max-width: 300px;
     margin-left: auto;
     margin-right: auto;
-    /* margin-top: 200px; */
 }
 
 #cita {
@@ -264,8 +222,6 @@ h1 {
     top: 0;
     right: -100px;
     transform: scaleX(-1);
-    /* margin-top: 154px;
-    margin-bottom: 80px; */
 }
 
 #images{
@@ -308,8 +264,6 @@ h1 {
 }
 
 
-
-
 .section-btn {
     /* min-height: 100vh; */
     display: flex;
@@ -320,7 +274,6 @@ h1 {
 }
 
 #title-btn {
-    /* margin-left: 5vh; */
     color: #3D2D00;
     font-size: 2rem;
     font-weight: 600;
