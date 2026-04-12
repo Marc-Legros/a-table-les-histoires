@@ -482,7 +482,7 @@ body {
     position: absolute;
     bottom: 100%;
     left: 0;
-    top: -5vw;
+    top: -6vw;
     z-index: 2;
     pointer-events: none;
 }
@@ -647,4 +647,41 @@ h2 {
     right: 8%;
     bottom: 5%;
 }
+
+/* TEST BG */
+/* --- POSITIONNEMENT PAR DÉFAUT / THÈME NUAGE --- */
+.theme-nuage #decor-1 { width: 17%; left: -2%; top: 10%; }
+.theme-nuage #decor-2 { width: 10%; left: 10%; bottom: 15%; }
+.theme-nuage #decor-3 { width: 15%; right: -1%; top: 15%; }
+.theme-nuage #decor-4 { width: 12%; right: 8%; bottom: 5%; }
+
+/* --- THÈME FÉES --- */
+/* Modifie ces valeurs comme tu le souhaites pour la slide des fées */
+.theme-fees #decor-1 { width: 20%; left: 5%; top: 5%; }
+.theme-fees #decor-2 { width: 8%; left: 15%; bottom: 20%; }
+.theme-fees #decor-3 { width: 12%; right: 5%; top: 10%; }
+.theme-fees #decor-4 { width: 15%; right: 10%; bottom: 10%; }
+
+/* --- THÈME JUNGLE (5 images) --- */
+.theme-jungle #decor-1 { width: 15%; left: 0%; top: 0%; } /* liane 1 (tombant du coin haut gauche) */
+.theme-jungle #decor-2 { width: 15%; right: 0%; top: 0%; } /* liane 2 (tombant du coin haut droit) */
+.theme-jungle #decor-3 { width: 12%; left: 10%; bottom: 20%; } /* perroquet */
+.theme-jungle #decor-4 { width: 14%; right: 15%; bottom: 10%; } /* singe */
+.theme-jungle #decor-5 { width: 8%; right: 30%; top: 25%; } /* fleur */
+
+/* --- THÈME ESPACE (avec 7 images !) --- */
+.theme-espace #decor-1 { width: 5%; left: 10%; top: 10%; } /* etoile1 */
+.theme-espace #decor-2 { width: 15%; left: 5%; bottom: 30%; } /* planete1 */
+.theme-espace #decor-3 { width: 20%; right: 20%; top: 5%; } /* etoileFilante */
+.theme-espace #decor-4 { width: 10%; right: 5%; top: 40%; } /* planete2 */
+.theme-espace #decor-5 { width: 18%; left: 30%; top: 15%; } /* fusee */
+.theme-espace #decor-6 { width: 12%; right: 15%; bottom: 20%; } /* planete3 */
+.theme-espace #decor-7 { width: 6%; left: 40%; bottom: 10%; } /* etoile2 */
+
+/* Ajoute une transition pour que les images se déplacent en douceur ! */
+/* .bg-item img {
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+} */
+
 /* -------------- */

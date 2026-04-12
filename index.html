@@ -117,41 +117,82 @@
                 d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z" />
         </svg>
 
+        <!-- <div class="vague vague1" id="vagueHaut"></div> -->
+
+        <!-- <div class="slider-backgrounds" id="scene">
+            <div class="layer bg-item" data-depth="0.05">
+                <img id="decor-1" src="assets/la_legende_de_lile_nuage/perroquet.svg" alt="">
+            </div>
+            <div class="layer bg-item" data-depth="0.05">
+                <img id="decor-2" src="assets/la_legende_de_lile_nuage/pieces.svg" alt="">
+            </div>
+            <div class="layer bg-item" data-depth="0.05">
+                <img id="decor-3" src="assets/la_legende_de_lile_nuage/gouvernail.svg" alt="">
+            </div>
+            <div class="layer bg-item" data-depth="0.05">
+                <img id="decor-4" src="assets/la_legende_de_lile_nuage/epee.svg" alt="">
+            </div>
+        </div> -->
+
         <div class="slider-backgrounds" id="scene">
-            <div class="layer bg-item" data-depth="0.05">
-                <img src="assets/la_legende_de_lile_nuage/perroquet.svg" alt="">
-            </div>
-            <div class="layer bg-item" data-depth="0.05">
-                <img src="assets/la_legende_de_lile_nuage/pieces.svg" alt="">
-            </div>
-            <div class="layer bg-item" data-depth="0.05">
-                <img src="assets/la_legende_de_lile_nuage/gouvernail.svg" alt="">
-            </div>
-            <div class="layer bg-item" data-depth="0.05">
-                <img src="assets/la_legende_de_lile_nuage/epee.svg" alt="">
-            </div>
+            <div class="layer bg-item" data-depth="0.05"><img id="decor-1" src="" alt=""></div>
+            <div class="layer bg-item" data-depth="0.05"><img id="decor-2" src="" alt=""></div>
+            <div class="layer bg-item" data-depth="0.05"><img id="decor-3" src="" alt=""></div>
+            <div class="layer bg-item" data-depth="0.05"><img id="decor-4" src="" alt=""></div>
+            <div class="layer bg-item" data-depth="0.05"><img id="decor-5" src="" alt=""></div>
+            <div class="layer bg-item" data-depth="0.05"><img id="decor-6" src="" alt=""></div>
+            <div class="layer bg-item" data-depth="0.05"><img id="decor-7" src="" alt=""></div>
         </div>
 
         <div class="slider">
             <div class="slider-title">
-                <h2>LA LÉGENDE DE L'ÎLE NUAGE</h2>
+                <h2 id="main-title">LA LÉGENDE DE L'ÎLE NUAGE</h2>
             </div>
 
             <div class="swiper mySwiper slider-content">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide" data-bg="#6872FF">
+
+                    <div class="swiper-slide" data-bg="#6872FF" data-title="LA LÉGENDE DE L'ÎLE NUAGE"
+                        data-theme="theme-nuage" data-img1="assets/la_legende_de_lile_nuage/perroquet.svg"
+                        data-img2="assets/la_legende_de_lile_nuage/pieces.svg"
+                        data-img3="assets/la_legende_de_lile_nuage/gouvernail.svg"
+                        data-img4="assets/la_legende_de_lile_nuage/epee.svg">
                         <img src="assets/index/ileFlottante.png" alt="Ile Flottante">
                     </div>
-                    <div class="swiper-slide" data-bg="#FF6B6B">
+
+                    <div class="swiper-slide" data-bg="#FFD04D" data-title="LA POTION DES FÉES" data-theme="theme-fees"
+                        data-img1="assets/la_potion_des_fees/traineeDetoiles.svg"
+                        data-img2="assets/la_potion_des_fees/baguette.svg" data-img3="assets/la_potion_des_fees/fee.svg"
+                        data-img4="assets/la_potion_des_fees/fleur.svg">
                         <img src="assets/index/smoothie.png" alt="Smoothie">
                     </div>
-                    <div class="swiper-slide" data-bg="#FFB801">
-                        <img src="assets/index/crèmeBrûlée.png" alt="Crème Brûlée">
+
+                    <div class="swiper-slide" data-bg="#A5DB76" data-title="LA FLAMME DU DRAGON"
+                        data-theme="theme-dragon" data-img1="assets/la_flamme_du_dragon/feu.svg"
+                        data-img2="assets/la_flamme_du_dragon/oeuf1.svg"
+                        data-img3="assets/la_flamme_du_dragon/dragon.svg"
+                        data-img4="assets/la_flamme_du_dragon/chateau.svg"
+                        data-img5="assets/la_flamme_du_dragon/oeuf2.svg">
+                        <img src="assets/index/cremeBrulee.png" alt="Crème Brûlée">
                     </div>
-                    <div class="swiper-slide" data-bg="#4ADE80">
+
+                    <div class="swiper-slide" data-bg="#FF8411" data-title="LE TRÉSOR DE LA JUNGLE"
+                        data-theme="theme-jungle" data-img1="assets/le_tresor_de_la_jungle/liane1.svg"
+                        data-img2="assets/le_tresor_de_la_jungle/liane2.svg"
+                        data-img3="assets/le_tresor_de_la_jungle/perroquet.svg"
+                        data-img4="assets/le_tresor_de_la_jungle/singe.svg"
+                        data-img5="assets/le_tresor_de_la_jungle/fleur.svg">
                         <img src="assets/index/saladeDeFruits.png" alt="Salade de fruits">
                     </div>
-                    <div class="swiper-slide" data-bg="#D4A373">
+
+                    <div class="swiper-slide" data-bg="#74B5FF" data-title="LES MÉTÉORITES CROUSTILLANTES"
+                        data-theme="theme-espace" data-img1="assets/les_meteorites_croustillantes/etoile1.svg"
+                        data-img2="assets/les_meteorites_croustillantes/planete1.svg"
+                        data-img3="assets/les_meteorites_croustillantes/etoileFilante.svg"
+                        data-img4="assets/les_meteorites_croustillantes/planete2.svg"
+                        data-img5="assets/les_meteorites_croustillantes/fusee.svg"
+                        data-img6="assets/les_meteorites_croustillantes/planete3.svg"
+                        data-img7="assets/les_meteorites_croustillantes/etoile2.svg">
                         <img src="assets/index/cookies.png" alt="Cookies">
                     </div>
                 </div>
@@ -170,6 +211,8 @@
                 </button>
             </div>
         </div>
+
+        <!-- <div class="vague vague2" id="vagueBas"></div> -->
 
         <svg class="vague vague2" viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
             <path class="vague-path"
