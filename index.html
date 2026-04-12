@@ -110,79 +110,73 @@
     </section>
 
 
-    <section class="section-slider">
+    <section class="section-slider" id="sectionSlider">
+
+        <svg class="vague vague1" viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
+            <path class="vague-path"
+                d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z" />
+        </svg>
+
+        <div class="slider-backgrounds" id="scene">
+            <div class="layer bg-item" data-depth="0.05">
+                <img src="assets/la_legende_de_lile_nuage/perroquet.svg" alt="">
+            </div>
+            <div class="layer bg-item" data-depth="0.05">
+                <img src="assets/la_legende_de_lile_nuage/pieces.svg" alt="">
+            </div>
+            <div class="layer bg-item" data-depth="0.05">
+                <img src="assets/la_legende_de_lile_nuage/gouvernail.svg" alt="">
+            </div>
+            <div class="layer bg-item" data-depth="0.05">
+                <img src="assets/la_legende_de_lile_nuage/epee.svg" alt="">
+            </div>
+        </div>
+
+        <div class="slider">
+            <div class="slider-title">
+                <h2>LA LÉGENDE DE L'ÎLE NUAGE</h2>
+            </div>
+
+            <div class="swiper mySwiper slider-content">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" data-bg="#6872FF">
+                        <img src="assets/index/ileFlottante.png" alt="Ile Flottante">
+                    </div>
+                    <div class="swiper-slide" data-bg="#FF6B6B">
+                        <img src="assets/index/smoothie.png" alt="Smoothie">
+                    </div>
+                    <div class="swiper-slide" data-bg="#FFB801">
+                        <img src="assets/index/crèmeBrûlée.png" alt="Crème Brûlée">
+                    </div>
+                    <div class="swiper-slide" data-bg="#4ADE80">
+                        <img src="assets/index/saladeDeFruits.png" alt="Salade de fruits">
+                    </div>
+                    <div class="swiper-slide" data-bg="#D4A373">
+                        <img src="assets/index/cookies.png" alt="Cookies">
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider-navigation">
+                <button class="btn btn-prev">
+                    <img src="assets/index/arrowLeft.svg" alt="Précédent">
+                </button>
+                <div class="text">
+                    <a href="html/customisation.html">JE PERSONNALISE</a>
+                    <p>LE HÉROS DE MA RECETTE !</p>
+                </div>
+                <button class="btn btn-next">
+                    <img src="assets/index/arrowRight.svg" alt="Suivant">
+                </button>
+            </div>
+        </div>
+
+        <svg class="vague vague2" viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg">
+            <path class="vague-path"
+                d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z" />
+        </svg>
 
     </section>
-
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img class="vague1" src="assets/la_legende_de_lile_nuage/vague1.svg" alt="">
-                <div class="slider-backgrounds" id="scene">
-                    <div class="layer bg-item" data-depth="0.05">
-                        <img src="assets/la_legende_de_lile_nuage/perroquet.svg" alt="">
-                    </div>
-                    <div class="layer bg-item" data-depth="0.05">
-                        <img src="assets/la_legende_de_lile_nuage/pieces.svg" alt="">
-                    </div>
-                    <div class="layer bg-item" data-depth="0.05">
-                        <img src="assets/la_legende_de_lile_nuage/gouvernail.svg" alt="">
-                    </div>
-                    <div class="layer bg-item" data-depth="0.05">
-                        <img src="assets/la_legende_de_lile_nuage/epee.svg" alt="">
-                    </div>
-                </div>
-
-                <div class="slider">
-                    <div class="slider-title">
-                        <h2>LA LÉGENDE DE L'ÎLE NUAGE</h2>
-                    </div>
-                    <div class="slider-content">
-                        <div class="slider-item">
-                            <img src="assets/index/ileFlottante.png" alt="">
-                        </div>
-                        <div class="slider-item">
-                            <img src="assets/index/smoothie.png" alt="">
-                        </div>
-                        <div class="slider-item">
-                            <img src="assets/index/crèmeBrûlée.png" alt="">
-                        </div>
-                        <div class="slider-item">
-                            <img src="assets/index/saladeDeFruits.png" alt="">
-                        </div>
-                        <div class="slider-item">
-                            <img src="assets/index/cookies.png" alt="">
-                        </div>
-                    </div>
-                    <div class="slider-navigation">
-                        <button class="btn" onclick="changeSlide(-1)">
-                            <img src="assets/index/arrowLeft.svg" alt="">
-                        </button>
-                        <div class="text">
-                            <a href="html/customisation.html">JE PERSONNALISE</a>
-                            <p>LE HÉROS DE MA RECETTE !</p>
-                        </div>
-                        <button class="btn" onclick="changeSlide(1)">
-                            <img src="assets/index/arrowRight.svg" alt="">
-                        </button>
-                    </div>
-                </div>
-                <img class="vague2" src="assets/la_legende_de_lile_nuage/vague2.svg" alt="">
-            </div>
-            <div class="swiper-slide">
-                <img class="vague1" src="assets/la_legende_de_lile_nuage/vague1.svg" alt="">
-                <img class="vague2" src="assets/la_legende_de_lile_nuage/vague2.svg" alt="">
-            </div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
-            <div class="swiper-slide">Slide 8</div>
-            <div class="swiper-slide">Slide 9</div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </div>
 
     <footer>
         <div id="footer-content">

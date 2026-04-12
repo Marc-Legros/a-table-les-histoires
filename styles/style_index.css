@@ -446,6 +446,36 @@ body {
     pointer-events: none;
 } */
 
+
+/* TEST */
+/* Animation fluide du fond de la section principale */
+.section-slider {
+    /* ... tes autres propriétés existantes ... */
+    background-color: #6872FF; 
+    transition: background-color 0.5s ease-in-out; 
+}
+
+/* Gestion des vagues en SVG Inline */
+.vague {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.vague1 { bottom: 100%; margin-bottom: -2px; } /* Aligné en haut */
+.vague2 { top: 100%; margin-top: -2px; } /* Aligné en bas */
+
+/* La couleur (fill) des vagues hérite de la couleur de la section, avec la même transition fluide */
+.vague-path {
+    fill: #6872FF; /* Couleur de base */
+    transition: fill 0.5s ease-in-out;
+}
+/* ================================ */
+
+
 .vague1 {
     display: block;
     width: 100%;
