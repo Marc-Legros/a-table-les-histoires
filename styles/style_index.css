@@ -33,7 +33,7 @@ body {
     position: absolute;
     top: 6%;
     right: 25%;
-    
+
 }
 
 #ligne1 {
@@ -84,7 +84,7 @@ body {
 #ligne4 {
     position: absolute;
     top: 15%;
-    left : 0;
+    left: 0;
     width: 15%;
 }
 
@@ -214,7 +214,8 @@ body {
 
 .personnalise-wrapper {
     background: linear-gradient(90deg, #CB55E4, #FFB802);
-    padding: 5px; /* épaisseur du contour */
+    padding: 5px;
+    /* épaisseur du contour */
     border-radius: 50px;
     display: inline-block;
 }
@@ -330,7 +331,7 @@ body {
     color: #000;
 }
 
-.text-purple{
+.text-purple {
     color: #CB55E4;
 }
 
@@ -435,27 +436,8 @@ body {
     font-size: 1.25rem;
 }
 
+
 /* SLIDER */
-/* .vague1 {
-    display: block;
-    width: 100%;
-    position: absolute;
-    top: -125px;
-    left: 0;
-    z-index: 2;
-    pointer-events: none;
-} */
-
-
-/* TEST */
-/* Animation fluide du fond de la section principale */
-.section-slider {
-    /* ... tes autres propriétés existantes ... */
-    background-color: #6872FF; 
-    transition: background-color 0.5s ease-in-out; 
-}
-
-/* Gestion des vagues en SVG Inline */
 .vague {
     display: block;
     width: 100%;
@@ -465,37 +447,20 @@ body {
     pointer-events: none;
 }
 
-.vague1 { bottom: 100%; margin-bottom: -2px; } /* Aligné en haut */
-.vague2 { top: 100%; margin-top: -2px; } /* Aligné en bas */
-
-/* La couleur (fill) des vagues hérite de la couleur de la section, avec la même transition fluide */
-.vague-path {
-    fill: #6872FF; /* Couleur de base */
-    transition: fill 0.5s ease-in-out;
-}
-/* ================================ */
-
-
 .vague1 {
-    display: block;
-    width: 100%;
-    position: absolute;
     bottom: 100%;
-    left: 0;
-    top: -6vw;
-    z-index: 2;
-    pointer-events: none;
+    margin-bottom: -2px;
 }
 
 .vague2 {
-    display: block;
-    width: 100%;
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    bottom: -5vw;
-    z-index: 2;
-    pointer-events: none;
+    top: 100%;
+    margin-top: -2px;
+}
+
+
+.vague-path {
+    fill: #6872FF;
+    transition: fill 0.5s ease-in-out;
 }
 
 .section-slider {
@@ -509,6 +474,7 @@ body {
     justify-content: center;
     margin-top: 5vw;
     margin-bottom: 5vw;
+    transition: background-color 0.5s ease-in-out;
 }
 
 .slider {
@@ -523,7 +489,6 @@ body {
     min-height: 100vh;
     position: relative;
     z-index: 5;
-
 }
 
 .slider-title {
@@ -540,7 +505,7 @@ body {
     box-shadow: 0px 10px 0px rgba(0, 0, 0, 1);
 }
 
-h2 {
+.slider-title h2 {
     font-weight: 100;
 }
 
@@ -598,11 +563,6 @@ h2 {
     height: min-content;
 }
 
-/* .slider-item{
-    position: absolute;
-} */
-
-
 /* PARALLAX */
 .slider-backgrounds {
     position: absolute;
@@ -624,61 +584,213 @@ h2 {
     position: absolute;
 }
 
-.bg-item:nth-child(1) img {
+
+/* .img-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* #ile-flottante{
+    
+}
+
+#smoothie{
+    width: 30%;
+}
+
+#creme-brulee{
+
+}
+
+#salade-fruits{
+
+}
+
+#cookie{
+
+} */
+
+/* --- THÈME NUAGE --- */
+/* PERROQUET */
+.theme-nuage #decor-1 {
     width: 17%;
     left: -2%;
     top: 10%;
 }
 
-.bg-item:nth-child(2) img {
+/* PIECES */
+.theme-nuage #decor-2 {
     width: 10%;
     left: 10%;
     bottom: 15%;
 }
 
-.bg-item:nth-child(3) img {
+/* GOUVERNAIL */
+.theme-nuage #decor-3 {
     width: 15%;
     right: -1%;
     top: 15%;
 }
 
-.bg-item:nth-child(4) img {
+/* ÉPÉE */
+.theme-nuage #decor-4 {
     width: 12%;
     right: 8%;
     bottom: 5%;
 }
 
-/* TEST BG */
-/* --- POSITIONNEMENT PAR DÉFAUT / THÈME NUAGE --- */
-.theme-nuage #decor-1 { width: 17%; left: -2%; top: 10%; }
-.theme-nuage #decor-2 { width: 10%; left: 10%; bottom: 15%; }
-.theme-nuage #decor-3 { width: 15%; right: -1%; top: 15%; }
-.theme-nuage #decor-4 { width: 12%; right: 8%; bottom: 5%; }
-
 /* --- THÈME FÉES --- */
-/* Modifie ces valeurs comme tu le souhaites pour la slide des fées */
-.theme-fees #decor-1 { width: 20%; left: 5%; top: 5%; }
-.theme-fees #decor-2 { width: 8%; left: 15%; bottom: 20%; }
-.theme-fees #decor-3 { width: 12%; right: 5%; top: 10%; }
-.theme-fees #decor-4 { width: 15%; right: 10%; bottom: 10%; }
+/* TRAINÉE D'ÉTOILES */
+.theme-fees #decor-1 {
+    width: 36%;
+    left: -3%;
+    top: 5%;
+}
 
-/* --- THÈME JUNGLE (5 images) --- */
-.theme-jungle #decor-1 { width: 15%; left: 0%; top: 0%; } /* liane 1 (tombant du coin haut gauche) */
-.theme-jungle #decor-2 { width: 15%; right: 0%; top: 0%; } /* liane 2 (tombant du coin haut droit) */
-.theme-jungle #decor-3 { width: 12%; left: 10%; bottom: 20%; } /* perroquet */
-.theme-jungle #decor-4 { width: 14%; right: 15%; bottom: 10%; } /* singe */
-.theme-jungle #decor-5 { width: 8%; right: 30%; top: 25%; } /* fleur */
+/* BAGUETTE */
+.theme-fees #decor-2 {
+    width: 25%;
+    left: 3%;
+    bottom: -18%;
+}
 
-/* --- THÈME ESPACE (avec 7 images !) --- */
-.theme-espace #decor-1 { width: 5%; left: 10%; top: 10%; } /* etoile1 */
-.theme-espace #decor-2 { width: 15%; left: 5%; bottom: 30%; } /* planete1 */
-.theme-espace #decor-3 { width: 20%; right: 20%; top: 5%; } /* etoileFilante */
-.theme-espace #decor-4 { width: 10%; right: 5%; top: 40%; } /* planete2 */
-.theme-espace #decor-5 { width: 18%; left: 30%; top: 15%; } /* fusee */
-.theme-espace #decor-6 { width: 12%; right: 15%; bottom: 20%; } /* planete3 */
-.theme-espace #decor-7 { width: 6%; left: 40%; bottom: 10%; } /* etoile2 */
+/* FÉE */
+.theme-fees #decor-3 {
+    width: 8%;
+    right: 20%;
+    top: 10%;
+}
 
-/* Ajoute une transition pour que les images se déplacent en douceur ! */
+/* FLEUR */
+.theme-fees #decor-4 {
+    width: 20%;
+    right: 5%;
+    bottom: 3%;
+}
+
+/* --- THÈME DRAGON --- */
+/* FEU */
+.theme-dragon #decor-1 {
+    width: 20%;
+    left: -2%;
+    top: 5%;
+}
+
+/* OEUF 1 */
+.theme-dragon #decor-2 {
+    width: 10%;
+    left: -3%;
+    bottom: 10%;
+}
+
+/* DRAGON */
+.theme-dragon #decor-3 {
+    width: 10%;
+    left: 15%;
+    bottom: 22%;
+}
+
+/* CHATEAU */
+.theme-dragon #decor-4 {
+    width: 18%;
+    right: 0%;
+    top: 25%;
+}
+
+/* OEUF 2 */
+.theme-dragon #decor-5 {
+    width: 7%;
+    right: 15%;
+    bottom: 0%;
+}
+
+/* --- THÈME JUNGLE --- */
+/* LIANE 1 */
+.theme-jungle #decor-1 {
+    width: 30%;
+    left: 12%;
+    top: -5%;
+}
+
+/* LIANE 2 */
+.theme-jungle #decor-2 {
+    width: 35%;
+    left: 5%;
+    top: -10%;
+}
+
+/* PERROQUET */
+.theme-jungle #decor-3 {
+    width: 14%;
+    left: -2%;
+    bottom: 20%;
+}
+
+/* SINGE */
+.theme-jungle #decor-4 {
+    width: 10%;
+    right: -1%;
+    top: 25%;
+}
+
+/* FLEUR */
+.theme-jungle #decor-5 {
+    width: 15%;
+    right: 8%;
+    bottom: 0%;
+}
+
+/* --- THÈME ESPACE --- */
+/* ÉTOILE 1 */
+.theme-espace #decor-1 {
+    width: 4%;
+    left: 13%;
+    top: 25%;
+}
+
+/* PLANÈTE 1 */
+.theme-espace #decor-2 {
+    width: 11%;
+    left: -1%;
+    bottom: 43%;
+}
+
+/* ÉTOILE FILANTE */
+.theme-espace #decor-3 {
+    width: 11%;
+    left: 12%;
+    bottom: 12%;
+}
+
+/* PLANÈTE 2 */
+.theme-espace #decor-4 {
+    width: 15%;
+    left: 28%;
+    top: 27%;
+}
+
+/* FUSÉE */
+.theme-espace #decor-5 {
+    width: 13%;
+    right: 12%;
+    top: 25%;
+}
+
+/* PLANÈTE 3 */
+.theme-espace #decor-6 {
+    width: 10%;
+    right: -.5%;
+    bottom: 25%;
+}
+
+/* ÉTOILE 2 */
+.theme-espace #decor-7 {
+    width: 3%;
+    right: 10%;
+    bottom: 15%;
+}
+
 /* .bg-item img {
     position: absolute;
     transition: all 0.5s ease-in-out;
