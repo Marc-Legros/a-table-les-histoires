@@ -164,30 +164,34 @@ h1 {
 .about-card {
     background: #FFF;
     border-radius: 20px;
-    padding: 2rem;
+    padding: 3rem 1.5rem;
     width: 293px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
+    justify-content: center;
     text-align: center;
 }
 
 .card-title {
-    font-weight: 600;
     font-size: 1.25rem;
+    font-weight: 600;
     text-transform: uppercase;
-    color: #FF9925;
+    color: #CB55E4;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 .card-text {
     font-size: 1.25rem;
+    font-weight: 400;
+    line-height: normal;
     color: #000;
 }
 
-.text-purple {
+/* .text-purple {
     color: #CB55E4;
-}
+} */
 
 /* .gradient-text {
     background: linear-gradient(90deg, #CB55E4, #FFB802);
@@ -197,6 +201,7 @@ h1 {
 } */
 
 
+/* --- SECTION CITATION --- */
 .section-cita {
     min-height: 60vh;
     margin: 0 8vw;
@@ -205,7 +210,7 @@ h1 {
     align-items: center;
 }
 
-#div-cita{
+#div-cita {
     position: relative;
     max-width: 300px;
     margin-left: auto;
@@ -224,7 +229,7 @@ h1 {
     transform: scaleX(-1);
 }
 
-#images{
+#images {
     position: relative;
     width: 100%;
     max-width: 600px;
@@ -232,7 +237,7 @@ h1 {
     margin: 0 auto;
 }
 
-#images img{
+#images img {
     position: absolute;
     width: 40%;
 }
@@ -280,7 +285,7 @@ h1 {
     text-transform: uppercase;
 }
 
-#buttons{
+#buttons {
     display: flex;
     flex-direction: row;
     margin: 56px 0 100px 0;
@@ -289,7 +294,8 @@ h1 {
 
 .btn-wrapper {
     background: linear-gradient(90deg, #CB55E4, #FFB802);
-    padding: 5px; /* épaisseur du contour */
+    padding: 5px;
+    /* épaisseur du contour */
     border-radius: 50px;
     display: inline-block;
 }
@@ -308,7 +314,7 @@ h1 {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-#chemin{
+#chemin {
     width: 100%;
     height: 100%;
 }
