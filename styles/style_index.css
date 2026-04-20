@@ -162,8 +162,7 @@ body {
 
 .p-line {
     font-family: "Belanosima", sans-serif;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 25px;
     margin-left: 5vw;
     margin-top: 3vh;
     color: #FFF;
@@ -174,7 +173,7 @@ body {
     position: absolute;
     background-color: #CB55E4;
     border-radius: 50%;
-    font-weight: 400;
+    font-weight: 800;
     margin-left: 83vw;
     margin-top: 10vh;
     color: #FFF;
@@ -249,7 +248,7 @@ body {
 
 #perso2 {
     position: absolute;
-    top: 42%;
+    top: 58%;
     right: 10%;
     z-index: 1;
 }
