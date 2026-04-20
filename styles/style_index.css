@@ -525,7 +525,7 @@ body {
     color: #FFF;
 }
 
-.slider-navigation a {
+.slider-navigation #btn {
     color: #FFF;
     padding: 0.5em 1.5em;
     border: 5px #FFF solid;
