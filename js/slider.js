@@ -30,7 +30,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
              // ← AJOUTE JUSTE CETTE LIGNE
             const lienPerso = document.querySelector(".text a");
-            if (lienPerso) lienPerso.href = `html/customisation.html?theme=${newTheme}`;
+            if (lienPerso) {
+                lienPerso.href = `html/customisation.html?theme=${newTheme}`;
+                console.log("Lien mis à jour :", lienPerso.href); // ← ajoute ça
+            }
         }
 
         // CHANGE LE BACKGROUNDS
