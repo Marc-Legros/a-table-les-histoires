@@ -1,6 +1,6 @@
 // ---- CONFIG DÉCORATIONS PAR THÈME ----
 const decorationsThemes = {
-    "pirate": {
+    "theme-nuage": {
         couleurFond: "#5B54C8",
         decos: [
             { classe: "deco-perroquet", src: "../assets/la_legende_de_lile_nuage/perroquet.svg" },
@@ -10,7 +10,7 @@ const decorationsThemes = {
             { classe: "deco-dessert",   src: "../assets/index/ileFlottante.png" },
         ],
     },
-    "fee": {
+    "theme-fees": {
         couleurFond: "#F5A623",
         decos: [
             { classe: "deco-perroquet", src: "../assets/fee/deco1.svg" },

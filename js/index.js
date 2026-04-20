@@ -36,6 +36,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const newTheme = activeSlide.getAttribute('data-theme');
         if (newTheme) {
             scene.className = 'slider-backgrounds ' + newTheme;
+
+             // ← AJOUTE JUSTE CETTE LIGNE
+            const lienPerso = document.querySelector(".text a");
+            if (lienPerso) lienPerso.href = `html/customisation.html?theme=${newTheme}`;
         }
 
         // CHANGE LE BACKGROUNDS
@@ -70,16 +74,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             slideChange: function () {
                 mettreAJourSlide(this);
-
-                const activeIndex = this.realIndex;
-
-                const btn = document.getElementById("btn");
-
-                console.log(btn);
-
-                btn.href = `html/customisation.html?slide=${activeIndex}`;
-
-                // window.history.replaceState(null, null, `?slide=${activeIndex}`);
             }
         }
     });
