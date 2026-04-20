@@ -479,7 +479,7 @@ body {
     transition: fill 0.5s ease-in-out;
 }
 
-#section-slider {
+.section-slider {
     position: relative;
     background-color: #6872FF;
     height: 100vh;
