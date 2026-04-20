@@ -1,14 +1,15 @@
 // ---- URL PARAMS ----
 const searchParams = new URLSearchParams(window.location.search);
-const themeId = searchParams.get("theme") || "pirate";
 
 // ---- VARIABLES ----
 let avatarActuel = "";
 let accessoireActuel = "";
 
 // ---- CONFIG DES THÈMES ----
+const themeId = searchParams.get("theme") || "theme-nuage";
+
 const themes = {
-    "pirate": {
+    "theme-nuage": {
         couleur: "#A89FD8",
         avatars: [
             "../assets/customisation/avatar/Group.svg",
@@ -43,7 +44,7 @@ const themes = {
             "../assets/customisation/accessoires/objets/accessoire6.svg",
         ],
     },
-    "fee": {
+    "theme-fees": {
         couleur: "#F5A623",
         avatars: [
             "../assets/customisation/avatar/Group.svg",
@@ -78,9 +79,85 @@ const themes = {
             "../assets/customisation/accessoires/objets/fee/Calque_1(6).svg",
         ],
     },
+    // Ajoute les autres thèmes quand tu auras les assets
+    "theme-dragon": { 
+        couleur: "#A5DB76", 
+        avatars: [
+            "../assets/customisation/avatar/Group.svg",
+            "../assets/customisation/avatar/Group1.svg",
+            "../assets/customisation/avatar/Group2.svg",
+            "../assets/customisation/avatar/Group3.svg",
+            "../assets/customisation/avatar/Group4.svg",
+            "../assets/customisation/avatar/Group5.svg",
+        ], 
+        chapeaux: [
+            "../assets/customisation/accessoires/chapeau/chevalier/chapeau de fou.svg",
+            "../assets/customisation/accessoires/chapeau/chevalier/chapeau.svg",
+            "../assets/customisation/accessoires/chapeau/chevalier/chapeau1.svg",
+            "../assets/customisation/accessoires/chapeau/chevalier/couronne(1).svg",
+            "../assets/customisation/accessoires/chapeau/chevalier/couronne2.svg",
+            "../assets/customisation/accessoires/chapeau/chevalier/couronne3.svg",
+        ], 
+        tshirts: [
+            "../assets/customisation/accessoires/t-shirt/chevalier/Calque_1(10).svg",
+            "../assets/customisation/accessoires/t-shirt/chevalier/Calque_1(7).svg",
+            "../assets/customisation/accessoires/t-shirt/chevalier/Calque_1(8).svg",
+            "../assets/customisation/accessoires/t-shirt/chevalier/Calque_1(9).svg",
+            "../assets/customisation/accessoires/t-shirt/chevalier/plastron.svg",
+            "../assets/customisation/accessoires/t-shirt/chevalier/t shirt 1 1(2).svg",
+            
+        ], 
+        accessoires: [
+            "../assets/customisation/accessoires/objets/chevalier/bouclier 1.svg",
+            "../assets/customisation/accessoires/objets/chevalier/bouclier 2.svg",
+            "../assets/customisation/accessoires/objets/chevalier/bouclier 3.svg",
+            "../assets/customisation/accessoires/objets/chevalier/Group(25).svg",
+            "../assets/customisation/accessoires/objets/chevalier/lance.svg",
+            "../assets/customisation/accessoires/objets/chevalier/épée.svg",
+        ] 
+    },
+    "theme-jungle": { 
+        couleur: "#FF8411", 
+        avatars: [
+            "../assets/customisation/avatar/Group.svg",
+            "../assets/customisation/avatar/Group1.svg",
+            "../assets/customisation/avatar/Group2.svg",
+            "../assets/customisation/avatar/Group3.svg",
+            "../assets/customisation/avatar/Group4.svg",
+            "../assets/customisation/avatar/Group5.svg",
+        ], 
+        chapeaux: [
+            "../assets/customisation/accessoires/chapeau/jungle/Calque 1(6).svg",
+            "../assets/customisation/accessoires/chapeau/jungle/casquette.svg",
+            "../assets/customisation/accessoires/chapeau/jungle/chapeau 3(1).svg",
+            "../assets/customisation/accessoires/chapeau/jungle/chapeau 3.svg",
+            "../assets/customisation/accessoires/chapeau/jungle/chapeau 6 1(3).svg",
+            "../assets/customisation/accessoires/chapeau/jungle/chapeau1(1).svg",
+        ], 
+        tshirts: [
+            
+        ], 
+        accessoires: [] 
+    },
+    "theme-espace": { 
+        couleur: "#74B5FF", 
+        avatars: [
+            "../assets/customisation/avatar/Group.svg",
+            "../assets/customisation/avatar/Group1.svg",
+            "../assets/customisation/avatar/Group2.svg",
+            "../assets/customisation/avatar/Group3.svg",
+            "../assets/customisation/avatar/Group4.svg",
+            "../assets/customisation/avatar/Group5.svg",
+        ], 
+        chapeaux: [], 
+        tshirts: [], 
+        accessoires: [] 
+    },
 };
 
-const theme = themes[themeId];
+const theme = themes[themeId] || themes["theme-nuage"];
+
+
 
 // ---- CHARGEMENT DU THÈME ----
 function chargerTheme() {
