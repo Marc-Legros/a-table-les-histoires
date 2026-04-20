@@ -74,6 +74,7 @@ body {
 
 .t-shirt {
     position: absolute;
+    z-index: 2;
     width: 200px;
     top: 215px;
     left: 28px;
@@ -88,6 +89,7 @@ body {
 
 .bras {
     position: absolute;
+    z-index: 1;
     width: 200px;
     top: 215px;
     left: 48px;
@@ -95,6 +97,7 @@ body {
 
 .accessoire {
     position: absolute;
+    z-index: 3;
     width: 100px;
 }
 
