@@ -60,6 +60,12 @@ body {
     width: 100px;
 }
 
+.inter-bras {
+    position: absolute;
+    width: 80px;
+    z-index: -1;
+}
+
 /* NOM */
 .nom-perso {
     color: #fff;

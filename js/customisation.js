@@ -8,7 +8,7 @@ const themeId = searchParams.get("theme") || "theme-nuage";
 // ON RETIENT CE QUI EST SÉLECTIONNÉ
 // =============================
 let avatarActuel = "";
-let accessoireActuel = "";
+let accessoireActuel = null; 
 let tshirtActuel = 0;
 // =============================
 // TOUS LES ASSETS PAR THÈME
@@ -219,10 +219,10 @@ function cliquerTshirt(indexDansCate, src) {
 // =============================
 // QUAND ON CLIQUE SUR UN ACCESSOIRE
 // =============================
-function cliquerAccessoire(src) {
+function cliquerAccessoire(src, index) {
     const accessoire = document.getElementById("calque-accessoire");
     accessoire.src = src;
-    accessoireActuel = src;
+    accessoireActuel = index; 
     placerAccessoire();
 }
 
@@ -230,13 +230,12 @@ function cliquerAccessoire(src) {
 // PLACER L'ACCESSOIRE AU BON ENDROIT
 // =============================
 function placerAccessoire() {
-    if (!accessoireActuel) return;
+    if (accessoireActuel === null) return; 
 
     const accessoire = document.getElementById("calque-accessoire");
     accessoire.style.transform = "";
 
-    const nomFichier = accessoireActuel.split("/").pop();
-    const i = theme.accessoires.findIndex(a => a.includes(nomFichier));
+    const i = accessoireActuel;
 
     if (themeId === "theme-nuage") {
         // Accessoire 0 — position selon le t-shirt actif
@@ -290,8 +289,12 @@ function placerAccessoire() {
         }
         // Accessoire 5 — épée
         else if (i === 5) {
-            if (tshirtActuel === 0) { accessoire.style.transform = "rotate(45deg)"; accessoire.style.top = "300px"; accessoire.style.left = "150px"; accessoire.style.width = "80px"; }
-            else if (tshirtActuel === 1) { accessoire.style.transform = "rotate(45deg)"; accessoire.style.top = "300px"; accessoire.style.left = "150px"; accessoire.style.width = "80px"; }
+            if (tshirtActuel === 0) { accessoire.style.transform = "rotate(45deg)"; accessoire.style.top = "325px"; accessoire.style.left = "-120px"; accessoire.style.width = "150px"; }
+            else if (tshirtActuel === 1) { accessoire.style.transform = "rotate(45deg)"; accessoire.style.top = "230px"; accessoire.style.left = "-130px"; accessoire.style.width = "150px"; }
+            else if (tshirtActuel === 2) { accessoire.style.transform = "rotate(45deg)"; accessoire.style.top = "335px"; accessoire.style.left = "-120px"; accessoire.style.width = "150px"; }
+            else if (tshirtActuel === 3) { accessoire.style.transform = "rotate(45deg)"; accessoire.style.top = "340px"; accessoire.style.left = "-120px"; accessoire.style.width = "150px"; }
+            else if (tshirtActuel === 4) { accessoire.style.transform = "rotate(75deg)"; accessoire.style.top = "325px"; accessoire.style.left = "-75px"; accessoire.style.width = "150px"; }
+            else if (tshirtActuel === 5) { accessoire.style.transform = "rotate(75deg)"; accessoire.style.top = "325px"; accessoire.style.left = "-90px"; accessoire.style.width = "150px"; }
             // ... etc
         }
     }
@@ -325,7 +328,9 @@ btns.forEach((btn) => {
         if (cateParent === cates[0]) { cliquerAvatar(indexDansCate, btn.src); }
         else if (cateParent === cates[1]) { cliquerChapeau(indexDansCate, btn.src); }
         else if (cateParent === cates[2]) { cliquerTshirt(indexDansCate, btn.src); }
-        else if (cateParent === cates[3]) { cliquerAccessoire(btn.src); }
+        else if (cateParent === cates[3]) { 
+            cliquerAccessoire(btn.src, indexDansCate); // ← on passe aussi l'index
+        }
 
     });
 });
@@ -350,9 +355,10 @@ btnAchat.addEventListener("click", (e) => {
     messagePret.textContent = nom + " est prêt !";
     messagePret.style.display = "block";
 
-    const personnage = {
+   const personnage = {
         nom: nom,
         theme: themeId,
+
         avatar: document.getElementById("calque-avatar").src,
         avatarTop: document.getElementById("calque-avatar").style.top,
         avatarLeft: document.getElementById("calque-avatar").style.left,
@@ -368,10 +374,18 @@ btnAchat.addEventListener("click", (e) => {
         tshirtLeft: document.getElementById("calque-tshirt").style.left,
         tshirtWidth: document.getElementById("calque-tshirt").style.width,
 
-        bras: document.getElementById("calque-bras").src,
-        brasTop: document.getElementById("calque-bras").style.top,
-        brasLeft: document.getElementById("calque-bras").style.left,
-        brasWidth: document.getElementById("calque-bras").style.width,
+        // ← bras gauche et droit séparés
+        brasGauche: document.getElementById("calque-bras-gauche").src,
+        brasGaucheTop: document.getElementById("calque-bras-gauche").style.top,
+        brasGaucheLeft: document.getElementById("calque-bras-gauche").style.left,
+        brasGaucheWidth: document.getElementById("calque-bras-gauche").style.width,
+        brasGaucheTransform: document.getElementById("calque-bras-gauche").style.transform,
+
+        brasDroit: document.getElementById("calque-bras-droit").src,
+        brasDroitTop: document.getElementById("calque-bras-droit").style.top,
+        brasDroitLeft: document.getElementById("calque-bras-droit").style.left,
+        brasDroitWidth: document.getElementById("calque-bras-droit").style.width,
+        brasDroitTransform: document.getElementById("calque-bras-droit").style.transform,
 
         accessoire: document.getElementById("calque-accessoire").src,
         accessoireTop: document.getElementById("calque-accessoire").style.top,
