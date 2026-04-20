@@ -80,11 +80,11 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 0.5fr;
     padding: 0.8rem 1rem;
-    font-weight: 700;
-    font-size: 0.85rem;
+    font-weight: 400;
+    font-size: 1.25rem;
     letter-spacing: 0.05em;
     border-bottom: 1px solid #ddd;
-    color: #555;
+    color: #3D2D00;
 }
 
 .panier-ligne {
@@ -106,14 +106,20 @@ body {
     object-fit: contain;
 }
 
+#article-img{
+    width: 13rem;
+}
+
 .article-nom {
-    font-weight: 700;
-    font-size: 0.95rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #000;
 }
 
 .article-sous {
-    font-size: 0.85rem;
-    color: #555;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #000;
 }
 
 .qte {
@@ -412,7 +418,7 @@ body {
     border-radius: 50px;
     border: 3px solid transparent;
     background: linear-gradient(white, white) padding-box,
-                linear-gradient(90deg, #F5A623, #CB55E4) border-box;
+        linear-gradient(90deg, #F5A623, #CB55E4) border-box;
     color: #1a1a1a;
     font-family: "Belanosima", sans-serif;
     font-weight: 800;
