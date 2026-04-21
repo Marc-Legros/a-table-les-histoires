@@ -829,6 +829,7 @@ body {
 .avis-header {
     text-align: center;
     margin-bottom: 2.5rem;
+    position: relative;
 }
 
 .avis-header h2 {
@@ -837,6 +838,31 @@ body {
     letter-spacing: 0.05em;
     color: #333;
     margin-bottom: 0.8rem;
+}
+
+/* Image gauche — cookies */
+.avis-deco-gauche {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130px;
+    object-fit: contain;
+}
+
+/* Image droite — dessert */
+.avis-deco-droite {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 130px;
+    object-fit: contain;
+}
+
+/* Petit personnage orange à côté du titre */
+.avis-orange {
+    width: 50px;
+    vertical-align: middle;
+    margin-left: 0.5rem;
 }
 
 .avis-sub {
