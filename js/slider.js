@@ -65,6 +65,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
             slideChange: function () {
                 mettreAJourSlide(this);
+
+                const activeIndex = this.realIndex;
+
+                const btn = document.getElementById("btn");
+
+                console.log(btn);
+
+                btn.href = `html/customisation.html?slide=${activeIndex}`;
+
+                // window.history.replaceState(null, null, `?slide=${activeIndex}`);
             }
         }
     });
