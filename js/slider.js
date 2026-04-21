@@ -29,11 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
             scene.className = 'slider-backgrounds ' + newTheme;
 
              // ← AJOUTE JUSTE CETTE LIGNE
-            const lienPerso = document.querySelector(".text a");
-            if (lienPerso) {
-                lienPerso.href = `html/customisation.html?theme=${newTheme}`;
-                console.log("Lien mis à jour :", lienPerso.href); // ← ajoute ça
-            }
+           const lienPerso = document.getElementById("btn");
+            if (lienPerso) lienPerso.href = `html/customisation.html?theme=${newTheme}`;
         }
 
         // CHANGE LE BACKGROUNDS
