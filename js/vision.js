@@ -1,38 +1,60 @@
-const chemin = document.querySelector("#chemin-gsap")
+// Anim qui fait apparaître le chemin
+gsap.registerPlugin(CustomEase)
 
-const longueurChemin = chemin.getTotalLength()
+// const chemin = document.querySelector("#chemin-gsap")
+const maskPath = document.querySelector("#masque-path");
 
-gsap.fromTo(chemin, {
-    strokeDasharray: longueurChemin,
-    strokeDashoffset: longueurChemin
-}, {
-    strokeDashoffset: 0,
-    duration: 8,
-    ease: "Power2.out"
-})
+const longueurChemin = maskPath.getTotalLength();
 
+CustomEase.create("linear", "M0,0 C0,0 1,1 1,1 ")
+
+gsap.fromTo(maskPath,
+    {
+        strokeDasharray: longueurChemin,
+        strokeDashoffset: longueurChemin
+    },
+    {
+        strokeDashoffset: 0,
+        duration: 3.5,
+        ease: "linear",
+        // y: -500
+    }
+);
 
 
 gsap.fromTo(document.querySelector("#marc-img"), {
     opacity: 0,
 }, {
-    duration: 2,
-    ease: "power1.out",
+    duration: .5,
+    ease: "linear",
     opacity: 1,
+    delay: .6
 });
 
 gsap.fromTo(document.querySelector("#tiph-img"), {
     opacity: 0,
 }, {
-    duration: 2,
-    ease: "power1.out",
+    duration: .5,
+    ease: "linear",
     opacity: 1,
+    delay: 2.3
 });
 
 gsap.fromTo(document.querySelector("#gaspar-img"), {
     opacity: 0,
 }, {
-    duration: 2,
-    ease: "power1.out",
+    duration: .5,
+    ease: "linear",
     opacity: 1,
+    delay: 3.2
+});
+
+
+gsap.fromTo(document.querySelectorAll(".number"), {
+    opacity: 0,
+}, {
+    duration: .4,
+    ease: "linear",
+    opacity: 1,
+    delay: 3.4
 });
