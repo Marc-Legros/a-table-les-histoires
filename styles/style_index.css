@@ -818,68 +818,81 @@ body {
 } */
 
 
-/* Section index*/
-
-.avis-section {
-    padding: 4rem 2rem;
+/* SECTION AVIS */
+.section-avis {
+    padding: 7rem 2rem;
     overflow: hidden;
     background-color: #f8f4ea;
 }
 
-.avis-header {
+#avis-header {
     text-align: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: 7.5rem;
     position: relative;
 }
 
-.avis-header h2 {
-    font-size: 1.4rem;
-    font-weight: 800;
-    letter-spacing: 0.05em;
-    color: #333;
+#avis-deco-cookies {
+    position: absolute;
+    left: -3.5%;
+    top: -25%;
+    width: 200px;
+    object-fit: contain;
+    filter: blur(2px);
+}
+
+#avis-deco-creme {
+    position: absolute;
+    left: 2%;
+    top: 90%;
+    width: 110px;
+    object-fit: contain;
+}
+
+#avis-deco-salade {
+    position: absolute;
+    right: -3.5%;
+    top: -25%;
+    width: 200px;
+    object-fit: contain;
+    filter: blur(2px)
+}
+
+#avis-deco-ile {
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    width: 170px;
+    object-fit: contain;
+}
+
+/* Titre + logo sur la même ligne */
+#avis-titre-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    /* margin-bottom: 0.8rem; */
+}
+
+#avis-header #avis-titre-wrapper h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
     margin-bottom: 0.8rem;
 }
 
-.avis-deco-cookies {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 200px; /* ← plus grand */
-    object-fit: contain;
-    filter: blur(0px);
+#avis-header #avis-titre-wrapper img {
+    width: 4%;
+    display: flex;
+    align-self: center;
 }
 
-.avis-deco-creme {
-    position: absolute;
-    left: 30px;
-    top: 80px;
-    width: 100px;
-    object-fit: contain;
-}
-
-.avis-deco-salade {
-    position: absolute;
-    right: 0; /* ← collé au bord droit */
-    top: 0;
-    width: 200px; /* ← plus grand */
-    object-fit: contain;
-    filter: blur(0px)
-}
-
-.avis-deco-ile {
-    position: absolute;
-    right: 0;
-    top: 80px;
-    width: 120px;
-    object-fit: contain;
-}
-
-.avis-sub {
-    font-size: 0.9rem;
-    color: #777;
-    max-width: 550px;
+#avis-sub {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #000;
+    max-width: 800px;
     margin: 0 auto;
-    line-height: 1.6;
 }
 
 .avis-track-wrapper {
@@ -894,24 +907,7 @@ body {
     animation: defilement 20s linear infinite;
 }
 
-/* Titre + logo sur la même ligne */
-.avis-titre-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-bottom: 0.8rem;
-}
-
-.avis-titre-wrapper h2 {
-    font-size: 1.4rem;
-    font-weight: 800;
-    letter-spacing: 0.05em;
-    color: #333;
-    margin: 0;
-}
-
-.avis-orange {
+#avis-orange {
     width: 50px;
     flex-shrink: 0;
 }
@@ -920,44 +916,45 @@ body {
     animation-play-state: paused; /* ← pause au survol */
 }
 
-@keyframes defilement {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-}
-
 .avis-card {
     background: #fff;
-    border-radius: 12px;
-    padding: 1.5rem;
-    width: 280px;
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    width: 457px;
     flex-shrink: 0;
     box-shadow: 0 2px 10px rgba(0,0,0,0.06);
 }
 
 .avis-nom {
-    font-weight: 700;
-    font-size: 0.8rem;
-    color: #333;
-    margin-bottom: 0.5rem;
+    max-width: 90%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000;
     text-transform: uppercase;
 }
 
 .avis-etoiles {
-    color: #F5A623;
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    color: #FFC800;
+    font-size: 3rem;
+    /* margin-bottom: 0.5rem; */
 }
 
 .avis-card hr {
     border: none;
-    border-top: 2px solid #F5A623;
-    margin: 0.8rem 0;
-    width: 60px;
+    border-top: 2px solid #FFD979;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+    width: 90%;
 }
 
 .avis-texte {
-    font-size: 0.85rem;
-    color: #555;
-    line-height: 1.6;
+    max-width: 90%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000;
 }
-/* -------------- */
+
+@keyframes defilement {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
