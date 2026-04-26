@@ -13,11 +13,11 @@ const decorationsThemes = {
     "theme-fees": {
         couleurFond: "#F5A623",
         decos: [
-            { classe: "deco-perroquet", src: "../assets/fee/deco1.svg" },
-            { classe: "deco-pieces",    src: "../assets/fee/deco2.svg" },
-            { classe: "deco-gouvernail",src: "../assets/fee/deco3.svg" },
-            { classe: "deco-epee",      src: "../assets/fee/deco4.svg" },
-            { classe: "deco-dessert",   src: "../assets/fee/deco5.svg" },
+            { classe: "deco-perroquet", src: "../assets/la_potion_des_fees/baguette.svg" },
+            { classe: "deco-pieces",    src: "../assets/la_potion_des_fees/fee.svg" },
+            { classe: "deco-gouvernail",src: "../assets/la_potion_des_fees/fleur.svg" },
+            { classe: "deco-epee",      src: "../assets/la_potion_des_fees/traineeDetoiles.svg" },
+            { classe: "deco-dessert",   src: "../assets/index/smoothie.png" },
         ],
     },
 };
