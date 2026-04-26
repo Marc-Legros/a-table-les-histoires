@@ -100,23 +100,52 @@ h2 {
 
 .box-ile {
     background-color: #6872FF;
-
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.box-ile:hover {
+    transform: scale(1.03);
+    box-shadow: 8px 8px 0px #4a52cc;
+    cursor: pointer;
 }
 
 .box-fee {
     background-color: #FFD04D;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.box-fee:hover {
+    transform: scale(1.03);
+    box-shadow: 8px 8px 0px #ccaa00;
+    cursor: pointer;
 }
 
 .box-dragon {
     background-color: #A5DB76;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.box-dragon:hover {
+    transform: scale(1.03);
+    box-shadow: 8px 8px 0px #74aa45;
+    cursor: pointer;
 }
 
 .box-jungle {
     background-color: #FF8411;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.box-jungle:hover {
+    transform: scale(1.03);
+    box-shadow: 8px 8px 0px #cc6600;
+    cursor: pointer;
 }
 
 .box-meteorites {
     background-color: #74B5FF;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.box-meteorites:hover {
+    transform: scale(1.03);
+    box-shadow: 8px 8px 0px #4488cc;
+    cursor: pointer;
 }
 
 .box-img{
@@ -127,3 +156,4 @@ h2 {
     object-fit: contain;
     margin-top: 20px;
 }
+
