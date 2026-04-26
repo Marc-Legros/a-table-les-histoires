@@ -104,6 +104,24 @@ body {
     left: 15%;
 }
 
+#perso {
+    animation: balader 6s ease-in-out infinite alternate;
+}
+
+@keyframes balader {
+    0% { transform: translateY(0) rotate(-3deg); }
+    50% { transform: translateY(-15px) rotate(0deg); }
+    100% { transform: translateY(-5px) rotate(3deg); }
+}
+
+#fourchette {
+    animation: flotter 3s ease-in-out infinite alternate;
+}
+
+@keyframes flotter {
+    0% { transform: translateY(0) rotate(-5deg); }
+    100% { transform: translateY(-12px) rotate(5deg); }
+}
 
 /* --- SECTION PRESENTATION --- */
 #section-presentation {
@@ -261,7 +279,7 @@ body {
 #star {
     display: block;
     margin: 0 auto;
-    margin-top: -130px;
+    margin-top: 0;
 }
 
 .card {
@@ -281,7 +299,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    margin: 12vw 8vw;
+    margin: 5vw 8vw;
     scroll-margin-top: 75px;
 }
 
