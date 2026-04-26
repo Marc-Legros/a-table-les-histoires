@@ -109,9 +109,17 @@ body {
 }
 
 @keyframes balader {
-    0% { transform: translateY(0) rotate(-3deg); }
-    50% { transform: translateY(-15px) rotate(0deg); }
-    100% { transform: translateY(-5px) rotate(3deg); }
+    0% {
+        transform: translateY(0) rotate(-3deg);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(-5px) rotate(3deg);
+    }
 }
 
 #fourchette {
@@ -119,8 +127,13 @@ body {
 }
 
 @keyframes flotter {
-    0% { transform: translateY(0) rotate(-5deg); }
-    100% { transform: translateY(-12px) rotate(5deg); }
+    0% {
+        transform: translateY(0) rotate(-5deg);
+    }
+
+    100% {
+        transform: translateY(-12px) rotate(5deg);
+    }
 }
 
 /* --- SECTION PRESENTATION --- */
@@ -391,6 +404,7 @@ body {
     left: 210px;
     width: 60px;
 }
+
 #texte1 {
     position: absolute;
     top: 245px;
@@ -399,6 +413,7 @@ body {
     color: #333;
     font-family: "Belanosima", sans-serif;
 }
+
 #Vector1 {
     position: absolute;
     top: 275px;
@@ -414,6 +429,7 @@ body {
     left: 365px;
     width: 60px;
 }
+
 #texte2 {
     position: absolute;
     bottom: 255px;
@@ -424,6 +440,7 @@ body {
     font-family: "Belanosima", sans-serif;
     max-width: 120px;
 }
+
 #Vector2 {
     position: absolute;
     bottom: 300px;
@@ -438,6 +455,7 @@ body {
     right: 430px;
     width: 60px;
 }
+
 #texte3 {
     position: absolute;
     top: 220px;
@@ -448,6 +466,7 @@ body {
     font-family: "Belanosima", sans-serif;
     max-width: 120px;
 }
+
 #Vector3 {
     position: absolute;
     top: 265px;
@@ -462,6 +481,7 @@ body {
     right: 170px;
     width: 60px;
 }
+
 #texte4 {
     position: absolute;
     bottom: 335px;
@@ -470,6 +490,7 @@ body {
     color: #333;
     font-family: "Belanosima", sans-serif;
 }
+
 #Vector4 {
     position: absolute;
     bottom: 365px;
@@ -477,20 +498,39 @@ body {
     width: auto;
 }
 
-#numero1, #texte1,
-#numero2, #texte2,
-#numero3, #texte3,
-#numero4, #texte4 {
+#numero1,
+#texte1,
+#numero2,
+#texte2,
+#numero3,
+#texte3,
+#numero4,
+#texte4 {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
 /* Délai progressif pour chaque étape */
-#numero1, #texte1 { transition-delay: 0s; }
-#numero2, #texte2 { transition-delay: 0.4s; }
-#numero3, #texte3 { transition-delay: 0.8s; }
-#numero4, #texte4 { transition-delay: 1.2s; }
+#numero1,
+#texte1 {
+    transition-delay: 0s;
+}
+
+#numero2,
+#texte2 {
+    transition-delay: 0.4s;
+}
+
+#numero3,
+#texte3 {
+    transition-delay: 0.8s;
+}
+
+#numero4,
+#texte4 {
+    transition-delay: 1.2s;
+}
 
 .visible {
     opacity: 1 !important;
@@ -866,78 +906,71 @@ body {
 /* SECTION AVIS */
 .section-avis {
     padding: 7rem 2rem;
-
-.avis-section {
-    padding: 4rem 0 4rem 0;
-    overflow: hidden;
-    background-color: #f8f4ea;
 }
 
 #avis-header {
     text-align: center;
     margin-bottom: 7.5rem;
     position: relative;
-    padding: 0 200px;
-    min-height: 220px; /* ← assez de hauteur pour les images */
+    /* padding: 0 200px; */
+    /* min-height: 220px; */
 }
 
-.avis-titre-wrapper {
+#avis-titre-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    gap: 3rem;
+    /* margin-bottom: 0.8rem; */
+}
+
+#avis-titre-wrapper h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
     margin-bottom: 0.8rem;
 }
 
-.avis-titre-wrapper h2 {
-    font-size: 1.4rem;
-    font-weight: 800;
-    letter-spacing: 0.05em;
-    color: #333;
-    margin: 0;
-    font-family: "Belanosima", sans-serif;
-}
-
-.avis-sub {
-    font-size: 0.9rem;
-    color: #777;
-    max-width: 550px;
+#avis-sub {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #000;
+    max-width: 800px;
     margin: 0 auto;
-    line-height: 1.6;
 }
 
 /* IMAGES DÉCO */
-.avis-deco-cookies {
+#avis-deco-cookies {
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 180px;
+    left: -3.5%;
+    top: -25%;
+    width: 200px;
     object-fit: contain;
-    filter: blur(3px); 
+    filter: blur(2px);
 }
 
 #avis-deco-creme {
     position: absolute;
-    left: 90px;
-    top: 115px;
+    left: 2%;
+    top: 90%;
     width: 110px;
     object-fit: contain;
 }
 
 #avis-deco-salade {
     position: absolute;
-    right: 0;
-    top: 0;
-    width: 180px;
+    right: -3.5%;
+    top: -25%;
+    width: 200px;
     object-fit: contain;
-    filter: blur(3px); 
+    filter: blur(2px)
 }
 
 #avis-deco-ile {
     position: absolute;
-    right: 80px;
-    top: 100px;
-    width: 120px;
+    right: 1%;
+    top: 50%;
+    width: 170px;
     object-fit: contain;
 }
 
@@ -965,8 +998,13 @@ body {
 }
 
 @keyframes defilement {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 /* CARTES */
@@ -974,42 +1012,46 @@ body {
     background: #fff;
     border-radius: 16px;
     padding: 2rem;
-    width: calc(33vw - 3rem); /* ← prend 1/3 de l'écran */
+    width: calc(33vw - 3rem);
+    /* ← prend 1/3 de l'écran */
     min-height: 400px;
     flex-shrink: 0;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
 }
 
 .avis-nom {
-    font-size: 2.0rem; /* ← plus grand */
-    color: #222;
+    max-width: 90%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000;
     text-transform: uppercase;
-    font-family: "Belanosima", sans-serif;
-    margin-top: 1rem;
 }
 
 
 .avis-etoiles {
-    color: #F5A623;
-    font-size: 3rem; 
+    color: #FFC800;
+    font-size: 3rem;
+    /* margin-bottom: 0.5rem; */
 }
 
 
 .avis-card hr {
     border: none;
-    border-top: 2px solid #F5A623;
-    width: 100%; /* ← toute la largeur */
-    margin: 0.5rem 0;
+    border-top: 2px solid #FFD979;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+    width: 90%;
 }
 
 .avis-texte {
-    font-size: 1.5rem; /* ← plus grand */
-    color: #444;
-    line-height: 1.7;
+    max-width: 90%;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000;
     flex: 1;
-    font-weight: 300;
 }
+
 /* -------------- */
