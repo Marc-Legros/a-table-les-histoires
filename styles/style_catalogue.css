@@ -17,7 +17,7 @@ body {
 
 .section {
     min-height: calc(100vh - 75px);
-    margin: 0 8vw 12vw 8vw;
+    margin: 0 8vw 9vw 8vw;
 }
 
 #header-catalogue{
