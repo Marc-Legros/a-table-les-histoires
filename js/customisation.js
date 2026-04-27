@@ -366,25 +366,25 @@ function placerAccessoire() {
             // ... etc
         }
     }
-    else if (themeId === "theme-fees") {
+    if (themeId === "theme-fees") {
         if (i === 0) {
             if (tshirtActuel === 0) { accessoire.style.top = "345px"; accessoire.style.left = "240px"; accessoire.style.width = "100px"; }
-            else if (tshirtActuel === 1) { accessoire.style.top = "345px"; accessoire.style.left = "240px"; accessoire.style.width = "100px"; }
+            else if (tshirtActuel === 1) { accessoire.style.top = "320px"; accessoire.style.left = "220px"; accessoire.style.width = "100px"; }
             else if (tshirtActuel === 2) { accessoire.style.top = "180px"; accessoire.style.left = "20px"; accessoire.style.width = "300px"; accessoire.style.zIndex = "-1"; }
             else if (tshirtActuel === 3) { accessoire.style.top = "180px"; accessoire.style.left = "20px"; accessoire.style.width = "300px"; accessoire.style.zIndex = "-1"; }
             else if (tshirtActuel === 4) { accessoire.style.top = "180px"; accessoire.style.left = "20px"; accessoire.style.width = "300px"; accessoire.style.zIndex = "-1"; }
             else if (tshirtActuel === 5) { accessoire.style.top = "180px"; accessoire.style.left = "20px"; accessoire.style.width = "300px"; accessoire.style.zIndex = "-1"; }
         }
         else if (i === 1) {
-            if (tshirtActuel === 0) { accessoire.style.top = "405px"; accessoire.style.left = "230px"; accessoire.style.width = "100px"; }
-            else if (tshirtActuel === 1) { accessoire.style.top = "310px"; accessoire.style.left = "230px"; accessoire.style.width = "100px"; }
+            if (tshirtActuel === 0) { accessoire.style.top = "345px"; accessoire.style.left = "230px"; accessoire.style.width = "100px"; }
+            else if (tshirtActuel === 1) { accessoire.style.top = "320px"; accessoire.style.left = "230px"; accessoire.style.width = "100px"; }
             else if (tshirtActuel === 2) { accessoire.style.top = "180px"; accessoire.style.left = "20px"; accessoire.style.width = "300px"; accessoire.style.zIndex = "-1"; }
             else if (tshirtActuel === 3) { accessoire.style.top = "180px"; accessoire.style.left = "20px"; accessoire.style.width = "300px"; accessoire.style.zIndex = "-1"; }
-            else if (tshirtActuel === 4) { accessoire.style.top = "180px"; accessoire.style.left = "20px"; accessoire.style.width = "30px"; accessoire.style.zIndex = "-1"; }
+            else if (tshirtActuel === 4) { accessoire.style.top = "180px"; accessoire.style.left = "20px"; accessoire.style.width = "300px"; accessoire.style.zIndex = "-1"; }
             else if (tshirtActuel === 5) { accessoire.style.top = "180px"; accessoire.style.left = "20px"; accessoire.style.width = "300px"; accessoire.style.zIndex = "-1"; }
         }
         else if (i === 2) {
-            if (tshirtActuel === 0) { accessoire.style.top = "345px"; accessoire.style.left = "20px"; accessoire.style.width = "300px"; accessoire.style.zIndex = "-1"; }
+            if (tshirtActuel === 0) { accessoire.style.top = "180px"; accessoire.style.left = "20px"; accessoire.style.width = "300px"; accessoire.style.zIndex = "-1"; }
             else if (tshirtActuel === 1) { accessoire.style.top = "180px"; accessoire.style.left = "20px"; accessoire.style.width = "300px"; accessoire.style.zIndex = "-1"; }
             else if (tshirtActuel === 2) { accessoire.style.top = "180px"; accessoire.style.left = "20px"; accessoire.style.width = "300px"; accessoire.style.zIndex = "-1"; }
             else if (tshirtActuel === 3) { accessoire.style.top = "180px"; accessoire.style.left = "20px"; accessoire.style.width = "300px"; accessoire.style.zIndex = "-1"; }
