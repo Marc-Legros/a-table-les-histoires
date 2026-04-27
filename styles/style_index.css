@@ -965,15 +965,8 @@ body {
 }
 
 .avis-nom {
-<<<<<<< HEAD
     font-size: 1.5rem; /* ← plus grand */
     color: #222;
-=======
-    max-width: 90%;
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #000;
->>>>>>> 1dbc2018d0349817c149aff1ef40cfaa6529ca14
     text-transform: uppercase;
 }
 
@@ -994,16 +987,9 @@ body {
 }
 
 .avis-texte {
-<<<<<<< HEAD
     font-size: 1.3rem; /* ← plus grand */
     color: #444;
     line-height: 1.7;
-=======
-    max-width: 90%;
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #000;
->>>>>>> 1dbc2018d0349817c149aff1ef40cfaa6529ca14
     flex: 1;
 }
 
