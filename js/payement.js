@@ -69,3 +69,21 @@ if (btnPaiement) {
         localStorage.setItem("total", (prixUnitaire * quantite).toFixed(2).replace(".", ",") + " €");
     });
 }
+
+// Noms des boxes par thème
+const nomsBoxes = {
+    "theme-nuage": "LA LÉGENDE DE L'ÎLE NUAGE",
+    "theme-fees": "LA POTION DES FÉES",
+    "theme-dragon": "LA FLAMME DU DRAGON",
+    "theme-jungle": "LE TRÉSOR DE LA JUNGLE",
+    "theme-espace": "LES MÉTÉORITES CROUSTILLANTES",
+};
+
+// On récupère le thème depuis le personnage sauvegardé
+const personnage = JSON.parse(localStorage.getItem("personnage"));
+const themeActif = personnage ? personnage.theme : "theme-nuage";
+const nomBox = nomsBoxes[themeActif] || "LA LÉGENDE DE L'ÎLE NUAGE";
+
+// On met à jour le nom dans le panier
+const articleSous = document.querySelector(".article-sous");
+if (articleSous) articleSous.textContent = `"${nomBox}"`;

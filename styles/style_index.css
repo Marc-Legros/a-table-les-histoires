@@ -392,15 +392,15 @@ body {
 
 #panneau {
     position: absolute;
-    bottom: 405px;
-    left: 95px;
+    bottom: 45%;
+    left: 6%;
     width: auto;
 }
 
 #pas {
     position: absolute;
-    bottom: 85px;
-    left: 575px;
+    bottom: 9%;
+    left: 40%;
     width: auto;
 }
 
