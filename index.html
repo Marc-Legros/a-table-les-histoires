@@ -49,6 +49,29 @@
             <img id="croix" src="./assets/index/union.svg" alt="">
             <img id="ligne4" src="./assets/index/ligne4.svg" alt="">
             <img id="fourchette" src="./assets/index/fourchette.svg" alt="">
+
+            <!-- Bouton circulaire "Je découvre" avec texte qui tourne -->
+            <div class="btn-decouvre">
+
+                <!-- SVG qui contient le texte circulaire -->
+                <svg class="texte-circulaire" viewBox="0 0 200 200">
+                    <defs>
+                        <!-- On définit un chemin circulaire invisible -->
+                        <!-- Le texte va suivre ce cercle -->
+                        <path id="cercle" d="M 100,100 m -75,0 a 75,75 0 1,1 150,0 a 75,75 0 1,1 -150,0"/>
+                    </defs>
+                    <text>
+                        <!-- Le texte suit le chemin #cercle défini au-dessus -->
+                        <textPath href="#cercle" startOffset="0%">
+                            Je découvre - Je découvre - Je découvre -
+                        </textPath>
+                    </text>
+                </svg>
+
+                <!-- Icône play au centre -->
+                <div class="play-icon">▶</div>
+
+            </div>
         </div>
     </section>
 

@@ -109,6 +109,82 @@ body {
 }
 
 /* ============================================================
+   BOUTON CIRCULAIRE "JE DÉCOUVRE"
+   ============================================================ */
+
+/* Conteneur principal — positionné en bas à gauche de #intro */
+.btn-decouvre {
+    position: absolute;
+    bottom: 8%;
+    left: 35%;       /* ← ajuste pour déplacer gauche/droite */
+    width: 160px;
+    height: 160px;
+    cursor: pointer;
+    z-index: 3;      /* ← passe au-dessus des autres éléments */
+}
+
+/* Cercle dégradé en fond — le grand cercle coloré */
+.btn-decouvre::before {
+    content: "";
+    position: absolute;
+    inset: 0;           /* ← couvre tout le .btn-decouvre */
+    border-radius: 50%; /* ← rond */
+    background: linear-gradient(135deg, #CB55E4, #F5A623);
+}
+
+/* Cercle blanc au centre — crée l'effet de "donut" */
+.btn-decouvre::after {
+    content: "";
+    position: absolute;
+    inset: 20px;        /* ← 20px de marge = épaisseur du cercle coloré */
+    border-radius: 50%;
+    background: #f8f4ea; /* ← même couleur que le fond de la page */
+}
+
+/* Le SVG avec le texte qui tourne */
+.texte-circulaire {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    animation: tournerBouton 8s linear infinite; /* ← tourne en boucle */
+    z-index: 2; /* ← au-dessus du cercle coloré */
+}
+
+/* Style du texte dans le SVG */
+.texte-circulaire text {
+    font-family: "Belanosima", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    fill: #fff; /* ← texte blanc */
+}
+
+/* Icône play au centre */
+.play-icon {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    /* Dégradé sur le texte ▶ */
+    background: linear-gradient(135deg, #CB55E4, #F5A623);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 3; /* ← au-dessus de tout */
+}
+
+/* Animation de rotation */
+@keyframes tournerBouton {
+    from { transform: rotate(0deg); }   /* ← départ */
+    to   { transform: rotate(360deg); } /* ← tour complet */
+}
+
+/* Au survol — le texte ralentit */
+.btn-decouvre:hover .texte-circulaire {
+    animation-duration: 20s; /* ← plus lent au hover */
+}
+/* ============================================================
    SECTION PRESENTATION — photo avec le texte
    ============================================================ */
 #section-presentation {
