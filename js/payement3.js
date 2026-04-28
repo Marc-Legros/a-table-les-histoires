@@ -30,4 +30,20 @@ window.addEventListener("load", () => {
     // On met à jour le total final avec la livraison incluse
     const totalElement = document.querySelector(".total-prix");
     if (totalElement) totalElement.innerHTML = '<span class="total-eur">EUR</span> ' + totalFinal.toFixed(2).replace(".", ",") + " €";
+
+    // Nom de la box dynamique
+    const nomsBoxes = {
+        "theme-nuage": "LA LÉGENDE DE L'ÎLE NUAGE",
+        "theme-fees": "LA POTION DES FÉES",
+        "theme-dragon": "LA FLAMME DU DRAGON",
+        "theme-jungle": "LE TRÉSOR DE LA JUNGLE",
+        "theme-espace": "LES MÉTÉORITES CROUSTILLANTES",
+    };
+
+    const personnage = JSON.parse(localStorage.getItem("personnage"));
+    const themeActif = personnage ? personnage.theme : "theme-nuage";
+    const nomBox = nomsBoxes[themeActif] || "LA LÉGENDE DE L'ÎLE NUAGE";
+
+    const recapNom = document.querySelector(".recap-nom");
+    if (recapNom) recapNom.textContent = `Box "${nomBox}"`;
 });

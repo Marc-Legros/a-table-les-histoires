@@ -226,6 +226,8 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 4;
+    position: relative; 
+    overflow: visible;
 }
 
 .text-reduc {
@@ -262,15 +264,15 @@ body {
 
 #img-reduc1 {
     position: absolute;
-    bottom: 31%;
+    bottom: 75%;
     right: 5%;
-    z-index: 0;
+    z-index: -1;
 }
 
 #img-reduc2 {
     position: absolute;
-    bottom: 31%;
-    right: 7%;
+    bottom: 82%;
+    right: 22%;
     z-index: 6;
 }
 
@@ -390,15 +392,15 @@ body {
 
 #panneau {
     position: absolute;
-    bottom: 405px;
-    left: 95px;
+    bottom: 45%;
+    left: 6%;
     width: auto;
 }
 
 #pas {
     position: absolute;
-    bottom: 85px;
-    left: 575px;
+    bottom: 9%;
+    left: 40%;
     width: auto;
 }
 
@@ -432,7 +434,7 @@ body {
 .etape2 {
     position: absolute;
     bottom: 25%;
-    left: 24%;
+    left: 23%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -443,13 +445,13 @@ body {
     position: absolute; /* ← par rapport à #chemin-wrapper */
     width: 3%;
     bottom: 37%;
-    left: 28%;
+    left: 27%;
 }
 
 /* ÉTAPE 3 */
 .etape3 {
     position: absolute;
-    top: 20%;
+    top: 19%;
     right: 28%;
     display: flex;
     flex-direction: column;
@@ -460,14 +462,14 @@ body {
 #Vector3 { 
     position: absolute; /* ← sort du flux flex */
     width: 1.5%;
-    top: 32%;    /* ← par rapport à .etape2 */
+    top: 30%;    /* ← par rapport à .etape2 */
     right: 32%;  /* ← par rapport à .etape2 */
 }
 
 /* ÉTAPE 4 */
 .etape4 {
     position: absolute;
-    bottom: 30%;
+    bottom: 29%;
     right: 15%;
     display: flex;
     flex-direction: column;
@@ -477,7 +479,7 @@ body {
 #texte4 { font-size: 0.8vw; color: #333; text-align: center; }
 #Vector4 { position: absolute; /* ← sort du flux flex */
     width: 2%;
-    bottom: 40%;    /* ← par rapport à .etape2 */
+    bottom: 39%;    /* ← par rapport à .etape2 */
     right: 17%;  /* ← par rapport à .etape2 */ 
 }
 
@@ -958,9 +960,9 @@ body {
 
 #avis-orange {
     position: absolute;
-    width: 6%;
-    top: -30%;
-    right: 38.5%;
+    width: 5%;
+    top: -20%;
+    right: 33%;
     flex-shrink: 0;
 }
 

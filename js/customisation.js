@@ -254,28 +254,28 @@ function cliquerTshirt(indexDansCate, src) {
     // ---- BRAS THEME-FEES ----
     else if (themeId === "theme-fees") {
         if (indexDansCate === 0) {
-            brasGauche.style.top = "280px"; brasGauche.style.left = "0px"; brasGauche.style.width = "80px"; brasGauche.style.transform = "rotate(30deg)";
-            brasDroit.style.top  = "280px"; brasDroit.style.left  = "210px"; brasDroit.style.width = "80px"; brasDroit.style.transform = "scaleX(-1) rotate(25deg)";
+            brasGauche.style.top = "280px"; brasGauche.style.left = "0px"; brasGauche.style.width = "80px"; brasGauche.style.transform = "rotate(30deg)"; brasGauche.style.zIndex = "1"; 
+            brasDroit.style.top  = "280px"; brasDroit.style.left  = "210px"; brasDroit.style.width = "80px"; brasDroit.style.transform = "scaleX(-1) rotate(25deg)"; brasDroit.style.zIndex = "1"
         }
         else if (indexDansCate === 1) {
-            brasGauche.style.top = "255px"; brasGauche.style.left = "10px"; brasGauche.style.width = "80px"; brasGauche.style.transform = "rotate(30deg)";
-            brasDroit.style.top  = "260px"; brasDroit.style.left  = "200px"; brasDroit.style.width = "80px"; brasDroit.style.transform = "scaleX(-1) rotate(25deg)";
+            brasGauche.style.top = "255px"; brasGauche.style.left = "10px"; brasGauche.style.width = "80px"; brasGauche.style.transform = "rotate(30deg)"; brasGauche.style.zIndex = "1"
+            brasDroit.style.top  = "260px"; brasDroit.style.left  = "200px"; brasDroit.style.width = "80px"; brasDroit.style.transform = "scaleX(-1) rotate(25deg)"; brasDroit.style.zIndex = "1"
         }
         else if (indexDansCate === 2) {
-            brasGauche.style.top = "285px"; brasGauche.style.left = "5px"; brasGauche.style.width = "80px"; brasGauche.style.transform = "rotate(30deg)";
-            brasDroit.style.top  = "285px"; brasDroit.style.left  = "210px"; brasDroit.style.width = "80px"; brasDroit.style.transform = "scaleX(-1) rotate(25deg)";
+            brasGauche.style.top = "285px"; brasGauche.style.left = "5px"; brasGauche.style.width = "80px"; brasGauche.style.transform = "rotate(30deg)"; brasGauche.style.zIndex = "1"
+            brasDroit.style.top  = "285px"; brasDroit.style.left  = "210px"; brasDroit.style.width = "80px"; brasDroit.style.transform = "scaleX(-1) rotate(25deg)"; brasDroit.style.zIndex = "1"
         }
         else if (indexDansCate === 3) {
-            brasGauche.style.top = "285px"; brasGauche.style.left = "5px"; brasGauche.style.width = "80px"; brasGauche.style.transform = "rotate(30deg)";
-            brasDroit.style.top  = "285px"; brasDroit.style.left  = "210px"; brasDroit.style.width = "80px"; brasDroit.style.transform = "scaleX(-1) rotate(25deg)";
+            brasGauche.style.top = "285px"; brasGauche.style.left = "5px"; brasGauche.style.width = "80px"; brasGauche.style.transform = "rotate(30deg)"; brasGauche.style.zIndex = "1"
+            brasDroit.style.top  = "285px"; brasDroit.style.left  = "210px"; brasDroit.style.width = "80px"; brasDroit.style.transform = "scaleX(-1) rotate(25deg)"; brasDroit.style.zIndex = "1"
         }
         else if (indexDansCate === 4) {
-            brasGauche.style.top = "315px"; brasGauche.style.left = "20px"; brasGauche.style.width = "80px"; brasGauche.style.transform = "rotate(15deg)";
-            brasDroit.style.top  = "315px"; brasDroit.style.left  = "198px"; brasDroit.style.width = "80px"; brasDroit.style.transform = "scaleX(-1) rotate(15deg)";
+            brasGauche.style.top = "315px"; brasGauche.style.left = "20px"; brasGauche.style.width = "80px"; brasGauche.style.transform = "rotate(15deg)"; brasGauche.style.zIndex = "1"
+            brasDroit.style.top  = "315px"; brasDroit.style.left  = "198px"; brasDroit.style.width = "80px"; brasDroit.style.transform = "scaleX(-1) rotate(15deg)"; brasDroit.style.zIndex = "1"
         }
         else if (indexDansCate === 5) {
-            brasGauche.style.top = "315px"; brasGauche.style.left = "20px"; brasGauche.style.width = "80px"; brasGauche.style.transform = "rotate(15deg)";
-            brasDroit.style.top  = "315px"; brasDroit.style.left  = "198px"; brasDroit.style.width = "80px"; brasDroit.style.transform = "scaleX(-1) rotate(15deg)";
+            brasGauche.style.top = "315px"; brasGauche.style.left = "20px"; brasGauche.style.width = "80px"; brasGauche.style.transform = "rotate(15deg)"; brasGauche.style.zIndex = "1"
+            brasDroit.style.top  = "315px"; brasDroit.style.left  = "198px"; brasDroit.style.width = "80px"; brasDroit.style.transform = "scaleX(-1) rotate(15deg)"; brasDroit.style.zIndex = "1"
         }
         // ... ajuste les positions pour chaque t-shirt fees
     }
@@ -308,12 +308,12 @@ function placerAccessoire() {
     if (themeId === "theme-nuage") {
         // Accessoire 0 — position selon le t-shirt actif
         if (i === 0) {
-            if (tshirtActuel === 0) { accessoire.style.top = "360px"; accessoire.style.left = "170px"; accessoire.style.width = "100px"; accessoire.style.transform = "rotate(100deg)"; }
+            if (tshirtActuel === 0) { accessoire.style.top = "360px"; accessoire.style.left = "225px"; accessoire.style.width = "100px";}
             else if (tshirtActuel === 1) { accessoire.style.top = "320px"; accessoire.style.left = "240px"; accessoire.style.width = "100px";}
-            else if (tshirtActuel === 2) { accessoire.style.top = "360px"; accessoire.style.left = "170px"; accessoire.style.width = "100px"; accessoire.style.transform = "rotate(100deg)"; }
+            else if (tshirtActuel === 2) { accessoire.style.top = "360px"; accessoire.style.left = "225px"; accessoire.style.width = "100px"; }
             else if (tshirtActuel === 3) { accessoire.style.top = "260px"; accessoire.style.left = "250px"; accessoire.style.width = "100px";}
-            else if (tshirtActuel === 4) { accessoire.style.top = "360px"; accessoire.style.left = "170px"; accessoire.style.width = "100px"; accessoire.style.transform = "rotate(100deg)"; }
-            else if (tshirtActuel === 5) { accessoire.style.top = "360px"; accessoire.style.left = "170px"; accessoire.style.width = "100px"; accessoire.style.transform = "rotate(100deg)"; }
+            else if (tshirtActuel === 4) { accessoire.style.top = "390px"; accessoire.style.left = "200px"; accessoire.style.width = "100px";}
+            else if (tshirtActuel === 5) { accessoire.style.top = "370px"; accessoire.style.left = "210px"; accessoire.style.width = "100px";}
         }
         // Accessoire 1
         else if (i === 1) {
@@ -366,7 +366,7 @@ function placerAccessoire() {
             // ... etc
         }
     }
-    if (themeId === "theme-fees") {
+    else if (themeId === "theme-fees") {
         if (i === 0) {
             if (tshirtActuel === 0) { accessoire.style.top = "345px"; accessoire.style.left = "240px"; accessoire.style.width = "100px"; }
             else if (tshirtActuel === 1) { accessoire.style.top = "320px"; accessoire.style.left = "220px"; accessoire.style.width = "100px"; }
@@ -503,6 +503,7 @@ btnAchat.addEventListener("click", (e) => {
         accessoireLeft: document.getElementById("calque-accessoire").style.left,
         accessoireWidth: document.getElementById("calque-accessoire").style.width,
         accessoireTransform: document.getElementById("calque-accessoire").style.transform,
+        accessoireZIndex: document.getElementById("calque-accessoire").style.zIndex,
     };
 
     localStorage.setItem("personnage", JSON.stringify(personnage));
