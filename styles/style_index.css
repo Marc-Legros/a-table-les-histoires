@@ -421,15 +421,18 @@ body {
 #numero1 { width: 4vw; }
 #texte1 { font-size: 0.8vw; color: #333; text-align: center; }
 #Vector1 { 
-    width: 0.5vw;
-    margin-top: 1vw; 
+    position: absolute;
+    width: 0.5%;
+    top: 30%; 
+    left: 16%;
+    z-index: 5;
 }
 
 /* ÉTAPE 2 */
 .etape2 {
     position: absolute;
     bottom: 25%;
-    left: 23%;
+    left: 24%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -437,17 +440,17 @@ body {
 #numero2 { width: 4vw; }
 #texte2 { font-size: 0.8vw; color: #333; text-align: center; max-width: 8vw; }
 #Vector2 {
-    position: absolute; /* ← sort du flux flex */
-    width: 3vw;
-    bottom: 7vw;    /* ← par rapport à .etape2 */
-    left: 5vw;  /* ← par rapport à .etape2 */
+    position: absolute; /* ← par rapport à #chemin-wrapper */
+    width: 3%;
+    bottom: 37%;
+    left: 28%;
 }
 
 /* ÉTAPE 3 */
 .etape3 {
     position: absolute;
     top: 20%;
-    right: 26%;
+    right: 28%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -456,15 +459,15 @@ body {
 #texte3 { font-size: 0.8vw; color: #333; text-align: center; max-width: 8vw; }
 #Vector3 { 
     position: absolute; /* ← sort du flux flex */
-    width: 2vw;
-    top: 7vw;    /* ← par rapport à .etape2 */
-    right: 5vw;  /* ← par rapport à .etape2 */
+    width: 1.5%;
+    top: 32%;    /* ← par rapport à .etape2 */
+    right: 32%;  /* ← par rapport à .etape2 */
 }
 
 /* ÉTAPE 4 */
 .etape4 {
     position: absolute;
-    bottom: 28%;
+    bottom: 30%;
     right: 15%;
     display: flex;
     flex-direction: column;
@@ -473,9 +476,9 @@ body {
 #numero4 { width: 4vw; }
 #texte4 { font-size: 0.8vw; color: #333; text-align: center; }
 #Vector4 { position: absolute; /* ← sort du flux flex */
-    width: 2.5vw;
-    bottom: 6vw;    /* ← par rapport à .etape2 */
-    right: 2vw;  /* ← par rapport à .etape2 */ 
+    width: 2%;
+    bottom: 40%;    /* ← par rapport à .etape2 */
+    right: 17%;  /* ← par rapport à .etape2 */ 
 }
 
 /* ANIMATION */
