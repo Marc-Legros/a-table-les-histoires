@@ -417,7 +417,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    margin: 5vw 8vw;
+    margin: 8vw;
     scroll-margin-top: 75px;
 }
 
@@ -469,6 +469,7 @@ body {
     position: relative;
     background-color: #F8F4EA;
     min-height: 120vh;
+    margin: 8vw 0vw;
     scroll-margin-top: 75px;
     display: flex;
     align-items: center;
@@ -729,13 +730,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     padding: 1em 1.5em;
     color: #FFF;
-    background-color: #3840A9;
+    /* background-color: #3840A9;
     font-family: "Belanosima", sans-serif;
     border-radius: 40px;
-    box-shadow: 0px 10px 0px rgba(0, 0, 0, 1);
+    box-shadow: 0px 10px 0px rgba(0, 0, 0, 1); */
 }
 
 .slider-title h2 {
@@ -1029,7 +1030,7 @@ body {
    SECTION AVIS — cartes défilantes
    ============================================================ */
 .section-avis {
-    padding: 7rem 2rem;
+    padding: 12rem 2rem 8rem 2rem;
     overflow: hidden;
 }
 
@@ -1099,7 +1100,7 @@ body {
 
 #avis-orange {
     position: absolute;
-    width: 5%;
+    width: 4%;
     top: -50%;
     right: 33%;
 }
@@ -1149,10 +1150,8 @@ body {
 
 .avis-nom {
     font-size: 1.5rem;
-    /* ← plus grand */
     color: #000;
     font-size: 1.5rem;
-    color: #222;
     text-transform: uppercase;
 }
 
@@ -1171,10 +1170,8 @@ body {
 
 .avis-texte {
     font-size: 1.3rem;
-    /* ← plus grand */
     color: #000;
     font-size: 1.3rem;
-    color: #444;
     line-height: 1.7;
     flex: 1;
 }
