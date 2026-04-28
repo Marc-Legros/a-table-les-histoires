@@ -6,27 +6,32 @@ const boxMeteorite = document.querySelector(".box-meteorites")
 
 let animIle = gsap.to(document.querySelector("#img-bg-ile"), {
     paused: true,
-    opacity: 1
+    opacity: 1,
+    duration: .5
 });
 
 let animFee = gsap.to(document.querySelector("#img-bg-fee"), {
     paused: true,
-    opacity: 1
+    opacity: 1,
+    duration: .5
 });
 
 let animDragon = gsap.to(document.querySelector("#img-bg-dragon"), {
     paused: true,
-    opacity: 1
+    opacity: 1,
+    duration: .5
 });
 
 let animJungle = gsap.to(document.querySelector("#img-bg-jungle"), {
     paused: true,
-    opacity: 1
+    opacity: 1,
+    duration: .5
 });
 
 let animMeteorite = gsap.to(document.querySelector("#img-bg-meteorite"), {
     paused: true,
-    opacity: 1
+    opacity: 1,
+    duration: .5
 });
 
 // Hover

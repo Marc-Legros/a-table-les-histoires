@@ -107,10 +107,13 @@ h1 {
     flex-direction: column;
     justify-content: center;
     /* width: 400px; */
-    min-height: 500px;
+    max-height: 500px;
     padding: 36px 70px;
     border-right: 3px solid #000;
     border-bottom: 3px solid #000;
+
+    position: relative;
+    overflow: hidden;
 }
 
 .box-ile {
@@ -141,6 +144,7 @@ h1 {
     height: 196px;
     object-fit: contain;
     margin-top: 20px;
+    z-index: 1;
 }
 
 #img-bg-ile,
@@ -149,73 +153,119 @@ h1 {
 #img-bg-jungle,
 #img-bg-meteorite {
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     opacity: 0;
 }
 
-#perroquet1{
-    
+#perroquet1 {
+    position: absolute;
+    top: 15%;
+    left: 0%;
 }
 
-#argent{
-
+#gouvernail {
+    position: absolute;
+    top: 31%;
+    left: 24%;
 }
 
-#eppe{
-
+#argent {
+    position: absolute;
+    top: 13%;
+    right: 5%;
 }
 
-#baguette{
-
+#eppe {
+    position: absolute;
+    bottom: 20%;
+    right: 0%;
 }
 
-#fleur1{
-
+#baguette {
+    position: absolute;
+    top: 17%;
+    left: 0%;
 }
 
-#fee{
-
+#fleur1 {
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
 }
 
-#feu{
-
+#fee {
+    position: absolute;
+    top: 22%;
+    right: 3%;
 }
 
-#dragon{
-
+#feu {
+    position: absolute;
+    top: 11%;
+    left: 0%;
 }
 
-#oeuf{
-
+#dragon {
+    position: absolute;
+    top: 30%;
+    left: 6%;
 }
 
-#perroquet2{
-
+#oeuf {
+    position: absolute;
+    top: 55%;
+    right: 0%;
 }
 
-#liane1{
-
+#perroquet2 {
+    position: absolute;
+    top: 41%;
+    left: 10%;
 }
 
-#liane2{
-
+#liane1 {
+    position: absolute;
+    width: 101%;
+    top: 1%;
+    left: 0%;
 }
 
-#fleur2{
-
+#liane2 {
+    position: absolute;
+    width: 101%;
+    top: 0%;
+    left: 0%;
 }
 
-#planet1{
-
+#fleur2 {
+    position: absolute;
+    top: 45%;
+    right: 0%;
 }
 
-#fusee{
-
+#planet1 {
+    position: absolute;
+    top: 38%;
+    left: 0%;
 }
 
-#etoile{
-
+#fusee {
+    position: absolute;
+    top: 23%;
+    left: 23%;
 }
 
-#planet2{
-    
+#etoile {
+    position: absolute;
+    bottom: 1%;
+    left: 9%;
+}
+
+#planet2 {
+    position: absolute;
+    top: 48%;
+    right: 0%;
 }
