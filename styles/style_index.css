@@ -115,7 +115,7 @@ body {
 /* Conteneur principal — positionné en bas à gauche de #intro */
 .btn-decouvre {
     position: absolute;
-    bottom: 15%;  /* ← entre le titre et la photo */
+    bottom: 8%;  /* ← entre le titre et la photo */
     left: 80%;
     transform: translateX(-50%); /* ← centré horizontalement */
     width: 150px;  /* ← plus petit */
@@ -156,8 +156,7 @@ body {
 /* Style du texte dans le SVG */
 .texte-circulaire text {
     font-family: "Belanosima", sans-serif;
-    font-size: 31px;
-    font-weight: 200;
+    font-size: 30.5px;
     fill: #fff; /* ← texte blanc */
 }
 
