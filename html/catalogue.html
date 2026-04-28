@@ -20,6 +20,9 @@
     <!-- lenis -->
     <script src="https://unpkg.com/lenis@1.3.21/dist/lenis.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.17/dist/lenis.css">
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/CustomEase.min.js"></script>
 </head>
 
 <body>
@@ -48,28 +51,60 @@
 
         <div id="grid">
             <a href="customisation.html" class="box-ile">
-                <h2>la légende de l'île nuage</h2>
+                <h2 class="box-title">la légende de l'île nuage</h2>
                 <img src="../assets/index/ileFlottante.png" class="box-img" alt="">
+                <!-- image backgrounds de la box -->
+                <div id="img-bg-ile">
+                    <img id="perroquet1" src="../assets/catalogue/ile/perroquet.svg" alt="">
+                    <img id="argent" src="../assets/catalogue/ile/argent.svg" alt="">
+                    <img id="eppe" src="../assets/catalogue/ile/epee.svg" alt="">
+                </div>
             </a>
 
             <a href="customisation.html" class="box-fee">
-                <h2>la potion des fées</h2>
+                <h2 class="box-title">la potion des fées</h2>
                 <img src="../assets/index/smoothie.png" class="box-img" alt="">
+                <!-- image backgrounds de la box -->
+                <div id="img-bg-fee">
+                    <img id="baguette" src="../assets/catalogue/fee/baguette.svg" alt="">
+                    <img id="fleur1" src="../assets/catalogue/fee/fleur.svg" alt="">
+                    <img id="fee" src="../assets/catalogue/fee/fee.svg" alt="">
+                </div>
             </a>
 
             <a href="customisation.html" class="box-dragon">
-                <h2>La flamme du dragon</h2>
+                <h2 class="box-title">La flamme du dragon</h2>
                 <img src="../assets/index/cremeBrulee.png" class="box-img" alt="">
+                <!-- image backgrounds de la box -->
+                <div id="img-bg-dragon">
+                    <img id="feu" src="../assets/catalogue/dragon/feu.svg" alt="">
+                    <img id="dragon" src="../assets/catalogue/dragon/dragon.svg" alt="">
+                    <img id="oeuf" src="../assets/catalogue/dragon/oeuf.svg" alt="">
+                </div>
             </a>
 
             <a href="customisation.html" class="box-jungle">
-                <h2>le trésor de la jungle</h2>
+                <h2 class="box-title">le trésor de la jungle</h2>
                 <img src="../assets/index/saladeDeFruits.png" class="box-img" alt="">
+                <!-- image backgrounds de la box -->
+                <div id="img-bg-jungle">
+                    <img id="perroquet2" src="../assets/catalogue/jungle/perroquet.svg" alt="">
+                    <img id="liane1" src="../assets/catalogue/jungle/liane1.svg" alt="">
+                    <img id="liane2" src="../assets/catalogue/jungle/liane2.svg" alt="">
+                    <img id="fleur2" src="../assets/catalogue/jungle/fleur.svg" alt="">
+                </div>
             </a>
 
             <a href="customisation.html" class="box-meteorites">
-                <h2>les météorites crouistillantes</h2>
+                <h2 class="box-title">les météorites crouistillantes</h2>
                 <img src="../assets/index/cookies.png" class="box-img" alt="">
+                <!-- image backgrounds de la box -->
+                <div id="img-bg-meteorite">
+                    <img id="planet1" src="../assets/catalogue/meteorite/planete1.svg" alt="">
+                    <img id="fusee" src="../assets/catalogue/meteorite/fusee.svg" alt="">
+                    <img id="etoile" src="../assets/catalogue/meteorite/etoile.svg" alt="">
+                    <img id="planet2" src="../assets/catalogue/meteorite/planete2.svg" alt="">
+                </div>
             </a>
         </div>
     </section>
@@ -117,6 +152,7 @@
         <img src="../assets/index/decoFooter.svg" alt="">
     </footer>
 
+    <script src="../js/catalogue.js"></script>
     <script src="../js/global_js.js"></script>
 </body>
 
