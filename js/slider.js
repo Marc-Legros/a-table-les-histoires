@@ -63,12 +63,39 @@ document.addEventListener("DOMContentLoaded", function () {
                 mettreAJourSlide(this);
             },
 
-            slideChange: function () {
+            slideChange: function () {                
                 mettreAJourSlide(this);
+                animSliderBg()
             }
         }
     });
 });
+
+
+
+function animSliderBg() {
+    gsap.fromTo(document.querySelectorAll(".bg-item"), {
+        scale: 0,
+        opacity: 0
+    }, {
+        scale: 1,
+        opacity: 1,
+        duration: .5,
+        delay: .5,
+    })
+    // ease: "back.out(1.7)",
+    // stagger: .1
+    
+    // gsap.fromTo(document.querySelector("#decor-1"), {
+    //     scale: 0,
+    //     opacity: 0
+    // }, {
+    //     scale: 1,
+    //     opacity: 1,
+    //     duration: .5,
+    //     delay: .5,
+    // })
+}
 
 // ================
 // ANCIEN SLIDER
