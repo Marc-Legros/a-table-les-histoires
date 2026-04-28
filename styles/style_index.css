@@ -226,6 +226,8 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 4;
+    position: relative; 
+    overflow: visible;
 }
 
 .text-reduc {
@@ -262,15 +264,15 @@ body {
 
 #img-reduc1 {
     position: absolute;
-    bottom: 31%;
+    bottom: 75%;
     right: 5%;
-    z-index: 0;
+    z-index: -1;
 }
 
 #img-reduc2 {
     position: absolute;
-    bottom: 31%;
-    right: 7%;
+    bottom: 82%;
+    right: 22%;
     z-index: 6;
 }
 
