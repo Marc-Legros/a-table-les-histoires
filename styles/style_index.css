@@ -91,6 +91,18 @@ body {
     z-index: 2;
 }
 
+#cookies {
+    animation: flotter 2.5s ease-in-out infinite alternate;
+}
+
+#croix {
+    animation: tourner 4s ease-in-out infinite alternate;
+}
+
+@keyframes tourner {
+    0% { transform: rotate(-10deg) scale(1); }
+    100% { transform: rotate(10deg) scale(1.1); }
+}
 #ligne4 {
     position: absolute;
     top: 15%;
@@ -398,139 +410,91 @@ body {
 }
 
 /* ÉTAPE 1 */
-#numero1 {
+.etape1 {
     position: absolute;
-    top: 180px;
-    left: 210px;
-    width: 60px;
+    top: 20%;
+    left: 13%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-#texte1 {
+#numero1 { width: 4vw; }
+#texte1 { font-size: 0.8vw; color: #333; text-align: center; }
+#Vector1 { 
     position: absolute;
-    top: 245px;
-    left: 185px;
-    font-size: 0.8rem;
-    color: #333;
-    font-family: "Belanosima", sans-serif;
-}
-
-#Vector1 {
-    position: absolute;
-    top: 275px;
-    left: 235px;
-    width: auto;
-    z-index: 2;
+    width: 0.5%;
+    top: 30%; 
+    left: 16%;
+    z-index: 5;
 }
 
 /* ÉTAPE 2 */
-#numero2 {
+.etape2 {
     position: absolute;
-    bottom: 190px;
-    left: 365px;
-    width: 60px;
+    bottom: 25%;
+    left: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-#texte2 {
-    position: absolute;
-    bottom: 255px;
-    left: 335px;
-    font-size: 0.8rem;
-    color: #333;
-    text-align: center;
-    font-family: "Belanosima", sans-serif;
-    max-width: 120px;
-}
-
+#numero2 { width: 4vw; }
+#texte2 { font-size: 0.8vw; color: #333; text-align: center; max-width: 8vw; }
 #Vector2 {
-    position: absolute;
-    bottom: 300px;
-    left: 400px;
-    width: auto;
+    position: absolute; /* ← par rapport à #chemin-wrapper */
+    width: 3%;
+    bottom: 37%;
+    left: 28%;
 }
 
 /* ÉTAPE 3 */
-#numero3 {
+.etape3 {
     position: absolute;
-    top: 155px;
-    right: 430px;
-    width: 60px;
+    top: 20%;
+    right: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-#texte3 {
-    position: absolute;
-    top: 220px;
-    right: 400px;
-    font-size: 0.8rem;
-    color: #333;
-    text-align: center;
-    font-family: "Belanosima", sans-serif;
-    max-width: 120px;
-}
-
-#Vector3 {
-    position: absolute;
-    top: 265px;
-    right: 460px;
-    width: auto;
+#numero3 { width: 4vw; }
+#texte3 { font-size: 0.8vw; color: #333; text-align: center; max-width: 8vw; }
+#Vector3 { 
+    position: absolute; /* ← sort du flux flex */
+    width: 1.5%;
+    top: 32%;    /* ← par rapport à .etape2 */
+    right: 32%;  /* ← par rapport à .etape2 */
 }
 
 /* ÉTAPE 4 */
-#numero4 {
+.etape4 {
     position: absolute;
-    bottom: 265px;
-    right: 170px;
-    width: 60px;
+    bottom: 30%;
+    right: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#numero4 { width: 4vw; }
+#texte4 { font-size: 0.8vw; color: #333; text-align: center; }
+#Vector4 { position: absolute; /* ← sort du flux flex */
+    width: 2%;
+    bottom: 40%;    /* ← par rapport à .etape2 */
+    right: 17%;  /* ← par rapport à .etape2 */ 
 }
 
-#texte4 {
-    position: absolute;
-    bottom: 335px;
-    right: 175px;
-    font-size: 0.8rem;
-    color: #333;
-    font-family: "Belanosima", sans-serif;
-}
-
-#Vector4 {
-    position: absolute;
-    bottom: 365px;
-    right: 200px;
-    width: auto;
-}
-
-#numero1,
-#texte1,
-#numero2,
-#texte2,
-#numero3,
-#texte3,
-#numero4,
-#texte4 {
+/* ANIMATION */
+#numero1, #texte1,
+#numero2, #texte2,
+#numero3, #texte3,
+#numero4, #texte4 {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
-/* Délai progressif pour chaque étape */
-#numero1,
-#texte1 {
-    transition-delay: 0s;
-}
-
-#numero2,
-#texte2 {
-    transition-delay: 0.4s;
-}
-
-#numero3,
-#texte3 {
-    transition-delay: 0.8s;
-}
-
-#numero4,
-#texte4 {
-    transition-delay: 1.2s;
-}
+#numero1, #texte1 { transition-delay: 0s; }
+#numero2, #texte2 { transition-delay: 0.4s; }
+#numero3, #texte3 { transition-delay: 0.8s; }
+#numero4, #texte4 { transition-delay: 1.2s; }
 
 .visible {
     opacity: 1 !important;
@@ -978,9 +942,9 @@ body {
 
 #avis-orange {
     position: absolute;
-    width: 80px;
+    width: 6%;
     top: -30%;
-    right: 33%;
+    right: 38.5%;
     flex-shrink: 0;
 }
 
@@ -1017,10 +981,8 @@ body {
 }
 
 .avis-nom {
-    max-width: 90%;
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #000;
+    font-size: 1.5rem; /* ← plus grand */
+    color: #222;
     text-transform: uppercase;
 }
 
@@ -1041,10 +1003,9 @@ body {
 }
 
 .avis-texte {
-    max-width: 90%;
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #000;
+    font-size: 1.3rem; /* ← plus grand */
+    color: #444;
+    line-height: 1.7;
     flex: 1;
 }
 
