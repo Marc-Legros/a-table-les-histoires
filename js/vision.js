@@ -20,7 +20,6 @@ gsap.fromTo(maskPath,
         strokeDashoffset: 0,
         duration: 3.5,
         ease: "linear",
-        // y: -500
     }
 );
 
