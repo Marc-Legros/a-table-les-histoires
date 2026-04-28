@@ -115,12 +115,13 @@ body {
 /* Conteneur principal — positionné en bas à gauche de #intro */
 .btn-decouvre {
     position: absolute;
-    bottom: 8%;
-    left: 35%;       /* ← ajuste pour déplacer gauche/droite */
-    width: 160px;
-    height: 160px;
+    bottom: 15%;  /* ← entre le titre et la photo */
+    left: 80%;
+    transform: translateX(-50%); /* ← centré horizontalement */
+    width: 150px;  /* ← plus petit */
+    height: 150px;
     cursor: pointer;
-    z-index: 3;      /* ← passe au-dessus des autres éléments */
+    z-index: 3;
 }
 
 /* Cercle dégradé en fond — le grand cercle coloré */
@@ -133,15 +134,16 @@ body {
 }
 
 /* Cercle blanc au centre — crée l'effet de "donut" */
+
+/* Cercle blanc au centre plus fin */
 .btn-decouvre::after {
     content: "";
     position: absolute;
-    inset: 20px;        /* ← 20px de marge = épaisseur du cercle coloré */
+    inset: 25px; /* ← un peu moins épais */
     border-radius: 50%;
-    background: #f8f4ea; /* ← même couleur que le fond de la page */
+    background: #f8f4ea;
 }
 
-/* Le SVG avec le texte qui tourne */
 .texte-circulaire {
     position: absolute;
     inset: 0;
@@ -154,8 +156,8 @@ body {
 /* Style du texte dans le SVG */
 .texte-circulaire text {
     font-family: "Belanosima", sans-serif;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 31px;
+    font-weight: 200;
     fill: #fff; /* ← texte blanc */
 }
 
@@ -394,7 +396,7 @@ body {
 /* Éléments décoratifs du chemin */
 #panneau { position: absolute; bottom: 55%; left: 8%;  width: auto; }
 #pas      { position: absolute; bottom: 9%;  left: 40%; width: auto; }
-#echelle  { position: absolute; top: 330px;  right: 95px; width: auto; }
+#echelle  { position: absolute; top: 40%;  right: 8%; width: auto; }
 #herbe { position: absolute; bottom: 48%; left: 8.5%; transform: rotate(-25deg); width: auto;}
 #herbe2 { position: absolute; bottom: 52%; left: 10%; transform: rotate(-25deg); width: auto;}
 
