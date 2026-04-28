@@ -28,28 +28,28 @@ gsap.fromTo(maskPath,
 gsap.fromTo(document.querySelector("#marc-img"), {
     opacity: 0,
 }, {
-    duration: .3,
+    duration: .2,
     ease: "linear",
     opacity: 1,
-    delay: .45
+    delay: .66
 });
 
 gsap.fromTo(document.querySelector("#tiph-img"), {
     opacity: 0,
 }, {
-    duration: .3,
+    duration: .2,
     ease: "linear",
     opacity: 1,
-    delay: 2.2
+    delay: 2.38
 });
 
 gsap.fromTo(document.querySelector("#gaspar-img"), {
     opacity: 0,
 }, {
-    duration: .3,
+    duration: .2,
     ease: "linear",
     opacity: 1,
-    delay: 3.02
+    delay: 3.3
 });
 
 
