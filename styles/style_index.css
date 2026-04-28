@@ -114,6 +114,17 @@ body {
     position: absolute;
     top: 10%;
     left: 15%;
+    animation: flotter 3s ease-in-out infinite alternate;
+}
+
+@keyframes flotter {
+    0% {
+        transform: translateY(0) rotate(-5deg);
+    }
+
+    100% {
+        transform: translateY(-12px) rotate(5deg);
+    }
 }
 
 #perso {
@@ -131,20 +142,6 @@ body {
 
     100% {
         transform: translateY(-5px) rotate(3deg);
-    }
-}
-
-#fourchette {
-    animation: flotter 3s ease-in-out infinite alternate;
-}
-
-@keyframes flotter {
-    0% {
-        transform: translateY(0) rotate(-5deg);
-    }
-
-    100% {
-        transform: translateY(-12px) rotate(5deg);
     }
 }
 
@@ -961,7 +958,7 @@ body {
 #avis-orange {
     position: absolute;
     width: 5%;
-    top: -20%;
+    top: -50%;
     right: 33%;
     flex-shrink: 0;
 }
@@ -1000,7 +997,7 @@ body {
 
 .avis-nom {
     font-size: 1.5rem; /* ← plus grand */
-    color: #222;
+    color: #000;
     text-transform: uppercase;
 }
 
@@ -1022,7 +1019,7 @@ body {
 
 .avis-texte {
     font-size: 1.3rem; /* ← plus grand */
-    color: #444;
+    color: #000;
     line-height: 1.7;
     flex: 1;
 }
