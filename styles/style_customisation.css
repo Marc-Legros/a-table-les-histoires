@@ -13,7 +13,7 @@ html {
 
 body {
     font-family: "Belanosima", sans-serif;
-    background-color: #f8f4ea;
+    background: linear-gradient(135deg, #f8f4ea 0%, #f0ecff 100%);
     margin: 0;
     padding: 0;
 }
@@ -42,10 +42,10 @@ body {
 
 .titre-customisation {
     font-weight: 700;
-    font-size: 0.95rem;
-    color: #333;
+    font-size: 1.1rem;
+    color: #3D2D00;
     align-self: flex-start;
-    margin-bottom: auto; 
+    margin-bottom: auto;
 }
 
 .achat-section {
@@ -59,9 +59,9 @@ body {
 /* PREVIEW */
 .preview {
     position: relative;
-    width: 260px;
-    height: 420px;
-    background: transparent;
+    width: 280px;
+    height: 440px;
+    border-radius: 24px;
     flex-shrink: 0;
 }
 
@@ -129,6 +129,10 @@ body {
     overflow: hidden;
 }
 
+.choice.selected {
+    border: 3px solid #FFB802;
+    transform: scale(1.1);
+}
 /* L'input ne doit jamais être bloqué */
 .input-nom {
     position: relative;
@@ -152,22 +156,29 @@ body {
 
 /* PANEL CHOIX */
 .customisation {
-    background: #A89FD8;
-    border-radius: 20px;
+    border-radius: 24px;
     padding: 1.5rem 1.8rem;
     width: 100%;
     max-width: 500px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.12);
 }
 
-.cate { margin-bottom: 1.2rem; }
+.cate {
+    margin-bottom: 1.2rem;
+    background: rgba(255,255,255,0.15);
+    border-radius: 12px;
+    padding: 0.6rem 0.8rem;
+}
 
 .cate:last-child { margin-bottom: 0; }
 
 .title-cate {
-    font-size: 0.78rem;
-    font-weight: 600;
+    font-size: 0.82rem;
+    font-weight: 700;
     color: #fff;
     margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 .choices {
@@ -181,20 +192,28 @@ body {
     width: 58px;
     height: 58px;
     background: #ffffff;
-    border-radius: 10px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: transform 0.15s ease;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
     overflow: hidden;
     flex-shrink: 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
-.choice:hover { transform: scale(1.08); }
+.choice:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
 
 .choice img {
     width: 85%;
     height: 85%;
     object-fit: contain;
+}
+
+#calque-avatar {
+    transition: all 0.3s ease;
 }

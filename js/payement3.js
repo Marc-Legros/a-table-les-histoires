@@ -46,4 +46,26 @@ window.addEventListener("load", () => {
 
     const recapNom = document.querySelector(".recap-nom");
     if (recapNom) recapNom.textContent = `Box "${nomBox}"`;
+
+    const couleursFond = {
+        "theme-nuage":  "#6872FF",
+        "theme-fees":   "#FFD04D",
+        "theme-dragon": "#A5DB76",
+        "theme-jungle": "#FF8411",
+        "theme-espace": "#74B5FF",
+    };
+
+    const desserts = {
+        "theme-nuage":  "../assets/index/ileFlottante.png",
+        "theme-fees":   "../assets/index/smoothie.png",
+        "theme-dragon": "../assets/index/cremeBrulee.png",
+        "theme-jungle": "../assets/index/saladeDeFruits.png",
+        "theme-espace": "../assets/index/cookies.png",
+    };
+
+    const recapBox     = document.getElementById("recap-box-visuel");
+    const recapDessert = document.getElementById("recap-dessert");
+
+    if (recapBox)     recapBox.style.backgroundColor = couleursFond[themeActif] || "#6872FF";
+    if (recapDessert) recapDessert.src = desserts[themeActif] || "../assets/index/ileFlottante.png";
 });

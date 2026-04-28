@@ -290,7 +290,7 @@ body {
 /* RECAP */
 .recap-article {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* ← était center */
     gap: 1rem;
 }
 
@@ -430,4 +430,23 @@ body {
 .btn-idees:hover {
     background: linear-gradient(90deg, #F5A623, #CB55E4);
     color: #fff;
+}
+
+.recap-img-box {
+    width: 70px;  /* ← même taille que l'ancien img */
+    height: 70px; /* ← même taille que l'ancien img */
+    border-radius: 8px; /* ← même border-radius */
+    background-color: #6872FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0; /* ← empêche de rétrécir */
+}
+
+.recap-img-box img {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 0;
 }
