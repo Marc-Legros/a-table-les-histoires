@@ -14,7 +14,9 @@ body {
     background-color: #f8f4ea;
 }
 
-/* --- SECTION INTRO --- */
+/* ============================================================
+   SECTION INTRO — le grand logo avec le personnage
+   ============================================================ */
 #section-intro {
     display: flex;
     align-items: center;
@@ -32,6 +34,7 @@ body {
     background-color: #F8F4EA;
 }
 
+/* Logo centré en haut */
 #logo {
     width: 45%;
     display: block;
@@ -39,35 +42,64 @@ body {
     padding-top: 5vh;
 }
 
+/* Personnage qui se balade */
 #perso {
     position: absolute;
     top: 6%;
     right: 25%;
-
+    animation: balader 6s ease-in-out infinite alternate;
 }
 
-#ligne1 {
+@keyframes balader {
+    0%   { transform: translateY(0) rotate(-3deg); }
+    50%  { transform: translateY(-15px) rotate(0deg); }
+    100% { transform: translateY(-5px) rotate(3deg); }
+}
+
+/* Fourchette qui flotte */
+#fourchette {
     position: absolute;
-    top: 15%;
-    right: 2%;
-    width: 8%;
+    top: 10%;
+    left: 15%;
+    animation: flotter 3s ease-in-out infinite alternate;
 }
 
+@keyframes flotter {
+    0%   { transform: translateY(0) rotate(-5deg); }
+    100% { transform: translateY(-12px) rotate(5deg); }
+}
+
+/* Cookies qui flottent */
 #cookies {
     position: absolute;
     top: 41%;
     right: 7%;
     width: 4%;
+    animation: flotter 2.5s ease-in-out infinite alternate;
 }
 
-
-#ligne2 {
+/* Croix qui tourne */
+#croix {
     position: absolute;
-    top: 50%;
-    right: 1%;
-    width: 8%;
+    bottom: 20%;
+    left: 4%;
+    width: 4%;
+    z-index: 2;
+    animation: tourner 4s ease-in-out infinite alternate;
 }
 
+@keyframes tourner {
+    0%   { transform: rotate(-10deg) scale(1); }
+    100% { transform: rotate(10deg) scale(1.1); }
+}
+
+/* Lignes décoratives */
+#ligne1 { position: absolute; top: 15%;    right: 2%;  width: 8%; }
+#ligne2 { position: absolute; top: 50%;    right: 1%;  width: 8%; }
+#ligne3 { position: absolute; bottom: 0%;  left: 0;    width: 15%; z-index: 1; }
+#ligne4 { position: absolute; top: 15%;    left: 0;    width: 15%; }
+
+/* Nuage en bas à gauche */
 #nuage {
     position: absolute;
     bottom: -.1%;
@@ -76,85 +108,14 @@ body {
     z-index: 2;
 }
 
-#ligne3 {
-    position: absolute;
-    bottom: 0%;
-    width: 15%;
-    z-index: 1;
-}
-
-#croix {
-    position: absolute;
-    bottom: 20%;
-    left: 4%;
-    width: 4%;
-    z-index: 2;
-}
-
-#cookies {
-    animation: flotter 2.5s ease-in-out infinite alternate;
-}
-
-#croix {
-    animation: tourner 4s ease-in-out infinite alternate;
-}
-
-@keyframes tourner {
-    0% { transform: rotate(-10deg) scale(1); }
-    100% { transform: rotate(10deg) scale(1.1); }
-}
-#ligne4 {
-    position: absolute;
-    top: 15%;
-    left: 0;
-    width: 15%;
-}
-
-#fourchette {
-    position: absolute;
-    top: 10%;
-    left: 15%;
-}
-
-#perso {
-    animation: balader 6s ease-in-out infinite alternate;
-}
-
-@keyframes balader {
-    0% {
-        transform: translateY(0) rotate(-3deg);
-    }
-
-    50% {
-        transform: translateY(-15px) rotate(0deg);
-    }
-
-    100% {
-        transform: translateY(-5px) rotate(3deg);
-    }
-}
-
-#fourchette {
-    animation: flotter 3s ease-in-out infinite alternate;
-}
-
-@keyframes flotter {
-    0% {
-        transform: translateY(0) rotate(-5deg);
-    }
-
-    100% {
-        transform: translateY(-12px) rotate(5deg);
-    }
-}
-
-/* --- SECTION PRESENTATION --- */
+/* ============================================================
+   SECTION PRESENTATION — photo avec le texte
+   ============================================================ */
 #section-presentation {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     gap: 5rem;
-    /* min-height: 75vh; */
     box-sizing: border-box;
     scroll-margin-top: 75px;
 }
@@ -169,6 +130,7 @@ body {
     z-index: -1;
 }
 
+/* Texte à gauche */
 #info {
     display: flex;
     flex-direction: column;
@@ -176,8 +138,6 @@ body {
     margin-left: 7vw;
     margin-top: 17vh;
 }
-
-/* 82 - 88 */
 
 #meta {
     display: flex;
@@ -191,6 +151,7 @@ body {
     color: #FFF;
 }
 
+/* Titre dégradé violet → orange */
 .text-gradient {
     background: linear-gradient(90deg, #CB55E4, #FFB801);
     -webkit-background-clip: text;
@@ -210,6 +171,7 @@ body {
     color: #FFF;
 }
 
+/* Ellipse de réduction à droite */
 #reduc {
     display: flex;
     justify-content: flex-end;
@@ -226,7 +188,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 4;
-    position: relative; 
+    position: relative;
     overflow: visible;
 }
 
@@ -240,56 +202,27 @@ body {
     z-index: 5;
 }
 
-#oeuf1 {
-    position: absolute;
-    bottom: 18%;
-    right: 40%;
-    width: 3%;
-    width: 60px;
-}
+/* Personnage dans l'ellipse */
+#img-reduc1 { position: absolute; bottom: 75%; right: 5%;  z-index: -1; }
+#img-reduc2 { position: absolute; bottom: 82%; right: 22%; z-index: 6; }
 
-#oeuf2 {
-    position: absolute;
-    bottom: 18%;
-    right: 35%;
-    width: 50px;
-}
+/* Petits œufs décoratifs */
+#oeuf1 { position: absolute; bottom: 18%; right: 40%; width: 60px; }
+#oeuf2 { position: absolute; bottom: 18%; right: 35%; width: 50px; }
+#oeuf3 { position: absolute; bottom: 5%;  left: 35%;  width: 75px; }
 
-#oeuf3 {
-    position: absolute;
-    bottom: 5%;
-    left: 35%;
-    width: 75px;
-}
-
-#img-reduc1 {
-    position: absolute;
-    bottom: 75%;
-    right: 5%;
-    z-index: -1;
-}
-
-#img-reduc2 {
-    position: absolute;
-    bottom: 82%;
-    right: 22%;
-    z-index: 6;
-}
-
-/* --- BOUTON DÉGRADÉ --- */
-/* DÉGRADÉ */
+/* ============================================================
+   BOUTON DÉGRADÉ — utilisé sur plusieurs sections
+   ============================================================ */
 .btn-gradient {
     width: fit-content;
     background: linear-gradient(90deg, #CB55E4, #FFB802);
     padding: 5px;
-    /* épaisseur du contour */
     border-radius: 50px;
     display: inline-block;
     cursor: pointer;
-    /* box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15); */
 }
 
-/* CONTENUE */
 .btn-content {
     display: block;
     background-color: #FFF;
@@ -302,25 +235,15 @@ body {
     text-transform: uppercase;
 }
 
-/* --- SECTION ABOUT --- */
+/* ============================================================
+   SECTION ABOUT — 3 cartes "la magie commence"
+   ============================================================ */
 #star {
     display: block;
     margin: 0 auto;
-    margin-top: 0;
 }
-
-.card {
-    width: 200px;
-    height: 200px;
-    background: linear-gradient(45deg, #00ffd0, #0066ff);
-    border-radius: 20px;
-    transition: transform 0.1s;
-    transform-style: preserve-3d;
-}
-
 
 #section-about {
-    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -371,7 +294,9 @@ body {
     color: #000;
 }
 
-/* SECTION CHEMIN */
+/* ============================================================
+   SECTION CHEMIN — les 4 étapes sur le chemin SVG
+   ============================================================ */
 #section-chemin {
     position: relative;
     background-color: #F8F4EA;
@@ -390,28 +315,14 @@ body {
     object-fit: cover;
 }
 
-#panneau {
-    position: absolute;
-    bottom: 45%;
-    left: 6%;
-    width: auto;
-}
+/* Éléments décoratifs du chemin */
+#panneau { position: absolute; bottom: 55%; left: 8%;  width: auto; }
+#pas      { position: absolute; bottom: 9%;  left: 40%; width: auto; }
+#echelle  { position: absolute; top: 330px;  right: 95px; width: auto; }
+#herbe { position: absolute; bottom: 48%; left: 8.5%; transform: rotate(-25deg); width: auto;}
+#herbe2 { position: absolute; bottom: 52%; left: 10%; transform: rotate(-25deg); width: auto;}
 
-#pas {
-    position: absolute;
-    bottom: 9%;
-    left: 40%;
-    width: auto;
-}
-
-#echelle {
-    position: absolute;
-    top: 330px;
-    right: 95px;
-    width: auto;
-}
-
-/* ÉTAPE 1 */
+/* Étape 1 */
 .etape1 {
     position: absolute;
     top: 20%;
@@ -421,16 +332,10 @@ body {
     align-items: center;
 }
 #numero1 { width: 4vw; }
-#texte1 { font-size: 0.8vw; color: #333; text-align: center; }
-#Vector1 { 
-    position: absolute;
-    width: 0.5%;
-    top: 30%; 
-    left: 16%;
-    z-index: 5;
-}
+#texte1  { font-size: 0.8vw; color: #333; text-align: center; }
+#Vector1 { position: absolute; width: 0.5%; top: 30%; left: 16%; z-index: 5; }
 
-/* ÉTAPE 2 */
+/* Étape 2 */
 .etape2 {
     position: absolute;
     bottom: 25%;
@@ -440,15 +345,10 @@ body {
     align-items: center;
 }
 #numero2 { width: 4vw; }
-#texte2 { font-size: 0.8vw; color: #333; text-align: center; max-width: 8vw; }
-#Vector2 {
-    position: absolute; /* ← par rapport à #chemin-wrapper */
-    width: 3%;
-    bottom: 37%;
-    left: 27%;
-}
+#texte2  { font-size: 0.8vw; color: #333; text-align: center; max-width: 8vw; }
+#Vector2 { position: absolute; width: 3%; bottom: 37%; left: 27%; }
 
-/* ÉTAPE 3 */
+/* Étape 3 */
 .etape3 {
     position: absolute;
     top: 19%;
@@ -458,15 +358,10 @@ body {
     align-items: center;
 }
 #numero3 { width: 4vw; }
-#texte3 { font-size: 0.8vw; color: #333; text-align: center; max-width: 8vw; }
-#Vector3 { 
-    position: absolute; /* ← sort du flux flex */
-    width: 1.5%;
-    top: 30%;    /* ← par rapport à .etape2 */
-    right: 32%;  /* ← par rapport à .etape2 */
-}
+#texte3  { font-size: 0.8vw; color: #333; text-align: center; max-width: 8vw; }
+#Vector3 { position: absolute; width: 1.5%; top: 30%; right: 32%; }
 
-/* ÉTAPE 4 */
+/* Étape 4 */
 .etape4 {
     position: absolute;
     bottom: 29%;
@@ -476,14 +371,10 @@ body {
     align-items: center;
 }
 #numero4 { width: 4vw; }
-#texte4 { font-size: 0.8vw; color: #333; text-align: center; }
-#Vector4 { position: absolute; /* ← sort du flux flex */
-    width: 2%;
-    bottom: 39%;    /* ← par rapport à .etape2 */
-    right: 17%;  /* ← par rapport à .etape2 */ 
-}
+#texte4  { font-size: 0.8vw; color: #333; text-align: center; }
+#Vector4 { position: absolute; width: 2%; bottom: 39%; right: 17%; }
 
-/* ANIMATION */
+/* Animation scroll — les étapes apparaissent au scroll */
 #numero1, #texte1,
 #numero2, #texte2,
 #numero3, #texte3,
@@ -503,28 +394,9 @@ body {
     transform: translateY(0) !important;
 }
 
-/* SECTION INFO */
-.info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 300px;
-    gap: 3rem;
-}
-
-.icon-about {
-    width: 100px;
-    height: 72px;
-}
-
-.text-about {
-    text-align: center;
-    font-size: 1.25rem;
-}
-
-
-/* SLIDER */
+/* ============================================================
+   SLIDER — les 5 box avec le swiper
+   ============================================================ */
 .vague {
     display: block;
     width: 100%;
@@ -534,16 +406,8 @@ body {
     pointer-events: none;
 }
 
-.vague1 {
-    bottom: 100%;
-    margin-bottom: -2px;
-}
-
-.vague2 {
-    top: 100%;
-    margin-top: -2px;
-}
-
+.vague1 { bottom: 100%; margin-bottom: -2px; }
+.vague2 { top: 100%;    margin-top: -2px; }
 
 .vague-path {
     fill: #6872FF;
@@ -565,14 +429,12 @@ body {
 }
 
 .slider {
-    /* width: 650px; */
     width: 100%;
     height: 650px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
-    /* gap: 3rem; */
     margin: 0 8vw;
     min-height: 100vh;
     position: relative;
@@ -589,16 +451,12 @@ body {
     background-color: #3840A9;
     font-family: "Belanosima", sans-serif;
     border-radius: 40px;
-
     box-shadow: 0px 10px 0px rgba(0, 0, 0, 1);
 }
 
-.slider-title h2 {
-    font-weight: 100;
-}
+.slider-title h2 { font-weight: 100; }
 
 #slider-navigation {
-    /* width: 100%; */
     width: 650px;
     display: flex;
     align-items: flex-start;
@@ -614,6 +472,7 @@ body {
     color: #FFF;
 }
 
+/* Bouton "JE PERSONNALISE" */
 #slider-navigation #btn {
     color: #FFF;
     padding: 0.5em 1.5em;
@@ -624,6 +483,7 @@ body {
     font-weight: 600;
 }
 
+/* Boutons flèches */
 .btn {
     display: flex;
     justify-content: center;
@@ -633,16 +493,13 @@ body {
     width: 70px;
     border: none;
     border-radius: 100%;
+    cursor: pointer;
 }
 
 .btn img {
     height: 30px;
     width: 30px;
     user-select: none;
-}
-
-.btn:hover {
-    cursor: pointer;
 }
 
 .slider-content {
@@ -652,7 +509,7 @@ body {
     height: min-content;
 }
 
-/* PARALLAX */
+/* Fond avec les décors */
 .slider-backgrounds {
     position: absolute;
     top: 0;
@@ -667,28 +524,20 @@ body {
     width: 100% !important;
     height: 100% !important;
     inset: 0;
-
 }
 
+/* Animation d'apparition des décors */
 @keyframes anim {
-    from {
-        opacity: 0;
-        transform: scale(0);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+    from { opacity: 0; transform: scale(0); }
+    to   { opacity: 1; transform: scale(1); }
 }
 
 .bg-item img {
     position: absolute;
-    
     opacity: 0;
     transform: scale(0);
     animation: anim 0.8s ease-out forwards;
 }
-
 
 .img-slider {
     display: flex;
@@ -697,250 +546,71 @@ body {
     height: 100%;
 }
 
-.img-slider img {
-    object-fit: contain;
-}
+.img-slider img { object-fit: contain; }
 
-/* --- THÈME NUAGE --- */
-/* PERROQUET */
-.theme-nuage #decor-1 {
-    width: 17%;
-    left: -2%;
-    top: 10%;
-}
+/* --- Positions des décors par thème --- */
 
-/* PIECES */
-.theme-nuage #decor-2 {
-    width: 10%;
-    left: 10%;
-    bottom: 15%;
-}
+/* THÈME PIRATE */
+.theme-nuage #decor-1 { width: 17%; left: -2%;  top: 10%; }
+.theme-nuage #decor-2 { width: 10%; left: 10%;  bottom: 15%; }
+.theme-nuage #decor-3 { width: 15%; right: -1%; top: 15%; }
+.theme-nuage #decor-4 { width: 12%; right: 8%;  bottom: 5%; }
 
-/* GOUVERNAIL */
-.theme-nuage #decor-3 {
-    width: 15%;
-    right: -1%;
-    top: 15%;
-}
+/* THÈME FÉES */
+.theme-fees #decor-1 { width: 36%; left: -3%;  top: 5%; }
+.theme-fees #decor-2 { width: 25%; left: 3%;   bottom: -18%; }
+.theme-fees #decor-3 { width: 8%;  right: 20%; top: 10%; }
+.theme-fees #decor-4 { width: 20%; right: 5%;  bottom: 3%; }
 
-/* ÉPÉE */
-.theme-nuage #decor-4 {
-    width: 12%;
-    right: 8%;
-    bottom: 5%;
-}
+/* THÈME DRAGON */
+.theme-dragon #decor-1 { width: 20%; left: -2%;  top: 5%; }
+.theme-dragon #decor-2 { width: 10%; left: -3%;  bottom: 10%; }
+.theme-dragon #decor-3 { width: 10%; left: 15%;  bottom: 22%; }
+.theme-dragon #decor-4 { width: 18%; right: 0%;  top: 25%; }
+.theme-dragon #decor-5 { width: 7%;  right: 15%; bottom: 0%; }
 
-/* --- THÈME FÉES --- */
-/* TRAINÉE D'ÉTOILES */
-.theme-fees #decor-1 {
-    width: 36%;
-    left: -3%;
-    top: 5%;
-}
+/* THÈME JUNGLE */
+.theme-jungle #decor-1 { width: 35%; left: 5%;   top: -10%; }
+.theme-jungle #decor-2 { width: 30%; left: 12%;  top: -5%; }
+.theme-jungle #decor-3 { width: 14%; left: -2%;  bottom: 20%; }
+.theme-jungle #decor-4 { width: 10%; right: -1%; top: 25%; }
+.theme-jungle #decor-5 { width: 15%; right: 8%;  bottom: 0%; }
 
-/* BAGUETTE */
-.theme-fees #decor-2 {
-    width: 25%;
-    left: 3%;
-    bottom: -18%;
-}
+/* THÈME ESPACE */
+.theme-espace #decor-1 { width: 4%;  left: 13%;  top: 25%; }
+.theme-espace #decor-2 { width: 11%; left: -1%;  bottom: 43%; }
+.theme-espace #decor-3 { width: 11%; left: 12%;  bottom: 12%; }
+.theme-espace #decor-4 { width: 15%; left: 28%;  top: 27%; }
+.theme-espace #decor-5 { width: 13%; right: 12%; top: 25%; }
+.theme-espace #decor-6 { width: 10%; right: -.5%; bottom: 25%; }
+.theme-espace #decor-7 { width: 3%;  right: 10%; bottom: 15%; }
 
-/* FÉE */
-.theme-fees #decor-3 {
-    width: 8%;
-    right: 20%;
-    top: 10%;
-}
-
-/* FLEUR */
-.theme-fees #decor-4 {
-    width: 20%;
-    right: 5%;
-    bottom: 3%;
-}
-
-/* --- THÈME DRAGON --- */
-/* FEU */
-.theme-dragon #decor-1 {
-    width: 20%;
-    left: -2%;
-    top: 5%;
-}
-
-/* OEUF 1 */
-.theme-dragon #decor-2 {
-    width: 10%;
-    left: -3%;
-    bottom: 10%;
-}
-
-/* DRAGON */
-.theme-dragon #decor-3 {
-    width: 10%;
-    left: 15%;
-    bottom: 22%;
-}
-
-/* CHATEAU */
-.theme-dragon #decor-4 {
-    width: 18%;
-    right: 0%;
-    top: 25%;
-}
-
-/* OEUF 2 */
-.theme-dragon #decor-5 {
-    width: 7%;
-    right: 15%;
-    bottom: 0%;
-}
-
-/* --- THÈME JUNGLE --- */
-/* LIANE 1 */
-.theme-jungle #decor-1 {
-    width: 35%;
-    left: 5%;
-    top: -10%;
-}
-
-/* LIANE 2 */
-.theme-jungle #decor-2 {
-    width: 30%;
-    left: 12%;
-    top: -5%;
-}
-
-/* PERROQUET */
-.theme-jungle #decor-3 {
-    width: 14%;
-    left: -2%;
-    bottom: 20%;
-}
-
-/* SINGE */
-.theme-jungle #decor-4 {
-    width: 10%;
-    right: -1%;
-    top: 25%;
-}
-
-/* FLEUR */
-.theme-jungle #decor-5 {
-    width: 15%;
-    right: 8%;
-    bottom: 0%;
-}
-
-/* --- THÈME ESPACE --- */
-/* ÉTOILE 1 */
-.theme-espace #decor-1 {
-    width: 4%;
-    left: 13%;
-    top: 25%;
-}
-
-/* PLANÈTE 1 */
-.theme-espace #decor-2 {
-    width: 11%;
-    left: -1%;
-    bottom: 43%;
-}
-
-/* ÉTOILE FILANTE */
-.theme-espace #decor-3 {
-    width: 11%;
-    left: 12%;
-    bottom: 12%;
-}
-
-/* PLANÈTE 2 */
-.theme-espace #decor-4 {
-    width: 15%;
-    left: 28%;
-    top: 27%;
-}
-
-/* FUSÉE */
-.theme-espace #decor-5 {
-    width: 13%;
-    right: 12%;
-    top: 25%;
-}
-
-/* PLANÈTE 3 */
-.theme-espace #decor-6 {
-    width: 10%;
-    right: -.5%;
-    bottom: 25%;
-}
-
-/* ÉTOILE 2 */
-.theme-espace #decor-7 {
-    width: 3%;
-    right: 10%;
-    bottom: 15%;
-}
-
-.bg-item img {
-    position: absolute;
-}
-
-
-/* SECTION AVIS */
+/* ============================================================
+   SECTION AVIS — cartes défilantes
+   ============================================================ */
 .section-avis {
     padding: 7rem 2rem;
     overflow: hidden;
 }
 
 #avis-header {
-    /* min-height: 220px; */
     position: relative;
     margin-bottom: 7.5rem;
-    /* padding: 0 200px; */
     text-align: center;
 }
 
-/* IMAGES DÉCO */
-#avis-deco-cookies {
-    position: absolute;
-    left: -3.5%;
-    top: -25%;
-    width: 200px;
-    object-fit: contain;
-    filter: blur(2px);
-}
+/* Images décoratives */
+#avis-deco-cookies { position: absolute; left: -3.5%; top: -25%;  width: 200px; object-fit: contain; filter: blur(2px); }
+#avis-deco-creme   { position: absolute; left: 2%;    top: 90%;   width: 110px; object-fit: contain; }
+#avis-deco-salade  { position: absolute; right: -3.5%; top: -25%; width: 200px; object-fit: contain; filter: blur(2px); }
+#avis-deco-ile     { position: absolute; right: 1%;   top: 60%;   width: 170px; object-fit: contain; }
 
-#avis-deco-creme {
-    position: absolute;
-    left: 2%;
-    top: 90%;
-    width: 110px;
-    object-fit: contain;
-}
-
-#avis-deco-salade {
-    position: absolute;
-    right: -3.5%;
-    top: -25%;
-    width: 200px;
-    object-fit: contain;
-    filter: blur(2px);
-}
-
-#avis-deco-ile {
-    position: absolute;
-    right: 1%;
-    top: 60%;
-    width: 170px;
-    object-fit: contain;
-}
-
+/* Titre et orange */
 #avis-titre-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    /* margin-bottom: 0.8rem; */
 }
 
 #avis-titre-wrapper h2 {
@@ -963,10 +633,9 @@ body {
     width: 5%;
     top: -20%;
     right: 33%;
-    flex-shrink: 0;
 }
 
-/* TRACK */
+/* Défilement infini */
 .avis-track-wrapper {
     overflow: hidden;
     width: 100%;
@@ -981,10 +650,15 @@ body {
 }
 
 .avis-track:hover {
-    animation-play-state: paused;
+    animation-play-state: paused; /* pause au survol */
 }
 
-/* CARTES */
+@keyframes defilement {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Cartes d'avis */
 .avis-card {
     display: flex;
     flex-direction: column;
@@ -999,18 +673,15 @@ body {
 }
 
 .avis-nom {
-    font-size: 1.5rem; /* ← plus grand */
+    font-size: 1.5rem;
     color: #222;
     text-transform: uppercase;
 }
 
-
 .avis-etoiles {
     color: #FFC800;
     font-size: 3rem;
-    /* margin-bottom: 0.5rem; */
 }
-
 
 .avis-card hr {
     width: 90%;
@@ -1021,18 +692,8 @@ body {
 }
 
 .avis-texte {
-    font-size: 1.3rem; /* ← plus grand */
+    font-size: 1.3rem;
     color: #444;
     line-height: 1.7;
     flex: 1;
-}
-
-@keyframes defilement {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
 }
