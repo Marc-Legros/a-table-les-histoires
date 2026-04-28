@@ -144,3 +144,10 @@ body {
     top: -100px;   /* ← monte le personnage, augmente la valeur pour monter plus */
     left: -10px;   /* ← décale vers la droite, augmente pour aller plus à droite */
 }
+
+#inter-avatar    { z-index: 1; } /* ← derrière tout */
+#inter-bras-gauche,
+#inter-bras-droit { z-index: 2; } /* ← devant avatar */
+#inter-tshirt    { z-index: 3; } /* ← devant les bras */
+#inter-chapeau   { z-index: 4; } /* ← devant le t-shirt */
+#inter-accessoire { z-index: 5; } /* ← devant tout */
