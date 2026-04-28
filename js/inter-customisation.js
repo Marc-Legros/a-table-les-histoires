@@ -92,7 +92,7 @@ const personnage = JSON.parse(localStorage.getItem("personnage"));
         accessoire.style.left = personnage.accessoireLeft;
         accessoire.style.width = personnage.accessoireWidth;
         accessoire.style.transform = personnage.accessoireTransform;
-        accessoire.style.zIndex = personnage.accessoireZIndex;
+        accessoire.style.zIndex = "-2";
     }
         // On remet le bras gauche
     const brasGauche = document.getElementById("inter-bras-gauche");
@@ -102,6 +102,7 @@ const personnage = JSON.parse(localStorage.getItem("personnage"));
         brasGauche.style.left = personnage.brasGaucheLeft;
         brasGauche.style.width = personnage.brasGaucheWidth;
         brasGauche.style.transform = personnage.brasGaucheTransform;
+        brasGauche.style.zIndex = "-1";
     }
 
     // On remet le bras droit
@@ -112,6 +113,7 @@ const personnage = JSON.parse(localStorage.getItem("personnage"));
         brasDroit.style.left = personnage.brasDroitLeft;
         brasDroit.style.width = personnage.brasDroitWidth;
         brasDroit.style.transform = personnage.brasDroitTransform;
+        brasDroit.style.zIndex = "-1";
     }
 
 } else {
