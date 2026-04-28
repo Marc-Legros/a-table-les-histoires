@@ -941,9 +941,9 @@ body {
 
 #avis-orange {
     position: absolute;
-    width: 6%;
-    top: -30%;
-    right: 32%;
+    width: 5%;
+    bottom: 35%;
+    right: 33%;
     flex-shrink: 0;
 }
 
