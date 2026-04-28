@@ -92,7 +92,7 @@ const personnage = JSON.parse(localStorage.getItem("personnage"));
         accessoire.style.left = personnage.accessoireLeft;
         accessoire.style.width = personnage.accessoireWidth;
         accessoire.style.transform = personnage.accessoireTransform;
-        accessoire.style.zIndex = "-2";
+        accessoire.style.zIndex = personnage.accessoireZIndex;
     }
         // On remet le bras gauche
     const brasGauche = document.getElementById("inter-bras-gauche");
