@@ -149,6 +149,15 @@ function chargerTheme() {
 
 chargerTheme();
 
+// ---- AVATAR PAR DÉFAUT ----
+const avatarDefaut = document.getElementById("calque-avatar");
+avatarDefaut.src = theme.avatars[0];
+avatarDefaut.style.top = "100px";
+avatarDefaut.style.left = "60px";
+avatarDefaut.style.width = "180px";
+
+// On marque le premier avatar comme selected
+document.querySelectorAll(".cate")[0].querySelector(".choice").classList.add("selected");
 // ============================================================
 // CLIC SUR UN AVATAR
 // ============================================================

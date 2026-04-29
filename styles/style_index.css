@@ -684,14 +684,14 @@ body {
     padding: 1.2rem 1.0rem;
     font-size: 0.8rem;
     line-height: 1.4;
-    max-width: 300px;
+    max-width: 350px;
     width: max-content;
     text-align: center;
     bottom: 120%;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 10;
-    color: #333;
+    z-index: 1;
+    color: #000000;
     font-weight: 500;
 }
 
@@ -714,6 +714,32 @@ body {
     pointer-events: auto;
 }
 
+
+.etoile-hover {
+    position: absolute; /* ← par rapport à #section-chemin */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 6;
+}
+
+/* Apparaissent au survol */
+.etape1:hover .etoile-hover,
+.etape2:hover .etoile-hover,
+.etape3:hover .etoile-hover,
+.etape4:hover .etoile-hover {
+    opacity: 1;
+}
+
+/* Étoiles etape1 */
+.etape1 .etoile-a, .etape3 .etoile-a { top: 10%; left: -5%; width: 12px; }
+.etape1 .etoile-b, .etape3 .etoile-b{ top: -25%; left: 45%; width: 8px; }
+.etape1 .etoile-c, .etape3 .etoile-c { top: 16%; left: 110%; width: 10px; }
+
+/* Étoiles etape2 */
+.etape2 .etoile-a { bottom: 27%; left: 22%; width: 12px; }
+.etape2 .etoile-b { bottom: 30%; left: 25%; width: 8px; }
+.etape2 .etoile-c { bottom: 25%; left: 20%; width: 10px; }
 /* ============================================================
    SLIDER — les 5 box avec le swiper
    ============================================================ */
