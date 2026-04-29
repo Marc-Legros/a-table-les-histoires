@@ -157,15 +157,11 @@ body {
 /* Conteneur principal — positionné en bas à gauche de #intro */
 .btn-decouvre {
     position: absolute;
-    bottom: 8%;
-    /* ← entre le titre et la photo */
     left: 80%;
+    bottom: 8%;
     transform: translateX(-50%);
-    /* ← centré horizontalement */
     width: 150px;
-    /* ← plus petit */
     height: 150px;
-    cursor: pointer;
     z-index: 3;
 }
 
@@ -174,22 +170,18 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    /* ← couvre tout le .btn-decouvre */
     border-radius: 50%;
-    /* ← rond */
-    background: linear-gradient(135deg, #CB55E4, #F5A623);
+    margin: -5px;
+    background: linear-gradient(180deg, #CB55E4, #FFC84D);
 }
 
-/* Cercle blanc au centre — crée l'effet de "donut" */
-
-/* Cercle blanc au centre plus fin */
+/* Cercle blanc */
 .btn-decouvre::after {
     content: "";
     position: absolute;
     inset: 25px;
-    /* ← un peu moins épais */
     border-radius: 50%;
-    background: #f8f4ea;
+    background: #FFF;
 }
 
 .texte-circulaire {
@@ -197,18 +189,16 @@ body {
     inset: 0;
     width: 100%;
     height: 100%;
-    animation: tournerBouton 8s linear infinite;
-    /* ← tourne en boucle */
     z-index: 2;
-    /* ← au-dessus du cercle coloré */
+    animation: tournerBouton 8s linear infinite;
 }
 
 /* Style du texte dans le SVG */
 .texte-circulaire text {
-    font-family: "Belanosima", sans-serif;
-    font-size: 30.5px;
-    fill: #fff;
-    /* ← texte blanc */
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 10%;
+    fill: #FFF;
 }
 
 /* Icône play au centre */
@@ -218,34 +208,26 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
-    /* Dégradé sur le texte ▶ */
-    background: linear-gradient(135deg, #CB55E4, #F5A623);
+    font-size: 3rem;
+    margin-left: 9px;
+    background: linear-gradient(180deg, #CB55E4, #FFC84D);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     z-index: 3;
-    /* ← au-dessus de tout */
 }
 
-/* Animation de rotation */
 @keyframes tournerBouton {
     from {
         transform: rotate(0deg);
     }
-
-    /* ← départ */
     to {
         transform: rotate(360deg);
     }
-
-    /* ← tour complet */
 }
 
-/* Au survol — le texte ralentit */
-.btn-decouvre:hover .texte-circulaire {
-    animation-duration: 20s;
-    /* ← plus lent au hover */
-}
+/* .btn-decouvre:hover .texte-circulaire {
+    animation-duration: 10s;
+} */
 
 
 /* ============================================================
@@ -320,20 +302,29 @@ body {
 
 #ellipse {
     width: 10vw;
-    height: 10vw;
-    border-radius: 50%;
+    min-width: 120px;
+    aspect-ratio: 1 / 1;
     color: #FFF;
-    background-color: #CB55E4;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 4;
     position: relative;
     overflow: visible;
+    z-index: 4;
+}
+
+#ellipse::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background-color: #CB55E4;
+    z-index: 1;
 }
 
 .text-reduc {
-    font-size: 1rem;
+    position: relative;
+    font-size: clamp(.7rem, 1.1rem, 1.2rem);
     font-weight: 600;
     line-height: normal;
     margin: 0vh 2vw 2vh 2vw;
@@ -347,13 +338,17 @@ body {
     position: absolute;
     bottom: 75%;
     right: 5%;
+    /* bottom: 85%;
+    right: -5%; */
     z-index: -1;
 }
 
 #img-reduc2 {
     position: absolute;
     bottom: 82%;
-    right: 22%;
+    right: 17%;
+    /* bottom: 82%;
+    right: 20%; */
     z-index: 6;
 }
 
