@@ -667,6 +667,48 @@ body {
     transform: translateY(0) !important;
 }
 
+.bulle-hover {
+    /* ← remplace display:none par ça */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    
+    position: absolute;
+    background: #fff;
+    border-radius: 20px;
+    padding: 1.2rem 1.0rem;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    max-width: 300px;
+    width: max-content;
+    text-align: center;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    color: #333;
+    font-weight: 500;
+}
+
+.bulle-hover::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 12px solid transparent;
+    border-top-color: #fff;
+}
+
+/* ← remplace display:block par opacity:1 */
+.etape1:hover .bulle-hover,
+.etape2:hover .bulle-hover,
+.etape3:hover .bulle-hover,
+.etape4:hover .bulle-hover {
+    opacity: 1;
+    pointer-events: auto;
+}
+
 /* ============================================================
    SLIDER — les 5 box avec le swiper
    ============================================================ */

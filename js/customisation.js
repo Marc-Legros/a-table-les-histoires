@@ -115,6 +115,15 @@ const themes = {
 
 // On récupère le thème actif selon l'URL
 const theme = themes[themeId] || themes["theme-nuage"];
+const decoThemes = {
+    "theme-nuage": "../assets/la_legende_de_lile_nuage/argent(1).svg",
+    "theme-fees":  "../assets/la_potion_des_fees/fee.svg",
+};
+
+const decoTheme = document.getElementById("deco-theme");
+if (decoTheme && decoThemes[themeId]) {
+    decoTheme.src = decoThemes[themeId];
+}
 
 // ============================================================
 // REMPLIR LES BOUTONS DE CHOIX AVEC LES BONS ASSETS
@@ -442,6 +451,11 @@ btns.forEach((btn) => {
     btn.addEventListener("click", () => {
         const cateParent    = btn.closest(".cate");
         const indexDansCate = Array.from(btn.closest(".choices").querySelectorAll("img")).indexOf(btn);
+
+        // ← Enlève selected de tous les choix de la catégorie
+        cateParent.querySelectorAll(".choice").forEach(c => c.classList.remove("selected"));
+        // ← Ajoute selected sur le choix cliqué
+        btn.closest(".choice").classList.add("selected");
 
         if (cateParent === cates[0]) { cliquerAvatar(indexDansCate, btn.src); }
         else if (cateParent === cates[1]) { cliquerChapeau(indexDansCate, btn.src); }

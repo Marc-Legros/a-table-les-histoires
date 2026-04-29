@@ -130,7 +130,7 @@ body {
 }
 
 .choice.selected {
-    border: 3px solid #FFB802;
+    border: 3px solid #000000;
     transform: scale(1.1);
 }
 /* L'input ne doit jamais être bloqué */
@@ -216,4 +216,13 @@ body {
 
 #calque-avatar {
     transition: all 0.3s ease;
+}
+
+#deco-theme {
+    position: absolute;
+    width: 80px;
+    object-fit: contain;
+    animation: flotter 3s ease-in-out infinite alternate;
+    top: 30%;   /* ← ajuste pour monter/descendre */
+    left: 40%;  /* ← ajuste pour gauche/droite */
 }
