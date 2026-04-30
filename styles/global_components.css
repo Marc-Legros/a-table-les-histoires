@@ -22,7 +22,7 @@
     transition: transform .3s ease-in-out;
 }
 
-#nav.cache{
+#nav.cache {
     transform: translateY(-100%);
 }
 
@@ -86,21 +86,12 @@ footer {
     height: 157px;
 }
 
-#btn {
-    color: #3D2D00;
-    padding: 0.5em 1.5em;
-    border: 5px #3D2D00 solid;
-    border-radius: 40px;
-    background: #FFF;
-    font-size: 24px;
-    font-weight: 600;
-}
-
 #desc-footer {
     font-size: 24px;
 }
 
-.info-block a {
+
+.info-block a:not(.btn-footer) {
     width: fit-content;
     color: #000;
     font-size: 16px;
@@ -133,7 +124,7 @@ footer {
     height: 50px;
     padding: 14px 30px;
     outline: none;
-    
+
 }
 
 .email::placeholder {
@@ -154,4 +145,146 @@ footer {
     border: none;
     border-radius: 8px;
     cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/* ============================================================
+   BOUTON DÉGRADÉ — utilisé sur plusieurs pages
+   ============================================================ */
+.btn-gradient {
+    width: fit-content;
+    background: linear-gradient(90deg, #CB55E4, #FFB802);
+    padding: 5px;
+    border-radius: 50px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-content {
+    position: relative;
+    display: block;
+    width: fit-content;
+    display: block;
+    background-color: #FFF;
+    border-radius: 50px;
+    padding: 0.5rem 1.8rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #000;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+    background-clip: padding-box;
+    z-index: 1;
+}
+
+/* POSITION AWARE BUTTON HOVER - DÉGRADÉ */
+/* .btn-gradient {
+    width: fit-content;
+    background: linear-gradient(90deg, #CB55E4, #FFB802);
+    padding: 5px;
+    border-radius: 50px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.btn-aware {
+    position: relative;
+    display: block;
+    width: fit-content;
+    display: block;
+    background-color: #FFF;
+    border-radius: 50px;
+    padding: 0.5rem 1.8rem;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #000;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+    background-clip: padding-box;
+    z-index: 1;
+}
+
+.btn-aware span {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #CB55E4, #FFB802);
+    -webkit-transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.btn-aware:hover {
+    color: #FFF;
+}
+
+.btn-aware:hover span {
+    width: 225%;
+    height: 562.5px;
+}
+
+.btn-aware:active {
+    background: linear-gradient(90deg, #CB55E4, #FFB802);
+} */
+
+/* POSITION AWARE BUTTON HOVER - FOOTER */
+.btn-footer {
+    position: relative;
+    display: block;
+    width: fit-content;
+    padding: 0.5em 1.5em;
+    font-size: 24px;
+    font-weight: 600;
+    border: 5px #3D2D00 solid;
+    border-radius: 40px;
+    color: #3D2D00;
+    background: #FFF;
+    overflow: hidden;
+    transition: color 0.4s ease-in-out;
+    background-clip: padding-box;
+    /* box-shadow: inset 0 0 0 1px #3D2D00; */
+    z-index: 1;
+}
+
+.btn-footer span {
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: #3D2D00;
+    -webkit-transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.btn-footer:hover {
+    color: #FFF;
+    /* background-color: #3D2D00;
+    transition: background-color 0s; */
+}
+
+.btn-footer:hover span {
+    width: 225%;
+    height: 562.5px;
+}
+
+.btn-footer:active {
+    background-color: #3D2D00;
 }

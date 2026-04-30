@@ -14,6 +14,72 @@ function raf(time) {
 requestAnimationFrame(raf);
 
 
+// Position Aware Button Hover
+const buttons = document.querySelectorAll(".btn-aware");
+const buttonFooter = document.querySelectorAll(".btn-footer");
+
+// Position hover pour les dégradé
+buttons.forEach(button => {
+    button.addEventListener("mouseenter", function (e) {
+        const span = this.querySelector("span");
+
+        // Ici on récupère les coordonnées du bouton
+        const rect = this.getBoundingClientRect();
+
+        // Calcule la position de la souris dans le bouton
+        const relX = e.clientX - rect.left;
+        const relY = e.clientY - rect.top;
+
+        span.style.top = relY + "px";
+        span.style.left = relX + "px";
+    });
+
+    // Même chose quand la souris sort du bouton
+    button.addEventListener("mouseout", function (e) {
+        const span = this.querySelector("span");
+
+        const rect = this.getBoundingClientRect();
+
+        const relX = e.clientX - rect.left;
+        const relY = e.clientY - rect.top;
+
+        span.style.top = relY + "px";
+        span.style.left = relX + "px";
+    });
+});
+
+// Position hover pour le bouton du footer
+buttonFooter.forEach(button => {
+    button.addEventListener("mouseenter", function (e) {
+        const span = this.querySelector("span");
+
+        // Ici on récupère les coordonnées du bouton
+        const rect = this.getBoundingClientRect();
+
+        // Calcule la position de la souris dans le bouton
+        const relX = e.clientX - rect.left;
+        const relY = e.clientY - rect.top;
+
+        span.style.top = relY + "px";
+        span.style.left = relX + "px";
+    });
+
+    // Même chose quand la souris sort du bouton
+    button.addEventListener("mouseout", function (e) {
+        const span = this.querySelector("span");
+
+        const rect = this.getBoundingClientRect();
+
+        const relX = e.clientX - rect.left;
+        const relY = e.clientY - rect.top;
+
+        span.style.top = relY + "px";
+        span.style.left = relX + "px";
+    });
+});
+
+
+
 // Scroll header
 let dernierScroll = 0
 let dernierTemps = Date.now()
