@@ -226,3 +226,12 @@ body {
     top: 30%;   /* ← ajuste pour monter/descendre */
     left: 40%;  /* ← ajuste pour gauche/droite */
 }
+
+#deco-theme-droite {
+    position: absolute;
+    left: -1%;
+    top: 30%;
+    transform: translateY(-50%);
+    width: 200px;
+    animation: tourner 8s linear infinite;
+}

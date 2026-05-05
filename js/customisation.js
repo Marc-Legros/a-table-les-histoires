@@ -125,6 +125,16 @@ if (decoTheme && decoThemes[themeId]) {
     decoTheme.src = decoThemes[themeId];
 }
 
+const decoThemesDroite = {
+    "theme-nuage": "../assets/la_legende_de_lile_nuage/perroquet.svg",
+    "theme-fees":  "../assets/la_potion_des_fees/baguette.svg",
+};
+
+const decoThemeDroite = document.getElementById("deco-theme-droite");
+if (decoThemeDroite && decoThemesDroite[themeId]) {
+    decoThemeDroite.src = decoThemesDroite[themeId];
+}
+
 // ============================================================
 // REMPLIR LES BOUTONS DE CHOIX AVEC LES BONS ASSETS
 // ============================================================
