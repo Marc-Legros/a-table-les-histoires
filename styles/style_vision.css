@@ -325,14 +325,14 @@ h1 {
     background: linear-gradient(90deg, #CB55E4, #FFB802);
     padding: 5px;
     /* épaisseur du contour */
-    border-radius: 50px;
+    border-radius: 40px;
     display: inline-block;
 }
 
 .btn {
     display: block;
     background-color: #FFF;
-    border-radius: 50px;
+    border-radius: 40px;
     padding: 0.5rem 1.8rem;
     font-family: "Belanosima", sans-serif;
     font-weight: 600;

@@ -21,7 +21,7 @@ const themes = {
 
     // ---- THÈME PIRATE ----
     "theme-nuage": {
-        couleur: "#A89FD8",
+        couleur: "#969DFF",
         avatars: [
             "../assets/customisation/avatar/Group.svg",
             "../assets/customisation/avatar/Group1.svg",
@@ -67,7 +67,7 @@ const themes = {
 
     // ---- THÈME FÉES ----
     "theme-fees": {
-        couleur: "#F5A623",
+        couleur: "#FFE6A3",
         avatars: [
             "../assets/customisation/avatar/Group.svg",
             "../assets/customisation/avatar/Group1.svg",

@@ -83,7 +83,7 @@ buttonFooter.forEach(button => {
 // Scroll header
 let dernierScroll = 0
 let dernierTemps = Date.now()
-const vitesseCap = 0.5
+const vitesseCap = 0.4
 const header = document.getElementById("nav")
 
 window.addEventListener("scroll", () => {
