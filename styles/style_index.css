@@ -688,6 +688,27 @@ body {
     pointer-events: auto;
 }
 
+.etape2 .bulle-hover,
+.etape4 .bulle-hover {
+    bottom: unset;   /* ← annule le bottom */
+    top: -220px;     /* ← positionne au-dessus */
+}
+
+.etape2 .bulle-hover,
+.etape4 .bulle-hover {
+    bottom: unset;
+    top: 120%;  /* ← en dessous au lieu d'au-dessus */
+}
+
+/* Flèche qui pointe vers le HAUT */
+.etape2 .bulle-hover::after,
+.etape4 .bulle-hover::after {
+    top: unset;
+    bottom: 100%;        /* ← triangle en haut de la bulle */
+    border-top-color: transparent;    /* ← annule le triangle du bas */
+    border-bottom-color: #fff;        /* ← triangle vers le haut */
+}
+
 
 .etoile-hover {
     position: absolute; /* ← par rapport à #section-chemin */
@@ -706,14 +727,22 @@ body {
 }
 
 /* Étoiles etape1 */
-.etape1 .etoile-a, .etape3 .etoile-a { top: 10%; left: -5%; width: 12px; }
-.etape1 .etoile-b, .etape3 .etoile-b{ top: -25%; left: 45%; width: 8px; }
-.etape1 .etoile-c, .etape3 .etoile-c { top: 16%; left: 110%; width: 10px; }
+.etape1 .etoile-a { top: 10%; left: -20%; width: 12px; }
+.etape1 .etoile-b { top: -15%; left: 25%; width: 8px; }
+.etape1 .etoile-c { top: 16%; right: -5%; width: 10px; }
+
+.etape3 .etoile-a { top: 10%; left: -5%; width: 12px; }
+.etape3 .etoile-b { top: -18%; left: 30%; width: 8px; }
+.etape3 .etoile-c { top: 16%; right: 5%; width: 10px; }
 
 /* Étoiles etape2 */
-.etape2 .etoile-a { bottom: 27%; left: 22%; width: 12px; }
-.etape2 .etoile-b { bottom: 30%; left: 25%; width: 8px; }
-.etape2 .etoile-c { bottom: 25%; left: 20%; width: 10px; }
+.etape2 .etoile-a { bottom: 5%; left: 5%; width: 12px; }
+.etape2 .etoile-b { bottom: -5%; left: 70%; width: 8px; }
+.etape2 .etoile-c { bottom: 25%; left: 90%; width: 10px; }
+
+.etape4 .etoile-a { bottom: 15%; left: -45%; width: 12px; }
+.etape4 .etoile-b { bottom: -10%; left: 75%; width: 8px; }
+.etape4 .etoile-c {bottom: 25%; right: -40%; width: 10px;}
 /* ============================================================
    SLIDER — les 5 box avec le swiper
    ============================================================ */
