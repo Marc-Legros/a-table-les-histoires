@@ -34,7 +34,7 @@
 .nav-link {
     color: #000000;
     background-color: var(--white);
-    border-radius: 50px;
+    border-radius: 40px;
     padding: 0.6rem 1.5rem;
     font-size: 1rem;
     font-weight: 400;
@@ -48,7 +48,7 @@
 
 .nav-account {
     background-color: #FFF;
-    border-radius: 50px;
+    border-radius: 40px;
     padding: 0.6rem 0.8rem;
     /* box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15); */
 }
@@ -162,7 +162,7 @@ footer {
     width: fit-content;
     background: linear-gradient(90deg, #CB55E4, #FFB802);
     padding: 5px;
-    border-radius: 50px;
+    border-radius: 40px;
     display: inline-block;
     cursor: pointer;
 }
@@ -173,7 +173,7 @@ footer {
     width: fit-content;
     display: block;
     background-color: #FFF;
-    border-radius: 50px;
+    border-radius: 40px;
     padding: 0.5rem 1.8rem;
     font-weight: 600;
     font-size: 1.25rem;
@@ -190,7 +190,7 @@ footer {
     width: fit-content;
     background: linear-gradient(90deg, #CB55E4, #FFB802);
     padding: 5px;
-    border-radius: 50px;
+    border-radius: 40px;
     display: inline-block;
     cursor: pointer;
 }
@@ -202,7 +202,7 @@ footer {
     width: fit-content;
     display: block;
     background-color: #FFF;
-    border-radius: 50px;
+    border-radius: 40px;
     padding: 0.5rem 1.8rem;
     font-weight: 600;
     font-size: 1.25rem;
