@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const vaguePaths = document.querySelectorAll('.vague-path');
 
     function mettreAJourSlide(swiperInstance) {
-        const activeSlide = swiperInstance.slides[swiperInstance.activeIndex];
+        const activeSlide = swiperInstance.slides[swiperInstance.realIndex];
 
         // CHANGE LE FOND
         const newColor = activeSlide.getAttribute('data-bg');
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
             scene.className = 'slider-backgrounds ' + newTheme;
 
              // ← AJOUTE JUSTE CETTE LIGNE
-           const lienPerso = document.getElementById("btn");
+           const lienPerso = document.getElementById("btn-custo-slider");
             if (lienPerso) lienPerso.href = `html/customisation.html?theme=${newTheme}`;
         }
 

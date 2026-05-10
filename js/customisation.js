@@ -111,13 +111,59 @@ const themes = {
             "../assets/customisation/accessoires/objets/fee/Calque_1(6).svg",
         ],
     },
+         // ---- THÈME ESPACE ----
+    "theme-espace": {
+        couleur: "#74B5FF",
+            avatars: [  
+                "../assets/customisation/avatar/Group.svg",
+                "../assets/customisation/avatar/Group1.svg",
+                "../assets/customisation/avatar/Group2.svg",
+                "../assets/customisation/avatar/Group3.svg",
+                "../assets/customisation/avatar/Group4.svg",
+                "../assets/customisation/avatar/Group5.svg",
+            ],
+            chapeaux: [
+                "../assets/customisation/accessoires/chapeau/space/Calque 1(9).svg",
+                "../assets/customisation/accessoires/chapeau/space/Calque 1(10).svg",
+                "../assets/customisation/accessoires/chapeau/space/casquette(1).svg",
+                "../assets/customisation/accessoires/chapeau/space/casquette(2).svg",
+                "../assets/customisation/accessoires/chapeau/space/serre tete étoiles.svg",
+                "../assets/customisation/accessoires/chapeau/space/serre tete lune.svg",
+            ],
+            tshirts: [
+                "../assets/customisation/accessoires/t-shirt/space/t shirt 1.svg",
+                "../assets/customisation/accessoires/t-shirt/space/t shirt 2(2).svg",
+                "../assets/customisation/accessoires/t-shirt/space/t shirt 3.svg",
+                "../assets/customisation/accessoires/t-shirt/space/t shirt 4.svg",
+                "../assets/customisation/accessoires/t-shirt/space/t shirt 4(1).svg",
+                "../assets/customisation/accessoires/t-shirt/space/t shirt 5 1(4).svg",
+            ],
+            bras: [
+                "../assets/customisation/avatar/hand.svg",
+                "../assets/customisation/avatar/hand.svg",
+                "../assets/customisation/avatar/hand.svg",
+                "../assets/customisation/avatar/hand2.svg",
+                "../assets/customisation/avatar/hand3.svg",
+                "../assets/customisation/avatar/hand4.svg",
+            ],
+            accessoires: [
+                "../assets/customisation/accessoires/objets/space/ballon.svg",
+                "../assets/customisation/accessoires/objets/space/Calque 2(2).svg",
+                "../assets/customisation/accessoires/objets/space/drapeau.svg",
+                "../assets/customisation/accessoires/objets/space/drapeau(1).svg",
+                "../assets/customisation/accessoires/objets/space/Group(27).svg",
+                "../assets/customisation/accessoires/objets/space/jumelles(1).svg",
+            ], 
+
+        },
 };
 
 // On récupère le thème actif selon l'URL
 const theme = themes[themeId] || themes["theme-nuage"];
 const decoThemes = {
-    "theme-nuage": "../assets/la_legende_de_lile_nuage/argent(1).svg",
-    "theme-fees":  "../assets/la_potion_des_fees/fee.svg",
+    "theme-nuage":  "../assets/la_legende_de_lile_nuage/argent(1).svg",
+    "theme-fees":   "../assets/la_potion_des_fees/fee.svg",
+    "theme-espace": "../assets/les_meteorites_croustillantes/etoile1.svg", 
 };
 
 const decoTheme = document.getElementById("deco-theme");
@@ -126,8 +172,9 @@ if (decoTheme && decoThemes[themeId]) {
 }
 
 const decoThemesDroite = {
-    "theme-nuage": "../assets/la_legende_de_lile_nuage/perroquet.svg",
-    "theme-fees":  "../assets/la_potion_des_fees/baguette.svg",
+    "theme-nuage":  "../assets/la_legende_de_lile_nuage/perroquet.svg",
+    "theme-fees":   "../assets/la_potion_des_fees/baguette.svg",
+    "theme-espace": "../assets/les_meteorites_croustillantes/fusee.svg", 
 };
 
 const decoThemeDroite = document.getElementById("deco-theme-droite");
@@ -210,6 +257,14 @@ function cliquerChapeau(indexDansCate, src) {
         else if (indexDansCate === 4) { chapeau.style.top = "45px";  chapeau.style.left = "50px";  chapeau.style.width = "210px"; }
         else if (indexDansCate === 5) { chapeau.style.top = "70px";  chapeau.style.left = "100px"; chapeau.style.width = "100px"; }
     }
+    else if (themeId === "theme-espace") {
+        if (indexDansCate === 0) { chapeau.style.top = "75px";  chapeau.style.left = "38px"; chapeau.style.width = "230px"; }
+        else if (indexDansCate === 1) { chapeau.style.top = "75px";  chapeau.style.left = "38px"; chapeau.style.width = "230px"; }
+        else if (indexDansCate === 2) { chapeau.style.top = "95px";  chapeau.style.left = "65px"; chapeau.style.width = "240px"; }
+        else if (indexDansCate === 3) { chapeau.style.top = "95px";  chapeau.style.left = "65px"; chapeau.style.width = "240px"; }
+        else if (indexDansCate === 4) { chapeau.style.top = "75px";  chapeau.style.left = "68px"; chapeau.style.width = "160px"; }
+        else if (indexDansCate === 5) { chapeau.style.top = "115px";  chapeau.style.left = "85px"; chapeau.style.width = "130px"; }
+    }
     else {
         chapeau.style.top = "75px"; chapeau.style.left = "38px"; chapeau.style.width = "230px";
     }
@@ -239,6 +294,14 @@ function cliquerTshirt(indexDansCate, src) {
         else if (indexDansCate === 3) { tshirt.style.top = "242px"; tshirt.style.left = "40px"; tshirt.style.width = "220px"; }
         else if (indexDansCate === 4) { tshirt.style.top = "260px"; tshirt.style.left = "25px"; tshirt.style.width = "250px"; }
         else if (indexDansCate === 5) { tshirt.style.top = "260px"; tshirt.style.left = "25px"; tshirt.style.width = "250px"; }
+    }
+    else if (themeId === "theme-espace") {
+        if (indexDansCate === 0) { tshirt.style.top = "270px"; tshirt.style.left = "40px"; tshirt.style.width = "220px"; }
+        else if (indexDansCate === 1) { tshirt.style.top = "270px"; tshirt.style.left = "40px";  tshirt.style.width = "220px"; }
+        else if (indexDansCate === 2) { tshirt.style.top = "275px"; tshirt.style.left = "25px"; tshirt.style.width = "250px"; }
+        else if (indexDansCate === 3) { tshirt.style.top = "275px"; tshirt.style.left = "25px"; tshirt.style.width = "250px"; }
+        else if (indexDansCate === 4) { tshirt.style.top = "275px"; tshirt.style.left = "25px"; tshirt.style.width = "250px"; }
+        else if (indexDansCate === 5) { tshirt.style.top = "240px"; tshirt.style.left = "40px"; tshirt.style.width = "220px"; }
     }
     else {
         tshirt.style.top = "242px"; tshirt.style.left = "40px"; tshirt.style.width = "220px";
@@ -318,6 +381,32 @@ function cliquerTshirt(indexDansCate, src) {
             brasDroit.style.top  = "315px"; brasDroit.style.left  = "198px"; brasDroit.style.width  = "80px"; brasDroit.style.transform  = "scaleX(-1) rotate(15deg)"; brasDroit.style.zIndex = "1";
         }
     }
+      else if (themeId === "theme-espace") {
+            if (indexDansCate === 0) {
+                brasGauche.style.top = "280px"; brasGauche.style.left = "0px";   brasGauche.style.width = "80px"; brasGauche.style.transform = "rotate(30deg)";
+                brasDroit.style.top  = "280px"; brasDroit.style.left  = "210px"; brasDroit.style.width  = "80px"; brasDroit.style.transform  = "scaleX(-1) rotate(25deg)";
+            }
+            else if (indexDansCate === 1) {
+                brasGauche.style.top = "280px"; brasGauche.style.left = "0px";   brasGauche.style.width = "80px"; brasGauche.style.transform = "rotate(30deg)";
+                brasDroit.style.top  = "280px"; brasDroit.style.left  = "210px"; brasDroit.style.width  = "80px"; brasDroit.style.transform  = "scaleX(-1) rotate(25deg)";
+            }
+            else if (indexDansCate === 2) {
+                brasGauche.style.top = "299px"; brasGauche.style.left = "6px";   brasGauche.style.width = "80px"; brasGauche.style.transform = "rotate(20deg)";
+                brasDroit.style.top  = "290px"; brasDroit.style.left  = "210px"; brasDroit.style.width  = "80px"; brasDroit.style.transform  = "scaleX(-1) rotate(20deg)";
+            }
+            else if (indexDansCate === 3) {
+                brasGauche.style.top = "299px"; brasGauche.style.left = "10px";   brasGauche.style.width = "80px"; brasGauche.style.transform = "rotate(15deg)";
+                brasDroit.style.top  = "299px"; brasDroit.style.left  = "210px"; brasDroit.style.width  = "80px"; brasDroit.style.transform  = "scaleX(-1) rotate(15deg)";
+            }
+            else if (indexDansCate === 4) {
+                brasGauche.style.top = "299px"; brasGauche.style.left = "10px";  brasGauche.style.width = "80px"; brasGauche.style.transform = "rotate(15deg)";
+                brasDroit.style.top  = "299px"; brasDroit.style.left  = "210px"; brasDroit.style.width  = "80px"; brasDroit.style.transform  = "scaleX(-1) rotate(15deg)";
+            }
+            else if (indexDansCate === 5) {
+                brasGauche.style.top = "290px"; brasGauche.style.left = "10px";  brasGauche.style.width = "80px"; brasGauche.style.transform = "rotate(18deg)";
+                brasDroit.style.top  = "280px"; brasDroit.style.left  = "200px"; brasDroit.style.width  = "80px"; brasDroit.style.transform  = "scaleX(-1) rotate(20deg)";
+            }
+        }
 
     placerAccessoire(); // repositionne l'accessoire si il y en a un
 }
@@ -452,6 +541,59 @@ function placerAccessoire() {
         }
     }
 
+    else if (themeId === "theme-espace") {
+
+        if (i === 0) { // Accessoire 0 — baguette 1
+            if (tshirtActuel === 0) { accessoire.style.top = "245px"; accessoire.style.left = "230px"; accessoire.style.width = "100px";}
+            else if (tshirtActuel === 1) { accessoire.style.top = "245px"; accessoire.style.left = "230px"; accessoire.style.width = "100px";}
+            else if (tshirtActuel === 2) { accessoire.style.top = "245px"; accessoire.style.left = "225px";  accessoire.style.width = "100px";}
+            else if (tshirtActuel === 3) { accessoire.style.top = "245px"; accessoire.style.left = "225px";  accessoire.style.width = "100px";}
+            else if (tshirtActuel === 4) { accessoire.style.top = "245px"; accessoire.style.left = "225px";  accessoire.style.width = "100px";}
+            else if (tshirtActuel === 5) { accessoire.style.top = "245px"; accessoire.style.left = "225px";  accessoire.style.width = "100px";}
+        }
+        else if (i === 1) { // Accessoire 1 — baguette 2
+            if (tshirtActuel === 0) { accessoire.style.top = "345px"; accessoire.style.left = "240px"; accessoire.style.width = "100px";}
+            else if (tshirtActuel === 1) { accessoire.style.top = "345px"; accessoire.style.left = "240px"; accessoire.style.width = "100px";}
+            else if (tshirtActuel === 2) { accessoire.style.top = "355px"; accessoire.style.left = "230px";  accessoire.style.width = "100px";}
+            else if (tshirtActuel === 3) { accessoire.style.top = "365px"; accessoire.style.left = "230px";  accessoire.style.width = "100px";}
+            else if (tshirtActuel === 4) { accessoire.style.top = "365px"; accessoire.style.left = "230px";  accessoire.style.width = "100px";}
+            else if (tshirtActuel === 5) { accessoire.style.top = "345px"; accessoire.style.left = "230px";  accessoire.style.width = "100px";}
+        }
+        else if (i === 2) { // Accessoire 2
+            if (tshirtActuel === 0) { accessoire.style.top = "150px"; accessoire.style.left = "-75px"; accessoire.style.width = "200px"; accessoire.style.transform = "rotate(-35deg)";}
+            else if (tshirtActuel === 1) { accessoire.style.top = "150px"; accessoire.style.left = "-75px"; accessoire.style.width = "200px"; accessoire.style.transform = "rotate(-35deg)";}
+            else if (tshirtActuel === 2) { accessoire.style.top = "150px"; accessoire.style.left = "-75px"; accessoire.style.width = "200px"; accessoire.style.transform = "rotate(-35deg)";}
+            else if (tshirtActuel === 3) { accessoire.style.top = "150px"; accessoire.style.left = "-75px"; accessoire.style.width = "200px"; accessoire.style.transform = "rotate(-35deg)"; }
+            else if (tshirtActuel === 4) { accessoire.style.top = "150px"; accessoire.style.left = "-75px"; accessoire.style.width = "200px"; accessoire.style.transform = "rotate(-35deg)"; }
+            else if (tshirtActuel === 5) { accessoire.style.top = "150px"; accessoire.style.left = "-75px"; accessoire.style.width = "200px"; accessoire.style.transform = "rotate(-35deg)"; }
+        }
+        else if (i === 3) { // Accessoire 3
+            if (tshirtActuel === 0) { accessoire.style.top = "150px"; accessoire.style.left = "-75px"; accessoire.style.width = "200px"; accessoire.style.transform = "rotate(-35deg)"; }
+            else if (tshirtActuel === 1) { accessoire.style.top = "150px"; accessoire.style.left = "-75px"; accessoire.style.width = "200px"; accessoire.style.transform = "rotate(-35deg)"; }
+            else if (tshirtActuel === 2) { accessoire.style.top = "150px"; accessoire.style.left = "-75px"; accessoire.style.width = "200px"; accessoire.style.transform = "rotate(-35deg)";  }
+            else if (tshirtActuel === 3) { accessoire.style.top = "150px"; accessoire.style.left = "-75px"; accessoire.style.width = "200px"; accessoire.style.transform = "rotate(-35deg)";  }
+            else if (tshirtActuel === 4) { accessoire.style.top = "150px"; accessoire.style.left = "-75px"; accessoire.style.width = "200px"; accessoire.style.transform = "rotate(-35deg)";  }
+            else if (tshirtActuel === 5) { accessoire.style.top = "150px"; accessoire.style.left = "-75px"; accessoire.style.width = "200px"; accessoire.style.transform = "rotate(-35deg)";  }
+        }
+        else if (i === 4) { // Accessoire 4
+            if (tshirtActuel === 0) { accessoire.style.top = "340px"; accessoire.style.left = "250px"; accessoire.style.width = "60px";  }
+            else if (tshirtActuel === 1) { accessoire.style.top = "340px"; accessoire.style.left = "250px"; accessoire.style.width = "60px"; }
+            else if (tshirtActuel === 2) { accessoire.style.top = "355px"; accessoire.style.left = "250px"; accessoire.style.width = "60px"; }
+            else if (tshirtActuel === 3) { accessoire.style.top = "360px"; accessoire.style.left = "245px"; accessoire.style.width = "60px"; }
+            else if (tshirtActuel === 4) { accessoire.style.top = "360px"; accessoire.style.left = "245px"; accessoire.style.width = "60px"; }
+            else if (tshirtActuel === 5) { accessoire.style.top = "355px"; accessoire.style.left = "240px"; accessoire.style.width = "60px"; }
+        }
+        else if (i === 5) { // Accessoire 5
+            if (tshirtActuel === 0) { accessoire.style.top = "365px"; accessoire.style.left = "240px"; accessoire.style.width = "80px";}
+            else if (tshirtActuel === 1) { accessoire.style.top = "375px"; accessoire.style.left = "240px"; accessoire.style.width = "80px"; }
+            else if (tshirtActuel === 2) { accessoire.style.top = "375px"; accessoire.style.left = "240px"; accessoire.style.width = "80px"; }
+            else if (tshirtActuel === 3) { accessoire.style.top = "385px"; accessoire.style.left = "240px"; accessoire.style.width = "80px";  }
+            else if (tshirtActuel === 4) { accessoire.style.top = "385px"; accessoire.style.left = "240px"; accessoire.style.width = "80px"; }
+            else if (tshirtActuel === 5) { accessoire.style.top = "375px"; accessoire.style.left = "240px"; accessoire.style.width = "80px";  }
+        }
+    }
+
+
     // ---- POSITIONS PAR DÉFAUT (autres thèmes) ----
     else {
         accessoire.style.top = "200px";
@@ -548,6 +690,6 @@ btnAchat.addEventListener("click", (e) => {
 
     // Redirection après 1 seconde
     setTimeout(() => {
-        window.location.href = "../html/inter-customisation.html";
+        window.location.href = `../html/inter-customisation.html?theme=${themeId}`;
     }, 1000);
 });

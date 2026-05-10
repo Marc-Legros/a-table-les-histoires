@@ -31,12 +31,19 @@ if (btnPanier) {
 }
 
 // ---- RÉCUPÉRATION DU PERSONNAGE ----
+const searchParams = new URLSearchParams(window.location.search);
+const themeIdFromUrl = searchParams.get("theme");
 const personnage = JSON.parse(localStorage.getItem("personnage"));
 
-    if (personnage) {
+        if (personnage) {
+            const themeId = themeIdFromUrl || personnage.theme || "theme-nuage";
+
+         if (themeIdFromUrl) {
+            personnage.theme = themeIdFromUrl;
+            localStorage.setItem("personnage", JSON.stringify(personnage));
+        }
 
         // On récupère le bon thème
-        const themeId = personnage.theme || "pirate";
         const themeConfig = decorationsThemes[themeId];
 
         if (themeConfig) {
