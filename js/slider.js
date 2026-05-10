@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const vaguePaths = document.querySelectorAll('.vague-path');
 
     function mettreAJourSlide(swiperInstance) {
-        const activeSlide = swiperInstance.slides[swiperInstance.realIndex];
+        const activeSlide = swiperInstance.slides[swiperInstance.activeIndex];
 
         // CHANGE LE FOND
         const newColor = activeSlide.getAttribute('data-bg');
