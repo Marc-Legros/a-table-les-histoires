@@ -20,6 +20,16 @@ const decorationsThemes = {
             { classe: "deco-dessert",   src: "../assets/index/smoothie.png" },
         ],
     },
+    "theme-espace": {
+        couleurFond: "#74B5FF",
+        decos: [
+            { classe: "deco-perroquet", src: "../assets/les_meteorites_croustillantes/etoile1.svg" },
+            { classe: "deco-pieces",    src: "../assets/les_meteorites_croustillantes/planete1.svg" },
+            { classe: "deco-gouvernail",src: "../assets/les_meteorites_croustillantes/fusee.svg" },
+            { classe: "deco-epee",      src: "../assets/les_meteorites_croustillantes/etoileFilante.svg" },
+            { classe: "deco-dessert",   src: "../assets/index/cookies.png" },
+        ],
+    },
 };
 
 // ---- BOUTON PANIER ----
